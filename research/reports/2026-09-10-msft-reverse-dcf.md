@@ -1,4 +1,4 @@
-# Microsoft (MSFT) Five-Year FCFF DCF
+# Microsoft (MSFT) Five-Year FCFF Reverse DCF
 
 **Valuation date:** September 10, 2026
 **Currency:** USD millions, except per-share data and percentages.
