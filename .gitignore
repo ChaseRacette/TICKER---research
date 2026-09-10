@@ -1,0 +1,21 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Python tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local editors and notebooks
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Local research scratch space
+scratch/
+*.tmp
