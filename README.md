@@ -7,6 +7,7 @@ Fundamental company-research materials and source filings, organized for repeata
 | Path | Contents |
 | --- | --- |
 | `research/reports/` | Dated company-research reports in Markdown. |
+| `models/` | Reproducible valuation models and analysis scripts. |
 | `sources/filings/` | Primary-source company filings cited by the reports. |
 
 ## Current coverage
