@@ -27,6 +27,19 @@ The new model is [`msft_proforma.py`](../../msft_proforma.py). Run it from the r
 
 The first-pass model produces approximately **$238.72 per share**. It is a scenario calculation, not a price target: most sensitivity comes from the capex-normalization, gross-margin, and cost-of-equity judgments. The program refuses to print a value if a forecast balance sheet has a material gap or cash falls below its stated floor.
 
+### Check block and market question
+
+| Check | FY2027E | FY2028E | FY2029E | FY2030E | FY2031E |
+|---|---:|---:|---:|---:|---:|
+| Balance-sheet gap | $0.0m | $0.0m | $0.0m | $0.0m | $0.0m |
+| Cash and short-term investments | $80,348.7m | $117,068.4m | $185,054.5m | $290,746.2m | $427,730.4m |
+| Cash at or above $25,000m floor | Yes | Yes | Yes | Yes | Yes |
+| Revolver draw | $0.0m | $0.0m | $0.0m | $0.0m | $0.0m |
+
+No forecast year draws the revolver because cash remains above the stated $25.0B floor in every year.
+
+On **September 24, 2026 at 1:37 PM EDT**, the available intraday MSFT quote was **$493.62 per share**. The model says **$238.72 per share** and the market says **$493.62 per share**, both using **7,425.545 million shares** - what capex, margin, growth, or discount-rate assumption would have to change for those two values to reconcile? [Price source](https://sogotrade2.websol.barchart.com/?1_selected=stockQuote&module=stockDetail&region=US&symbol=MSFT)
+
 ## Three-year history grid
 
 | Fiscal year | Revenue | Gross profit | SG&A proxy* | Net income | Inventory | PP&E, net | Shareholders' equity |
@@ -97,5 +110,17 @@ The first-pass model produces approximately **$238.72 per share**. It is a scena
 | Revolver / floor plan | None | Microsoft does not have dealer inventory financing. Do not force a floor-plan formula into this model. |
 
 Microsoft has positive net income and historical operating cash flow in all three years. The "negative FCFE" limitation therefore does not apply to these historical years. If an explicit forecast year produces negative FCFE, label it **negative FCFE** and do not use a Gordon-growth terminal value on a negative terminal cash flow: a perpetuity of negative cash flow is not a meaningful enterprise-value number.
+
+## Fresh-eyes review
+
+### AI skeptical-review draft - replace or confirm with your partner's own words
+
+**Attack:** Why should capital spending fall from 34% of revenue in FY2027E to 20% in FY2031E when FY2026 AI-infrastructure spending was still increasing and Microsoft has not guided to that percentage decline?
+
+**Answer (two sentences):** I used a slow decline because FY2026 capex of $115.948B, or about 35% of revenue, is a very high starting point and the forecast does not assume it disappears; it remains $112.4B in FY2031E under this model. I would raise the capex ratios if Microsoft reports continued capex intensity, lease commitments, or cloud-margin pressure without evidence that utilization and efficiency are improving.
+
+### Partner-model attack - requires your partner's assumption table
+
+I cannot truthfully record an attack on a partner model I have not seen. Ask this evidence-focused question after opening it: **“Which judgment changes your cash balance most, and what filing history or guidance supports that number rather than the most recent year?”** Record your partner's answer and whether it changed your view.
 
 > Disclaimer: I have no licensure in any field of finance. This material is for educational purposes only and is not financial advice.
