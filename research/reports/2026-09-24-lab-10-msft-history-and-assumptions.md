@@ -8,6 +8,25 @@ All amounts are USD millions. Microsoft fiscal years end June 30. I opened the S
 - **S25:** [Microsoft FY2025 Form 10-K, filed July 30, 2025](https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm), Item 8.
 - **S26:** [Microsoft FY2026 Form 10-K, filed July 29, 2026](https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm), Item 8; Item 7 MD&A.
 
+## Opening balance sheet and linked model
+
+The new model is [`msft_proforma.py`](../../msft_proforma.py). Run it from the repository root with `python msft_proforma.py`. Its FY2026A opening balance sheet ties to zero before it forecasts any year.
+
+| Opening FY2026A balance sheet item | USD millions | Source |
+|---|---:|---|
+| Cash and short-term investments | $76,843 | S26, Item 8, Consolidated Balance Sheets |
+| Accounts receivable | $80,876 | S26, Item 8, Consolidated Balance Sheets |
+| Inventory | $1,397 | S26, Item 8, Consolidated Balance Sheets |
+| PP&E, net | $313,076 | S26, Item 8, Consolidated Balance Sheets |
+| Other assets (aggregated) | $286,184 | S26, Item 8; total assets less separately modeled asset lines |
+| **Total assets** | **$758,376** | S26, Item 8, Consolidated Balance Sheets |
+| Debt | $40,294 | S26, Item 8, debt disclosures; simplified model line |
+| Other liabilities (aggregated) | $275,695 | S26, Item 8; total liabilities less simplified debt line |
+| Shareholders' equity | $442,387 | S26, Item 8, Consolidated Balance Sheets |
+| **Total liabilities and equity** | **$758,376** | S26, Item 8, Consolidated Balance Sheets |
+
+The first-pass model produces approximately **$238.72 per share**. It is a scenario calculation, not a price target: most sensitivity comes from the capex-normalization, gross-margin, and cost-of-equity judgments. The program refuses to print a value if a forecast balance sheet has a material gap or cash falls below its stated floor.
+
 ## Three-year history grid
 
 | Fiscal year | Revenue | Gross profit | SG&A proxy* | Net income | Inventory | PP&E, net | Shareholders' equity |
