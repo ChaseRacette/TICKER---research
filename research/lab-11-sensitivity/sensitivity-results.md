@@ -19,11 +19,6 @@ Each scenario changes only one independent input. The final-year outputs below a
 
 All six runs balance in FY2027E through FY2031E with a $0.0m balance-sheet gap in every year, and cash remains above the $25,000m floor. No scenario draws a revolver because each path retains positive cash above that floor.
 
-## What happened versus the locked predictions
-
-- **Revenue growth:** The direction matched the prediction. The lower-to-higher range moves value per share from $228.37 to $249.49 because revenue changes gross profit, operating income, FCFE, and terminal value.
-- **Capex intensity:** The direction matched the prediction. FY2031E operating income does not change in this simplified model because capex is not separately charged again in the income statement; FCFE and value change materially because capex changes cash investment and later depreciation.
-
 ## Partner check still required
 
 Before class submission, have your partner verify the percentage-point and percentage-of-revenue units in the locked record and confirm that each scenario changes only one driver. Record their name or initials and any correction here rather than claiming a check that did not occur.
