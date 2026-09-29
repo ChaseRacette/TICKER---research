@@ -28,3 +28,45 @@
 ## Partner unit check
 
 Before running, a partner should verify that the revenue cases are **percentage-point shifts**, not percentage changes, and that capex is stated as a **percentage of revenue**, not a dollar amount. Only one independent input changes in each scenario; every other model input remains at its base value.
+
+## Actual results and prediction review
+
+**Recorded:** 2026-09-29T14:06:50-04:00  
+**Calculation convention:** FCFE, USD millions except USD per diluted share. The associated runner uses a fresh independent copy of the base input set for each case and reruns a fresh base case at the end.
+
+### Revenue-growth path results
+
+| Case | FY2031E operating profit | Change from base | FY2031E FCFE | Change from base | Value per share | Change from base |
+|---|---:|---:|---:|---:|---:|---:|
+| Lower | $243,208.6m | -$23,143.6m | $158,744.0m | -$8,240.2m | $228.37 | -$10.35 |
+| Base | $266,352.1m | $0.0m | $166,984.2m | $0.0m | $238.72 | $0.00 |
+| Higher | $291,224.2m | +$24,872.0m | $175,575.4m | +$8,591.2m | $249.49 | +$10.77 |
+| Span | $48,015.6m |  | $16,831.4m |  | $21.12 |  |
+
+**Prediction review:** The direction prediction was correct: lower growth reduced all three outputs and higher growth increased them. The size prediction was wrong: value per share moved by a smaller percentage than final-year operating profit because the model also requires incremental capex and working-capital investment as revenue grows, and discounting reduces the present value of later cash flows.
+
+### AI/cloud capital-spending intensity results
+
+| Case | FY2031E operating profit | Change from base | FY2031E FCFE | Change from base | Value per share | Change from base |
+|---|---:|---:|---:|---:|---:|---:|
+| Lower | $266,352.1m | $0.0m | $186,247.0m | +$19,262.8m | $270.90 | +$32.18 |
+| Base | $266,352.1m | $0.0m | $166,984.2m | $0.0m | $238.72 | $0.00 |
+| Higher | $266,352.1m | $0.0m | $147,721.4m | -$19,262.8m | $206.53 | -$32.18 |
+| Span | $0.0m |  | $38,525.6m |  | $64.37 |  |
+
+**Prediction review:** The direction and the operating-profit prediction were correct. In this simplified model, capex is a cash-investment input rather than a separate operating-income expense, so it changes FCFE and value while final-year operating profit remains unchanged.
+
+### Validation result and research-priority statement
+
+The first base run and restored base run have the same inputs and outputs within the runner's $0.000001 tolerance: FY2031E operating profit $266,352.1m, FY2031E FCFE $166,984.2m, and value per share $238.72. All six lower/base/higher runs have a $0.0m balance-sheet gap in each forecast year and cash above the $25,000m floor; no run draws a revolver.
+
+This does not change the base-case valuation output, but it reinforces the research priority: verify whether AI/cloud capital spending can actually normalize toward the stated path without weakening cloud growth or margins. The capex range creates the wider value-per-share span, so that judgment remains the most important evidence question in this model.
+
+## Partner exchange 2 - complete in class
+
+I have not seen a partner's model, so this section must be completed during the exchange rather than invented here.
+
+| Whose model | Changed result checked against base | Difference recomputed | Other independent inputs confirmed at base? | Statement trace question / correction |
+|---|---|---|---|---|
+| My Microsoft model - partner initials/date: ______ |  |  |  |  |
+| Partner's model - name/date: ______ |  |  |  |  |
