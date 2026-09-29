@@ -26,9 +26,9 @@
 
 **My answer:** Yes. The capex cases move each year by five percentage points while revenue-growth cases move each year by two percentage points, so the larger capex span is a result only **over these ranges**; it identifies a high-priority research question, not a universal ranking.
 
-**Listener's summary of my conclusion - partner initials/date: ______:**
+**Listener's summary of my conclusion - JP / September 9, 2026:**
 
-> ____________________________________________________________________________
+> Capex directly reduces FCFE without first being diluted by operating costs or taxes. The wider capex test range can make capex look like the dominant driver, so the ranking applies only over these selected ranges.
 
 ### Partner's model
 

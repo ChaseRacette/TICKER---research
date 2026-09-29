@@ -66,9 +66,9 @@ The revenue-growth prediction got the direction right but overstated the relativ
 
 **Answer:** Yes. The capex cases move five percentage points annually while revenue growth moves two percentage points, so the result identifies the larger driver only over these ranges and not a universal ranking.
 
-**Actual partner listener summary / initials / date: ______**
+**Actual partner listener summary / initials / date: JP / September 9, 2026**
 
-> ____________________________________________________________________________
+> JP agreed that capex can look like the dominant driver because it cuts directly into free cash flow without first being diluted by operating costs or taxes. JP also noted that the wider tested capex range creates a larger-looking capex impact, so the ranking is conditional on the chosen ranges.
 
 ### Check I performed on my partner's analysis
 
