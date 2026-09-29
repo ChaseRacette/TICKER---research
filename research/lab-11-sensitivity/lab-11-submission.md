@@ -72,9 +72,9 @@ The revenue-growth prediction got the direction right but overstated the relativ
 
 ### Check I performed on my partner's analysis
 
-I need my partner's actual model and changed/base result to complete this honestly. During the exchange, I will recompute their reported change as `changed output - base output`, verify that their other independent assumptions stayed at base, and ask them to trace their result through the statements.
+JP left class before I was able to review his changed/base result, recompute the difference, verify that other independent assumptions stayed at base, or trace the result through his statements. No partner-model check is claimed.
 
-**Partner name / model / result checked / question or correction / date: ______**
+**Partner name / model / status / date: JP / partner-model check not completed because partner left class / September 9, 2026**
 
 > ____________________________________________________________________________
 

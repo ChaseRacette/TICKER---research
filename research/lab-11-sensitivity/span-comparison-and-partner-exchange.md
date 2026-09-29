@@ -32,17 +32,17 @@
 
 ### Partner's model
 
-**Partner's main driver and causal link - partner name/date: ______:**
+**Partner's main driver and causal link - JP / September 9, 2026:**
 
-> ____________________________________________________________________________
+> Not completed: JP left class before the reciprocal comparison.
 
 **My question about whether their ranking reflects the chosen ranges:**
 
-> ____________________________________________________________________________
+> Not completed because JP's model and result were not available for review.
 
 **Their answer and my summary of their conclusion:**
 
-> ____________________________________________________________________________
+> Not completed because JP left class before the reciprocal comparison.
 
 ## Cross-company comparison
 

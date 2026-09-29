@@ -69,4 +69,4 @@ I have not seen a partner's model, so this section must be completed during the 
 | Whose model | Changed result checked against base | Difference recomputed | Other independent inputs confirmed at base? | Statement trace question / correction |
 |---|---|---|---|---|
 | My Microsoft model - JP / September 9, 2026 | AI/cloud capex higher: $206.53/share vs. $238.72 base | -$32.18/share | Yes - revenue growth and other independent assumptions remained at base | JP: capex directly cuts FCFE without first being diluted by operating costs or taxes; the wider capex range can make it appear dominant. |
-| Partner's model - name/date: ______ |  |  |  |  |
+| Partner's model - JP / September 9, 2026 | Not completed: JP left class before reciprocal model review | Not completed | Not completed | No partner-model result available to trace or correct. |
