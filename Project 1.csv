@@ -1,0 +1,13 @@
+item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
+Research-Evolution.pdf,yes,UNRESOLVED,Research evolution PDF,,2026-10-06,no,,"No file with this required name was found in the workspace or repository. Existing research reports are not a substitute for the required PDF."
+Repository,yes,https://github.com/ChaseRacette/TICKER---research,TICKER---research repository,main branch checked,2026-10-06,yes,0e6dda3,"Repository contains the MSFT models, reports, source filing, and Lab 11/12 materials indexed below."
+Visible executed output,yes,https://github.com/ChaseRacette/TICKER---research/blob/main/research/lab-11-sensitivity/lab-11-submission.md,Lab 11 Microsoft one-at-a-time sensitivity output,FY2027E-FY2031E,2026-09-29,yes,a45b5b8,"Visible output table and restored-base results are committed. The validation record says a local Python interpreter was unavailable in this workspace, so capture a real VS Code terminal run before submitting if the project requires executed terminal evidence."
+Decision memo or deck,yes,https://github.com/ChaseRacette/TICKER---research/blob/main/research/reports/2026-09-17-msft-pe-triangulation-lab.md,MSFT Deal Evidence and Valuation Triangulation,September 1-17 2026,2026-09-17,yes,702b8ed,"Markdown decision memo with DCF and peer-P/E comparison plus a conditional watch/defer call. No presentation deck was found."
+Validation-and-AI-Use.pdf,yes,https://github.com/ChaseRacette/TICKER---research/blob/main/research/lab-11-sensitivity/validation-check.md,Lab 11 validation check,FY2027E-FY2031E,2026-09-29,no,4aefabc,"Supporting validation record exists in Markdown, but the specifically required Validation-and-AI-Use.pdf was not found. Create and upload that PDF before final submission."
+Video 1,yes,UNRESOLVED,Video 1,,2026-10-06,no,,"No video file or hosted-video link was found in the workspace or repository."
+Transcript Video 1,yes,UNRESOLVED,Transcript Video 1,,2026-10-06,no,,"No transcript file or link was found in the workspace or repository."
+Video 2,yes,UNRESOLVED,Video 2,,2026-10-06,no,,"No video file or hosted-video link was found in the workspace or repository."
+Transcript Video 2,yes,UNRESOLVED,Transcript Video 2,,2026-10-06,no,,"No transcript file or link was found in the workspace or repository."
+Video 3,yes,UNRESOLVED,Video 3,,2026-10-06,no,,"No video file or hosted-video link was found in the workspace or repository."
+Transcript Video 3,yes,UNRESOLVED,Transcript Video 3,,2026-10-06,no,,"No transcript file or link was found in the workspace or repository."
+Optional deployed output,no,N/A,Optional deployed output,,2026-10-06,yes,,"Not required. No deployed output was identified."
