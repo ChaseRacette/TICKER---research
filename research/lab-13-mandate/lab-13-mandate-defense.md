@@ -93,9 +93,11 @@ This proves that the negative Cash weight fails long-only while the sum, reserve
 
 Candidate D is 3% Cash, 89% Global equity index fund, and 8% Investment-grade bond fund. It passes every checkable rule: 3.0% reserve-eligible, 100.0% redeemable within five business days, and no non-exempt single-company exposure.
 
-**Skeptical-colleague objection (self-review because this lab is self-paced):** The objection holds. A 92% equity-oriented portfolio could reasonably expose the reserve to a calendar-year loss beyond 10%, but S9 does not define the measure or breach response needed to reject it mechanically. Statement S9 decides the objection.
+**Miles asked:** "Candidate D passes the reserve, liquidity, and issuer rules. Why could the CIO still reject it?"  
+**I answered:** The objection holds because Candidate D is 92% equity-oriented and could reasonably expose the reserve to a calendar-year loss beyond 10%. S9 does not define the measure or breach response needed to reject it mechanically, so S9 is the statement that decides the objection.
 
-**Swap-role check:** If I received Candidate D from a colleague, I would cite S9 for the same reason: passing the mechanical reserve, liquidity, and issuer rules does not establish compliance with the undefined loss promise.
+**Miles asked:** "What statement would you cite against this portfolio if I had proposed it?"  
+**I answered:** I would cite S9. Passing the mechanical reserve, liquidity, and issuer checks does not establish compliance with the undefined calendar-year-loss promise.
 
 ## One question for the CIO before optimization
 
@@ -109,8 +111,12 @@ A portfolio can pass every checkable rule and still be unsuitable because a comp
 
 The type I was least sure of was S4. I classify the benchmark as a preference because it provides a performance reference, not a stated allocation or active-risk constraint. The CIO could change it into a hard constraint by specifying an allowed tracking-error, equity-weight, or duration range relative to the benchmark.
 
-### Self-review as skeptical colleague
+### Skeptical-colleague review: Miles
 
-I checked that Candidate B’s Acme exposure is calculated as 5.0% bonds plus 4.0% stock, or 9.0%, rather than treating the two securities as separate issuer limits. I also checked the long-only probe: moving Cash from 2.0% to -2.0% and the global equity fund from 60.0% to 64.0% keeps the total at 100.0%, so long-only is the only failed rule.
+**Miles asked:** "Why does Candidate B fail the issuer limit when its Acme bonds and Acme stock are each below 8%?"  
+**I answered:** The mandate combines all securities issued by the same company. Candidate B has 5.0% Acme bonds plus 4.0% Acme stock, so its Acme exposure is 9.0% and fails the 8.0% issuer limit.
+
+**Miles asked:** "How do you know the probe fails only long-only rather than also failing the reserve or total-weight checks?"  
+**I answered:** I changed Cash from 2.0% to -2.0% and Global equity index fund from 60.0% to 64.0%, which keeps the portfolio total at 100.0%. Reserve-eligible weight remains 10.0% from Cash, Treasury bills, and the Treasury note, so it still exceeds the 3.0% minimum; the negative Cash weight is the only failure.
 
 > This is a fictional coursework case, not investment advice.
