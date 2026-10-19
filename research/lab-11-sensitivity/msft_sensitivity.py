@@ -1,7 +1,7 @@
 """Lab 11: one-at-a-time sensitivity analysis for msft_proforma.py.
 
 Run from repository root:
-    python research\lab-11-sensitivity\msft_sensitivity.py
+    python research/lab-11-sensitivity/msft_sensitivity.py
 """
 
 from copy import deepcopy

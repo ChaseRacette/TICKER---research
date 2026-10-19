@@ -1,7 +1,7 @@
 """Lab 08: Microsoft P/E peer comparison using frozen sourced inputs.
 
 Run from the repository root:
-    python models\msft_pe_comps.py
+    python models/msft_pe_comps.py
 """
 
 from statistics import median
