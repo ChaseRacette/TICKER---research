@@ -1,0 +1,166 @@
+%PDF-1.4
+%Project PDF
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R  ] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 3407 >>
+stream
+BT
+/F1 15 Tf
+50 750 Td
+(Microsoft Corporation \(MSFT\) Decision Memo) Tj
+/F1 9 Tf
+0 -22 Td
+(Project 1 | Page 1 of 2) Tj
+0 -18 Td
+/F1 10 Tf
+13 TL
+(Microsoft Corporation \(MSFT\) Decision Memo) Tj
+T*
+(Recommendation: WATCH / DEFER) Tj
+T*
+(Valuation reference date: September 1-10, 2026) Tj
+T*
+(Currency and share basis: USD per diluted share) Tj
+T*
+(Committee view) Tj
+T*
+(Microsoft has material strengths in Azure/cloud growth, recurring commercial revenue, and) Tj
+T*
+(contracted revenue. The present evidence does not yet support initiating a position because) Tj
+T*
+(the central valuation question is whether AI-infrastructure capital spending can normalize) Tj
+T*
+(while cloud growth, cloud margins, and cash conversion remain strong.) Tj
+T*
+(Valuation evidence) Tj
+T*
+(Method Result Key basis and limitation) Tj
+T*
+(--- ---: ---) Tj
+T*
+(Five-year FCFF DCF $541.74/share September 10 calculation. Depends on FCFF-growth path,) Tj
+T*
+(capex normalization, 8.0% WACC, 3.5% terminal growth, cash/debt treatment, and diluted) Tj
+T*
+(shares.) Tj
+T*
+(Peer P/E $435.11-$556.30/share September 1 prices and annual GAAP diluted EPS. Median) Tj
+T*
+(reference is $495.71/share. Oracle is used; Alphabet is qualified because its consolidated) Tj
+T*
+(earnings are advertising-dominant.) Tj
+T*
+(The defensible valuation reference range is $435 to $556 per share. The DCF result falls) Tj
+T*
+(inside that range. I do not average the methods because they use different valuation objects) Tj
+T*
+(and have different limitations.) Tj
+T*
+(Top sensitivities) Tj
+T*
+(1. AI/cloud capex intensity: over the stated ranges, it creates a $64.37 per-share value) Tj
+T*
+(span in the FCFE sensitivity model because capex directly affects cash reinvestment.) Tj
+T*
+(2. Revenue growth: it creates the larger final-year operating-profit span, $48,015.6m,) Tj
+T*
+(because it changes revenue and gross profit.) Tj
+T*
+(3. Discounting and terminal assumptions: the FCFF DCF remains sensitive to its 8.0% WACC and) Tj
+T*
+(3.5% terminal-growth assumptions.) Tj
+T*
+(Sensitivity measures the model's response over the selected ranges. It does not assign) Tj
+T*
+(probabilities to the lower, base, or higher cases.) Tj
+T*
+(Failure conditions and monitoring) Tj
+T*
+(Do not initiate if any of the following emerge:) Tj
+T*
+(- AI-infrastructure capex stays elevated longer than the forecast path assumes.) Tj
+T*
+(- Cloud growth slows materially before utilization or scale benefits improve margins.) Tj
+T*
+(- Microsoft Cloud margins do not recover as infrastructure is deployed.) Tj
+T*
+(- A consistently normalized enterprise-cloud peer comparison fails to support value above) Tj
+T*
+(the market price.) Tj
+T*
+(Monitor quarterly AI-infrastructure capex as a percentage of revenue, cloud growth,) Tj
+T*
+(cloud-margin performance, and any normalized-EPS reconciliation for Microsoft and its) Tj
+T*
+(admitted peers.) Tj
+T*
+(Committee ask) Tj
+T*
+(Do not initiate a position today. Revisit the decision after the next reported results) Tj
+T*
+(provide evidence on capex normalization, cloud-margin recovery, and cash-flow conversion. A) Tj
+T*
+(more favorable view requires that evidence to support the valuation path rather than only a) Tj
+T*
+(higher reported revenue figure.) Tj
+T*
+(Sources and reproducibility) Tj
+T*
+(- Microsoft FY2026 Form 10-K, filed July 29, 2026.) Tj
+T*
+(- models/dcf.py and research/reports/2026-09-10-msft-reverse-dcf.md.) Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 363 >>
+stream
+BT
+/F1 15 Tf
+50 750 Td
+(Microsoft Corporation \(MSFT\) Decision Memo) Tj
+/F1 9 Tf
+0 -22 Td
+(Project 1 | Page 2 of 2) Tj
+0 -18 Td
+/F1 10 Tf
+13 TL
+(- models/msft_pe_comps.py and research/reports/2026-09-17-msft-pe-triangulation-lab.md.) Tj
+T*
+(- research/lab-11-sensitivity/lab-11-submission.md.) Tj
+T*
+(Educational coursework only. Not investment advice.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000000 00000 n 
+0000000071 00000 n 
+0000000137 00000 n 
+0000000207 00000 n 
+0000000333 00000 n 
+0000003792 00000 n 
+0000003918 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4332
+%%EOF

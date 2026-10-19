@@ -1,0 +1,182 @@
+%PDF-1.4
+%Project PDF
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R  ] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 3640 >>
+stream
+BT
+/F1 15 Tf
+50 750 Td
+(Project 1 Validation and AI Use) Tj
+/F1 9 Tf
+0 -22 Td
+(Project 1 | Page 1 of 2) Tj
+0 -18 Td
+/F1 10 Tf
+13 TL
+(Project 1 Validation and AI Use) Tj
+T*
+(Company: Microsoft Corporation \(MSFT\)) Tj
+T*
+(Project period: September-October 2026) Tj
+T*
+(Status: Documentation and source/code checks completed. A local terminal capture remains) Tj
+T*
+(required before final submission.) Tj
+T*
+(Named AI disclosure) Tj
+T*
+(Tool Tasks performed How the work was checked) Tj
+T*
+(--- --- ---) Tj
+T*
+(Codex Pulled and organized information from the Microsoft 10-Ks and helped solve the) Tj
+T*
+(formulas used in the DCF, peer-P/E, pro-forma, and sensitivity analysis. It also helped) Tj
+T*
+(organize the written reports and Project 1 documents. I checked reported financial facts) Tj
+T*
+(against Microsoft's FY2026 Form 10-K and primary links. I reviewed model inputs, formulas,) Tj
+T*
+(dates, units, accounting checks, and output logic. I retained unresolved limitations rather) Tj
+T*
+(than treating generated text as a source.) Tj
+T*
+(Google Antigravity Used as a second study partner for coursework and model-question) Tj
+T*
+(clarification. I compared its explanations against the course instructions, the Microsoft) Tj
+T*
+(filing, and the committed model/report evidence. I did not use an AI response as a) Tj
+T*
+(financial-data source without checking it.) Tj
+T*
+(AI tools supported drafting, organization, and explanation. The reported facts, source) Tj
+T*
+(selection, calculation conventions, and final conditional conclusion remain subject to my) Tj
+T*
+(review.) Tj
+T*
+(Locked changed-input record) Tj
+T*
+(The locked record was saved at 2026-09-29T13:52:57-04:00 before scenario results and is) Tj
+T*
+(recorded in Git commit caa7f1e.) Tj
+T*
+(Independent input Human-authored prediction before run Lower/base/higher design) Tj
+T*
+(--- --- ---) Tj
+T*
+(Consolidated revenue-growth path Lower growth should reduce FY2031E operating profit, FCFE,) Tj
+T*
+(and value; higher growth should increase all three. Base path shifted down or up by 2) Tj
+T*
+(percentage points in every forecast year.) Tj
+T*
+(AI/cloud capex as % of revenue Higher capex should leave FY2031E operating profit unchanged) Tj
+T*
+(in the simplified model but reduce FCFE and value; lower capex should increase FCFE and) Tj
+T*
+(value. Base path shifted down or up by 5 percentage points in every forecast year.) Tj
+T*
+(Actual scenario output and diagnosis) Tj
+T*
+(Driver and case FY2031E operating profit FY2031E FCFE Value/share Diagnosis) Tj
+T*
+(--- ---: ---: ---: ---) Tj
+T*
+(Revenue growth - lower $243,208.6m $158,744.0m $228.37 Direction prediction supported. Value) Tj
+T*
+(moved less than operating profit because higher revenue also requires incremental investment) Tj
+T*
+(and later cash flows are discounted.) Tj
+T*
+(Revenue growth - base $266,352.1m $166,984.2m $238.72 Base reference.) Tj
+T*
+(Revenue growth - higher $291,224.2m $175,575.4m $249.49 Direction prediction supported.) Tj
+T*
+(Capex intensity - lower $266,352.1m $186,247.0m $270.90 Lower cash reinvestment increased) Tj
+T*
+(FCFE and value.) Tj
+T*
+(Capex intensity - base $266,352.1m $166,984.2m $238.72 Base reference.) Tj
+T*
+(Capex intensity - higher $266,352.1m $147,721.4m $206.53 Prediction supported: capex reduced) Tj
+T*
+(cash available to equity without changing operating profit in this simplified model.) Tj
+T*
+(The runner records a restored-base match within $0.000001, zero balance-sheet gaps in each) Tj
+T*
+(valid scenario, cash above the $25,000m floor, and no revolver draw. These scenario outputs) Tj
+T*
+(are documented in the committed Lab 11 sensitivity records.) Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 959 >>
+stream
+BT
+/F1 15 Tf
+50 750 Td
+(Project 1 Validation and AI Use) Tj
+/F1 9 Tf
+0 -22 Td
+(Project 1 | Page 2 of 2) Tj
+0 -18 Td
+/F1 10 Tf
+13 TL
+(Remaining execution evidence) Tj
+T*
+(The environment used to assemble the documents does not expose a Python interpreter. Before) Tj
+T*
+(submission, I must run the repository's capture command in my local VS Code terminal, review) Tj
+T*
+(the resulting docs/executed-output.txt, then commit it. That file will be the real execution) Tj
+T*
+(evidence; this disclosure does not claim to replace it.) Tj
+T*
+(Source and validation index) Tj
+T*
+(- Primary filing: sources/filings/MSFT-FY2026-10-K.pdf.) Tj
+T*
+(- Locked record: research/lab-11-sensitivity/locked-changed-input-record.md.) Tj
+T*
+(- Scenario runner: research/lab-11-sensitivity/msft_sensitivity.py.) Tj
+T*
+(- Sensitivity output: research/lab-11-sensitivity/lab-11-submission.md.) Tj
+T*
+(- Technical validation: research/lab-11-sensitivity/validation-check.md.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000000 00000 n 
+0000000071 00000 n 
+0000000137 00000 n 
+0000000207 00000 n 
+0000000333 00000 n 
+0000004025 00000 n 
+0000004151 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+5161
+%%EOF
