@@ -1,0 +1,200 @@
+Project 1 executed-model output
+Captured: 2026-10-19T12:20:48.5756784-04:00
+Repository: C:\Users\chase\Documents\Codex\fin43900-work\Work Folder\MSFT\ticker-research
+
+
+=== python models\dcf.py ===
+FCFF Year 1:                                        90708.1907
+FCFF Year 2:                                        120842.1584
+FCFF Year 3:                                        151337.6880
+FCFF Year 4:                                        186059.3486
+FCFF Year 5:                                        216876.5343
+Present value of explicit FCFF:                     592090.1756
+Terminal value at Year 5:                           4988160.2888
+Present value of terminal value:                    3394858.0767
+Enterprise value:                                   3986948.2523
+Equity value:                                       4023497.2523
+Value per diluted share:                            541.7392
+PV of terminal value as share of enterprise value:  0.8515
+
+Sensitivity analysis: value per diluted share
+WACC \ Terminal Growth | 2.00% | 3.00% | 4.00%
+----------------------------------------------
+9.00%                 | $358.83 | $408.08 | $477.04
+10.00%                 | $311.20 | $346.82 | $394.30
+11.00%                 | $274.26 | $300.98 | $335.33
+
+Reverse DCF: uniform shift to all five explicit growth rates
+Target price: $491.65
+Held fixed: starting FCFF=$44,229.34M; base growth rates=[1.0508601451, 0.3322077922, 0.2523583654, 0.2294316842, 0.1656309448]; WACC=8.00%; terminal growth=3.50%; cash=$76,843.00M; debt=$40,294.00M; shares=7,427.00M
+Search bounds: -5.00% to 10.00%
+Solved uniform shift: -2.776970%
+Value per diluted share at solved shift: $491.6500
+
+
+=== python models\msft_pe_comps.py ===
+Microsoft P/E comparable-company analysis
+Comparison date: September 1, 2026
+Target: Microsoft Corporation (MSFT)
+Target closing price: $501.02
+
+Peer P/E multiples
+Oracle Corporation (ORCL): 24.240137x
+Alphabet Inc. Class A (GOOGL): 30.991674x
+
+Peer P/E summary
+Minimum P/E: 24.240137x
+Median P/E: 27.615906x
+Maximum P/E: 30.991674x
+
+MSFT implied prices
+Minimum peer P/E implied price: $435.11
+Median peer P/E implied price: $495.71
+Maximum peer P/E implied price: $556.30
+
+Leave-one-peer-out analysis
+Remove ORCL: reference estimate; one valid peer remains $556.30; change from full-peer median estimate $60.60
+Remove GOOGL: reference estimate; one valid peer remains $435.11; change from full-peer median estimate $-60.60
+
+Note: This P/E comparison does not add cash or subtract debt.
+
+
+=== python msft_proforma.py ===
+
+Income Statement (USD millions)
+Line item                                  FY2027E        FY2028E        FY2029E        FY2030E        FY2031E
+--------------------------------------------------------------------------------------------------------------
+Revenue                                  391,570.0      446,389.8      495,492.7      535,132.1      561,888.7
+Gross profit                             264,309.8      303,545.1      339,412.5      368,170.9      387,703.2
+SG&A proxy                                40,968.0       47,049.5       52,608.9       57,066.5       60,094.0
+Research and development                  41,760.9       47,960.1       53,627.2       58,171.0       61,257.1
+Operating income                         181,580.8      208,535.5      233,176.4      252,933.4      266,352.1
+Interest                                       0.0            0.0            0.0            0.0            0.0
+Tax                                       34,500.4       39,621.7       44,303.5       48,057.3       50,606.9
+Net income                               147,080.5      168,913.7      188,872.9      204,876.1      215,745.2
+
+Balance Sheet (USD millions)
+Line item                                  FY2027E        FY2028E        FY2029E        FY2030E        FY2031E
+--------------------------------------------------------------------------------------------------------------
+Cash and short-term investments           80,348.7      117,068.4      185,054.5      290,746.2      427,730.4
+Accounts receivable                       95,478.7      108,845.7      120,818.8      130,484.3      137,008.5
+Inventory                                  1,673.6        1,878.5        2,052.6        2,195.7        2,290.7
+PP&E, net                                411,771.4      500,393.5      579,133.3      638,509.0      680,650.8
+Other assets                             292,157.1      297,639.1      302,549.4      306,513.3      309,189.0
+Total assets                             881,429.6    1,025,825.3    1,189,608.4    1,368,448.4    1,556,869.3
+Debt                                      40,294.0       40,294.0       40,294.0       40,294.0       40,294.0
+Other liabilities                        281,668.1      287,150.1      292,060.4      296,024.3      298,700.0
+Revolver                                       0.0            0.0            0.0            0.0            0.0
+Equity                                   559,467.5      698,381.2      857,254.1    1,032,130.1    1,217,875.3
+Liabilities + equity                     881,429.6    1,025,825.3    1,189,608.4    1,368,448.4    1,556,869.3
+
+Cash Flow / FCFE (USD millions)
+Line item                                  FY2027E        FY2028E        FY2029E        FY2030E        FY2031E
+--------------------------------------------------------------------------------------------------------------
+Net income                               147,080.5      168,913.7      188,872.9      204,876.1      215,745.2
+Depreciation                              34,438.4       45,294.9       55,043.3       63,704.7       70,236.0
+Capital spending                         133,133.8      133,916.9      133,783.0      123,080.4      112,377.7
+Change in accounts receivable             14,602.7       13,367.0       11,973.0        9,665.5        6,524.2
+Change in inventory                          276.6          204.9          174.1          143.1           95.0
+Change in other assets                     5,973.1        5,482.0        4,910.3        3,963.9        2,675.7
+Change in other liabilities                5,973.1        5,482.0        4,910.3        3,963.9        2,675.7
+Free cash flow to equity                  33,505.7       66,719.7       97,986.0      135,691.7      166,984.2
+Share repurchases                         30,000.0       30,000.0       30,000.0       30,000.0       30,000.0
+
+Checks
+FY2026A opening balance-sheet gap: $0.0m
+FY2027E: assets - liabilities - equity = $0.0m; cash >= minimum = True
+FY2028E: assets - liabilities - equity = $0.0m; cash >= minimum = True
+FY2029E: assets - liabilities - equity = $0.0m; cash >= minimum = True
+FY2030E: assets - liabilities - equity = $0.0m; cash >= minimum = True
+FY2031E: assets - liabilities - equity = $0.0m; cash >= minimum = True
+
+Equity Valuation
+Present value of five FCFE: $355,581.7m
+Present value of terminal value: $1,417,015.7m
+Equity value: $1,772,597.4m
+Value per share: $238.72
+
+
+=== python research\lab-11-sensitivity\msft_sensitivity.py ===
+Lab 11 Microsoft one-at-a-time sensitivity analysis
+Cash-flow label: FCFE. USD millions except value per diluted share.
+Every scenario begins with a fresh independent copy of the base input set.
+
+Revenue growth (% of prior-year revenue; annual growth rates)
+Case   Actual FY2027E-FY2031E input values     FY2031E operating profit   FY2031E FCFE   Value/share   Accounting check
+----------------------------------------------------------------------------------------------------------------------------------
+Lower  16%, 12%, 9%, 6%, 3%                             $243,208.6m ($-23,143.6m)     $158,744.0m ($-8,240.2m)     $228.37 ($-10.35)  PASS: all five years
+Base   18%, 14%, 11%, 8%, 5%                            $266,352.1m ($+0.0m)     $166,984.2m ($+0.0m)     $238.72 ($+0.00)  PASS: all five years
+Higher 20%, 16%, 13%, 10%, 7%                           $291,224.2m ($+24,872.0m)     $175,575.4m ($+8,591.2m)     $249.49 ($+10.77)  PASS: all five years
+FY2031E operating profit span: $48,015.6 USD millions
+FY2031E FCFE span: $16,831.4 USD millions
+Value per share span: $21.12 USD per diluted share
+
+Trace detail: Revenue growth / Base - FY2031E (USD millions)
+  Revenue                     $561,888.7m
+  Gross profit                $387,703.2m
+  SG&A proxy                  $60,094.0m
+  R&D                         $61,257.1m
+  Operating income            $266,352.1m
+  Net income                  $215,745.2m
+  Depreciation                $70,236.0m
+  Capital spending            $112,377.7m
+  Accounts receivable         $137,008.5m
+  Inventory                   $2,290.7m
+  PP&E                        $680,650.8m
+  Cash                        $427,730.4m
+  FCFE                        $166,984.2m
+  Total assets                $1,556,869.3m
+  Liabilities + equity        $1,556,869.3m
+  Balance gap                 $0.0m
+
+AI/cloud capex (% of revenue; capital spending intensity)
+Case   Actual FY2027E-FY2031E input values     FY2031E operating profit   FY2031E FCFE   Value/share   Accounting check
+----------------------------------------------------------------------------------------------------------------------------------
+Lower  29%, 25%, 22%, 18%, 15%                          $266,352.1m ($+0.0m)     $186,247.0m ($+19,262.8m)     $270.90 ($+32.18)  PASS: all five years
+Base   34%, 30%, 27%, 23%, 20%                          $266,352.1m ($+0.0m)     $166,984.2m ($+0.0m)     $238.72 ($+0.00)  PASS: all five years
+Higher 39%, 35%, 32%, 28%, 25%                          $266,352.1m ($+0.0m)     $147,721.4m ($-19,262.8m)     $206.53 ($-32.18)  PASS: all five years
+FY2031E operating profit span: $0.0 USD millions
+FY2031E FCFE span: $38,525.6 USD millions
+Value per share span: $64.37 USD per diluted share
+
+Trace detail: AI/cloud capex / Base - FY2031E (USD millions)
+  Revenue                     $561,888.7m
+  Gross profit                $387,703.2m
+  SG&A proxy                  $60,094.0m
+  R&D                         $61,257.1m
+  Operating income            $266,352.1m
+  Net income                  $215,745.2m
+  Depreciation                $70,236.0m
+  Capital spending            $112,377.7m
+  Accounts receivable         $137,008.5m
+  Inventory                   $2,290.7m
+  PP&E                        $680,650.8m
+  Cash                        $427,730.4m
+  FCFE                        $166,984.2m
+  Total assets                $1,556,869.3m
+  Liabilities + equity        $1,556,869.3m
+  Balance gap                 $0.0m
+
+Base restoration check
+PASS: restored base matches the first base run.
+
+Trace detail: Revenue growth / Base restored - FY2031E (USD millions)
+  Revenue                     $561,888.7m
+  Gross profit                $387,703.2m
+  SG&A proxy                  $60,094.0m
+  R&D                         $61,257.1m
+  Operating income            $266,352.1m
+  Net income                  $215,745.2m
+  Depreciation                $70,236.0m
+  Capital spending            $112,377.7m
+  Accounts receivable         $137,008.5m
+  Inventory                   $2,290.7m
+  PP&E                        $680,650.8m
+  Cash                        $427,730.4m
+  FCFE                        $166,984.2m
+  Total assets                $1,556,869.3m
+  Liabilities + equity        $1,556,869.3m
+  Balance gap                 $0.0m
+
