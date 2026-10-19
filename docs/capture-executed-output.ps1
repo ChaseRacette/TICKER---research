@@ -6,6 +6,10 @@ $repoRoot = Split-Path -Parent $PSScriptRoot
 $outputPath = Join-Path $PSScriptRoot 'executed-output.txt'
 
 Set-Location $repoRoot
+if (-not (Get-Command python -ErrorAction SilentlyContinue)) {
+    throw "Python is not available. Install Python 3, reopen the terminal, then rerun this script."
+}
+
 "Project 1 executed-model output" | Set-Content -LiteralPath $outputPath
 "Captured: $(Get-Date -Format o)" | Add-Content -LiteralPath $outputPath
 "Repository: $repoRoot" | Add-Content -LiteralPath $outputPath
