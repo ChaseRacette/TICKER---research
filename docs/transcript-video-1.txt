@@ -1,0 +1,29 @@
+VIDEO 1 — Research Evolution & AI Check
+Microsoft Corporation (MSFT)
+YouTube: https://www.youtube.com/watch?v=GPZATDStvJw
+Duration: 02:44
+
+Note: Corrected plain-text transcript prepared from the YouTube automatic-caption export. Proper names and clear caption-recognition errors were corrected; the speaker's meaning is retained.
+
+[00:01] Introduction and recommendation
+Hello, everyone. My name is Chase Racette, and the company that I am analyzing is Microsoft. My recommendation is Watch-Defer.
+
+[00:14] Edition A: baseline thesis and what was unresolved
+In addition, I thought that Microsoft was worth researching because it shows strong cloud and Azure growth, recurring commercial revenue, and a large remaining performance-obligation balance.
+
+I did not have an initial recommendation in Edition A because I had not performed any analysis. There was no valuation range, no market-price comparison, and no model of how AI infrastructure would affect cash flow and margins.
+
+My main question was whether the large AI and data-center investment would turn into durable cash flow and per-share value, or whether it would continue to pressure margins and free cash flow.
+
+[01:02] Edition B: work added and change in reasoning
+Moving on to Edition B, I added several analyses: a five-year FCFF discounted-cash-flow model, a reverse DCF, a P/E comparison, a five-year pro forma, and a one-at-a-time sensitivity analysis.
+
+I reached the same Watch-Defer conclusion, but for different reasons. In Edition A, I had no analysis. In Edition B, I defer because the valuation is conditional on capital-expenditure normalization and cash-flow conversion.
+
+[01:39] AI tools, purpose, and independent check
+The AI tools I used were Codex and Google Antigravity. I used Codex mainly to pull and organize information from Microsoft 10-K filings and to help solve formulas used in my analysis. I used Google Antigravity to clarify questions.
+
+I did not use either AI tool as a financial-data source. I checked all inputs against the actual Microsoft 10-K to make sure the information used in the analyses was correct.
+
+[02:25] Evidence that could change the conclusion
+The next evidence point I would monitor is quarterly AI-infrastructure capital spending as a percentage of revenue, along with cloud growth and cloud-margin recovery. If capital spending can normalize without weakening those metrics, I would reconsider my Watch-Defer call.
