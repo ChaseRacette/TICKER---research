@@ -1,0 +1,38 @@
+VIDEO 2 — Codebase Walkthrough
+Microsoft Corporation (MSFT)
+YouTube: https://www.youtube.com/watch?v=QeYVH1z7us4
+Duration: 05:44
+
+Note: Corrected plain-text transcript prepared from the speaker-provided transcript. Obvious caption-recognition errors and financial-model terms were corrected without changing the speaker's meaning.
+
+REPOSITORY STRUCTURE AND REPRODUCIBILITY
+
+This is my Microsoft research repository. In the Project 1 folder, you can find my Research Evolution, decision memo, validation disclosure, and manifest. In the models folder, you can find my FCFF discounted-cash-flow model and P/E comparable-company calculator. In the research folder, you can find my written work. In the Lab 11 sensitivity folder, you can find the sensitivity runner and locked changed-input record. In sources and filings, I keep the downloaded Microsoft 10-K.
+
+I pre-ran the models because I was having trouble running them live; the run was taking a long time to download and was still frozen. The executed output preserves the DCF, pro forma, and sensitivity output together.
+
+DCF MODEL: INPUTS, LOGIC, AND SENSITIVITY
+
+In the DCF code, the inputs at the top are Microsoft's starting financial data, forecast growth path, WACC, terminal growth, and diluted share count. When the model runs, it forecasts five years of free cash flow to the firm, discounts those cash flows, adds a terminal value, and converts the result to value per share.
+
+The sensitivity grid changes WACC and terminal growth while holding the other inputs fixed. At the bottom, the reverse DCF solves for the growth shift required to reach the market price; however, it does not prove that the stock is mispriced.
+
+PRO FORMA: LINKED FINANCIAL STATEMENTS AND VALIDATION
+
+The pro forma carries revenue assumptions through income-statement lines, balance-sheet lines, cash flow, and cash last. The accounting checks must balance before using the valuation.
+
+SENSITIVITY ANALYSIS: ONE INPUT AT A TIME
+
+At the top of the sensitivity analysis is revenue growth as a percentage of prior-year revenue. The second table is AI and cloud capex as a percentage of revenue. The sensitivity model holds all other independent assumptions at base and changes one driver at a time.
+
+For the revenue table, revenue growth affects revenue, gross profit, operating profit, cash flow, and value. AI and cloud capex affects capital spending, PP&E, depreciation, cash, FCFE, and value.
+
+In the higher-capex case, capital spending rises five percentage points in each forecast year. Operating profit stays the same in this model because I changed reinvestment rather than operating margin. However, FCFE falls by about $19.3 billion, and value per share falls by $32.18, from $238.72 to $206.53.
+
+HIGHEST-RISK VALIDATION TEST
+
+My highest-risk issue is whether Microsoft's AI-infrastructure capital spending can normalize while cloud growth and margins remain strong. I tested the capital-spending assumption one input at a time. The model recalculates linked depreciation, cash flow, and value, then restores the original base inputs. The restored-base check confirms that the model returns to the same starting result.
+
+MODELING LIMITATION
+
+One modeling limitation is that the DCF depends heavily on long-term growth, WACC, and terminal-value assumptions. The sensitivity analysis shows how results respond to those ranges, but it does not assign probabilities to them.
