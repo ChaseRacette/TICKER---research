@@ -1,4 +1,4 @@
-"""Lab 13 Meridian Foundation Reserve mandate checker.
+r"""Lab 13 Meridian Foundation Reserve mandate checker.
 
 Run from the repository root:
     python research\lab-13-mandate\mandate.py
@@ -83,6 +83,12 @@ CANDIDATES = {
     "D": {
         "Cash": 3, "Treasury bills": 0, "Treasury 10-year note": 0,
         "Global equity index fund": 89, "Investment-grade bond fund": 8,
+        "Private real estate fund": 0, "Acme Corp bonds": 0, "Acme Corp stock": 0,
+    },
+    # Candidate E is the Lab 14 benchmark: 40% IG bonds and 60% global equity.
+    "E": {
+        "Cash": 0, "Treasury bills": 0, "Treasury 10-year note": 0,
+        "Global equity index fund": 60, "Investment-grade bond fund": 40,
         "Private real estate fund": 0, "Acme Corp bonds": 0, "Acme Corp stock": 0,
     },
 }
