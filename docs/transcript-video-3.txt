@@ -1,0 +1,28 @@
+VIDEO 3 — Investment Committee Pitch
+Microsoft Corporation (MSFT)
+YouTube: https://www.youtube.com/watch?v=7Upkg72sF_A
+Duration: 02:35
+
+Note: Corrected plain-text transcript prepared from the speaker-provided transcript. Obvious caption-recognition errors and financial-model terms were corrected without changing the speaker's meaning.
+
+RECOMMENDATION
+
+For my decision memo to an investment committee, my recommendation is Watch-Defer. Microsoft has strong cloud, Azure, and recurring-commercial-revenue qualities, but I do not recommend investing today because the valuation depends on AI-infrastructure capital expenditure normalizing while cloud growth, margins, and cash conversion remain strong.
+
+VALUATION REASONING
+
+The DCF falls inside the peer P/E range. I do not average these methods because they use different valuation objects and assumptions. The DCF is driven mainly by forecast cash flow, WACC, and terminal growth, while peer P/E depends on comparable businesses and reported earnings.
+
+TOP SENSITIVITIES
+
+AI/cloud capex intensity is my largest value sensitivity over my stated ranges. Its value span is $64.37 per share. Revenue growth matters most for final-year operating profit, but capex matters most for cash flow over these tested ranges.
+
+FAILURE CONDITIONS AND MONITORING
+
+Do not initiate if AI-infrastructure capex stays elevated longer than expected, cloud growth weakens before margin benefits appear, cloud margins fail to recover, or the peer comparison no longer supports value above the market price.
+
+I will monitor quarterly AI-infrastructure capex as a percentage of revenue, cloud growth, Microsoft Cloud margins, and peer normalized-EPS evidence.
+
+COMMITTEE ASK
+
+My committee ask is that you do not initiate a position today. However, you should revisit the decision after the next reported results to see whether there is evidence of capex normalization, cloud-margin recovery, or cash-flow conversion.
