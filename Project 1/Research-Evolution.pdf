@@ -1,359 +1,81 @@
-%PDF-1.4
-%Plain PDF
+%PDF-1.7
+%¡³Å×
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<</Pages 2 0 R /Type/Catalog>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R  ] /Count 3 >>
+<</Count 4/Kids[ 4 0 R  10 0 R  12 0 R  14 0 R ]/Type/Pages>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<</CreationDate(D:20261019203839+00'00')/Creator(PDFium)/Producer(PDFium)>>
 endobj
 4 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+<</Contents 5 0 R /MediaBox[ 0 0 612 792]/Parent 2 0 R /Resources<</Font 6 0 R /ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/Rotate 0/Trans<<>>/Type/Page>>
 endobj
 5 0 obj
-<< /Length 3803 >>
-stream
-BT
-/F1 15 Tf
-50 750 Td
-(Research Evolution: Microsoft Corporation \(MSFT\)) Tj
-/F1 9 Tf
-0 -22 Td
-(Project 1 | Page 1 of 3) Tj
-0 -18 Td
-/F1 10 Tf
-13 TL
-(Research Evolution - Microsoft \(MSFT\)) Tj
-T*
-(Research Evolution: Microsoft Corporation \(MSFT\)) Tj
-T*
-(Edition A baseline to Edition B valuation conclusion | Prepared for Project 1) Tj
-T*
-(Company: Microsoft Corporation \(NASDAQ: MSFT\)) Tj
-T*
-(Currency and scale: USD; financial-statement amounts in millions unless stated otherwise) Tj
-T*
-(Edition A prepared: September 1, 2026 | First Git-frozen: September 3, 2026, commit 861e227) Tj
-T*
-(Edition B evidence through: September 29, 2026) Tj
-T*
-(Purpose and final position) Tj
-T*
-(Watch / defer. The recommendation did not change from Edition A. What changed is the quality) Tj
-T*
-(and amount of evidence behind it. The valuation work supports a conditional view, not a) Tj
-T*
-(point estimate or a recommendation to buy immediately.) Tj
-T*
-(Edition B estimates a five-year FCFF DCF value of $541.74 per diluted share . The September) Tj
-T*
-(1, 2026 peer-P/E range is $435.11 to $556.30 per share , with a $495.71 median reference.) Tj
-T*
-(The two methods are not averaged because they use different inputs and have different) Tj
-T*
-(limitations. The principal condition for a more favorable call is evidence that) Tj
-T*
-(AI-infrastructure capital spending can normalize without impairing cloud growth, margins, or) Tj
-T*
-(cash conversion.) Tj
-T*
-(Edition A: frozen baseline) Tj
-T*
-(Original decision: Decide whether an investment committee should begin full fundamental) Tj
-T*
-(valuation of Microsoft and, after that work, decide whether to initiate an equity position.) Tj
-T*
-(Initial thesis - Watch / defer. Microsoft merited full valuation work because FY2026 results) Tj
-T*
-(showed cloud-led growth and a large contracted-revenue base. I did not have an) Tj
-T*
-(intrinsic-value range, market-price comparison, normalized free-cash-flow forecast, or) Tj
-T*
-(explicit analysis of AI-infrastructure capital intensity. The initial conclusion was an) Tj
-T*
-(admission decision for research, not an investment recommendation.) Tj
-T*
-(Known facts at the baseline date) Tj
-T*
-(Item FY2026 baseline fact Source locator) Tj
-T*
-(Revenue $331,839m; up 18% from FY2025 Microsoft FY2026 Form 10-K, Consolidated Statements of) Tj
-T*
-(Income and MD&A) Tj
-T*
-(Operating income $155,237m FY2026 Form 10-K, Consolidated Statements of Income) Tj
-T*
-(Cash and short-term investments $76,843m at June 30, 2026 FY2026 Form 10-K, Balance Sheets) Tj
-T*
-(Total debt $40,294m FY2026 Form 10-K, Balance Sheets and Note 10) Tj
-T*
-(Diluted weighted-average shares 7,453m for FY2026 FY2026 Form 10-K, earnings-per-share note) Tj
-T*
-(Azure and other cloud-services growth 41% FY2026 Form 10-K, Item 7 MD&A) Tj
-T*
-(Commercial RPO Up 84% to $678bn FY2026 Form 10-K, Item 7 MD&A) Tj
-T*
-(Initial assumptions and uncertainties) Tj
-T*
-(The FY2026 Form 10-K was the appropriate primary baseline as of September 1, 2026.) Tj
-T*
-(Debt began at the June 30, 2026 carrying amount, subject to later review of other debt-like) Tj
-T*
-(items.) Tj
-T*
-(Cash and short-term investments required an operating-cash assessment before any amount) Tj
-T*
-(could be added to equity value.) Tj
-T*
-(Azure growth and RPO were useful indicators, but did not prove durable margin,) Tj
-T*
-(free-cash-flow, or valuation support.) Tj
-T*
-(The central unresolved question was whether AI-infrastructure spending would absorb cash) Tj
-T*
-(flow and pressure margins faster than cloud growth could create durable per-share value.) Tj
-T*
-(Baseline research plan) Tj
-T*
-(The baseline called for a historical operating model, a revenue-to-FCFF bridge, explicit) Tj
-T*
-(revenue/margin/reinvestment assumptions, a documented enterprise-to-equity bridge, peer) Tj
-T*
-ET
+<</Filter[/ASCII85Decode/FlateDecode]/Length 3002>>stream
+Gb!#]gN)%<&q/A5oRjeFVaqYW42"Fs,URPJ;^(C"D3\EME[W-JKuQPd\ao9;H2nMh;f]BJ)cmGm!).U/mQTGi'VscM:k)7bU(:a[f,#\@)UCrVRRQ74F>LZ+G+f4N\qWqJE'20[8M^e,Z3@(c(GS*s*Dbu^jPW\Ke9$UH8[G$AYSF-]eA_]<]PgkmWbo!j.Lg3P>h@@c]Fe"VGVcqq%Bk5SRstl2I3%2T^(C63o_J2q3#E,$A%EQemfp\$H?.p>4R/!rhnGrW+#Nt2HXgK![^EC;h/MlRjpJ;nIA*&e$o82:CR2)H]p70#>g6;qn($,K(a\Np1G'r&*[J!4dNg9i9J2P$:J0X9=ekLLaCq#9MFb`IDIc4VP1(ULSq<r;+F]JVY+GI<VdL^V"3-^oAsdPT9'VuI-oVS1%F1t\GMj=*Dnrj&?+;4J-ab[Ub>;VT-uZMJ16[/JRFBDZ&f,<HHhn^UdNhIt3F*rq,"\'q)nKj"j*4%qc%\dJZ:ss+b>KL^Zg<*H@AEu@6p5kc1DpD%Ucb>so`IAQ@A-YO+6#joA:.$BYL[(BL$20JFPZg'2B[0d*e#,8\&j\o,0hu(LS>n"Yt7DR*6Kh59l+COT?HIrMf&Eo(,&Rrn5D?DO^*u]PG,lYpT7S[Ai]f0jIKGBI$_*aCmL.:J0Bf%S30;4q#(-YNkGmFP2e9g!7?(\'T_jNWP"qP/U'<lYj%GXYHK0HCsU\f.M04`AI9:,[>h=8E##Nc\M]`+!he3(OH-n&R7(+<2*"g6`C*]<<%U^]!:SoaMG:_md#cCbc)m58FM:+c(rCI-$MOJdQej+$)iS[&B\q5,]eMM2*F7RpDh_h\Z7bfF#P/<7O67.AYTm[@/VA*_9GIk-k'i77L?#"n,C1:,554AU;Z_=,F1H>2\&&Z.r0dJ->(nCOZc72"EZX.1OD@I+P7Lg$5aimoI85c"(?k$4ONY)\`MZ-;?oP;e&0\J28]b=rh(et%pJ<tNJ>Ht1QU,_?,3'pIs5W)Mbep&+9Nip\lP.n+%r%iRhhj#?X^Ys*[Y/='bN/[7;cZsYE%-34KpH56J`U";%4d3-lZG%!ehkOK%N<lC:CG;'n^I#m>*lZ$]r`3ZcMGH7eD_%r1>QAepMc$'NSRG&b2%a-n;MRYB)5U-5$_Og<Q(-L`enJrBiHQ8A;[l#s!&ks3JaV2hU;nh4.s6*Xn1K6ip.LGbI%(PpBDK(d^C1@e5t?\n*S_<#>/;c!iCh:_)5O&k+)WUGOKF2+,_fQ?7DfC$<5Ti7eOL'cK:$!%7&M:1EAji)"W8<VIfZY6IY3De\oWt;lR!R.'F[Xe:CKQ+%(.(@7N#/<K+C$$cP['R7s"Q)s,aucAqHG@e'p@R!BuYGa0r?-0V_;=X-hWJK&3uR]La*hcS9q=3?;&hn^s\OftfSdra(`?`V.ogo$XRgkU$qH$+a@f#"i;<L:Z?=,VHo:aGXX1.@T29<,;e,ZC?$d"@k`7E4/7HmZRq"u?F,N](TKE+M>oRH+7R-XhPn6^<V3/4bTdGS2S*E)g%AeVIgBE@=GHTD^/0PRjI`M'%IW"4t*t'Z]'I-\uE7TB0cAabuD@><l(Wf`FSlL``l5_gjR1\bn'o)8N<tkD]$8kj[6G&!LHpO(koDkA?+SoJ)0.2HRYMT?XoK!Wh^6pJn`C(YkV6^8U@''ilr]R-12\?SM%N17FIe>ic?e2;Q&plBcADLT9;rWeE&8[%*toI8/(Nen'pI!!AlhjWn4>hJY>:/\8qHN%rL9iW_CMd+9V5ZMVkB7)_]SOFmfXd]@spB*F_1IZ(h"<L\SHAi3bn>_KmZ:Hlt,^[aQa=)Fe`RUicN5n),MFb(>!>JY1),0:O\8"Bn!g'aB]Q*>CQ9m9=Ye+0mPhC=LO:7;SWI,FeVcS7u(KC[*FqmUnPD'l;SV?'b&"]kegRP!iAm/L9)N`9UZL_L!9973FB\eE4IY&!'?2PHsN7g]jmP/B@Wr<^Da;Y_Tu6E8.",qH99l1;7h?utC&(/-ch4XfWa8sV\QhGI:2I?!bBaHF'hjP=Q9C<]X*4.K0==dUa#f3pt2X$i0O6(+6N9^r^2cO:N)i,FQ@)[U*HkE8_p$KJONO4Esa-@VghOJrJ-+=jTdX1>\(IlAQqZemne4biKA)I?'b]h3]qi6qHZ:6s6:*e=JTa%\AS6C5UCO'YqiotnbqC^f.!#;)\g[#R)l_D]OinA\,Xn%,\<@9`CP.iGPSdRCW[3S'7_p2iK)"h:K\heb!@K<P]PBA+H`]#r<`#MH9c72]B,1OiZ\-n/&i@@0ad4@p%g/9`63j@?dNYp4?mElKR'c7&521e$.T]?rjB5i_4E.Apg4[!`QkgYGpO/"3YQXGK*[m?Mbii&ZO&kLVUtU!60GJFdkT,<d5Z/n$YB;:04h?BM6fqKuS?_>L(@oT$Hjo?OlH*+4j1WM)ZdPV/k]G=KuH_RA3RkoNU/g/#^=a-t_9qkX3#594g%DO_0&.rI1(,Z)5(]RrBq>,t*F.1_tHP=sMAUO/!1p3\F,=JgQ,gopG()3risfEXY5\b@2jV*'?b6_69$%c\g9IIG'^^+RetS&@rmD]<!JA8[o3i$k$n7"._S:(."+jEC96Nk_`WQ^0COS9%>,%A2a-e#>GhUEXU1ZB5:F,aKjLElo82n%&ZsC(.i%3ahB9Jq=rmA)q/[Y>sa&JbHg!pW_*IW(F%[/i&jccW/4C,+G@I!@M<53Y+oMG]V"V[B/0ns)t7%Srqg[Pjl$0$6Djg#nK/9]>:J230V^m$hCAX4CVYYY4lo1LV>eirXXO/nJRtgm-:g8n*2\l*d=VagoXUG[pI$Z]rFPmE`q5Ll`O0gihg$\1JYK\DX2F&,aI\M=BjZFD;91nfR:lgpVQ1$5-FC]XG@YWfM:OVJZ=go4pLK6#S$BDcISS>'VkY5H#n?pk4j;^\k3J455uh5`0up=B:IYLUs96j]_3/"1g-X>g^'7f:S4,-bu[CI,Ip(l4b3C/KDP!,!4qqYWb3)j~>
 endstream
 endobj
 6 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+<</F1 7 0 R /F2 8 0 R /F3 9 0 R >>
 endobj
 7 0 obj
-<< /Length 3772 >>
-stream
-BT
-/F1 15 Tf
-50 750 Td
-(Research Evolution: Microsoft Corporation \(MSFT\)) Tj
-/F1 9 Tf
-0 -22 Td
-(Project 1 | Page 2 of 3) Tj
-0 -18 Td
-/F1 10 Tf
-13 TL
-(comparison, reverse DCF, and tests of cloud growth, margin, and capital-intensity reversal) Tj
-T*
-(conditions.) Tj
-T*
-(Edition B: post-research valuation brief) Tj
-T*
-(What was completed) Tj
-T*
-(Workstream Result What it added) Tj
-T*
-(Five-year FCFF DCF and reverse DCF $541.74 per diluted share; base WACC 8.0%; terminal) Tj
-T*
-(growth 3.5% An explicit intrinsic-value estimate and a record of the growth path implied by) Tj
-T*
-(the comparison price.) Tj
-T*
-(Peer P/E comparison $435.11-$556.30 implied range; $495.71 median reference A market-based) Tj
-T*
-(cross-check using Oracle and qualified Alphabet comparability evidence.) Tj
-T*
-(Five-year pro-forma Linked three-statement FCFE model with balance-sheet checks A cash-last) Tj
-T*
-(model of revenue, margins, PP&E, depreciation, cash, and FCFE.) Tj
-T*
-(One-at-a-time sensitivity Revenue growth changed operating profit most; AI/cloud capex) Tj
-T*
-(intensity changed FCFE and value most over the tested ranges A quantified test of the) Tj
-T*
-(central AI-capex risk rather than a qualitative warning alone.) Tj
-T*
-(Valuation evidence and limitations) Tj
-T*
-(Method Result and date Main limitation) Tj
-T*
-(FCFF DCF $541.74 per share; September 10, 2026 calculation Depends on FCFF growth, capex) Tj
-T*
-(normalization, 8.0% WACC, 3.5% terminal growth, and cash/debt treatment.) Tj
-T*
-(Peer P/E $435.11-$556.30; September 1, 2026 prices and annual GAAP EPS Oracle and Alphabet) Tj
-T*
-(have non-identical business mixes and fiscal year-ends. Alphabet is advertising-dominant and) Tj
-T*
-(therefore qualified rather than a direct peer.) Tj
-T*
-(Pro-forma FCFE $238.72 per diluted share in the Lab 11 base model This simplified FCFE model) Tj
-T*
-(uses a different cash-flow definition and discount-rate convention. It is not averaged with) Tj
-T*
-(the FCFF DCF.) Tj
-T*
-(Key sensitivity evidence) Tj
-T*
-(Output, FY2031E where applicable Revenue-growth span AI/cloud-capex-intensity span) Tj
-T*
-(Interpretation) Tj
-T*
-(Operating profit $48,015.6m $0.0m Revenue growth produces the larger operating-profit span) Tj
-T*
-(over these stated ranges.) Tj
-T*
-(FCFE $16,831.4m $38,525.6m Capex intensity produces the larger cash-flow span because it) Tj
-T*
-(directly changes reinvestment.) Tj
-T*
-(Value per diluted share $21.12 $64.37 Capex intensity produces the larger value span over) Tj
-T*
-(these ranges. This is not a probability statement or a universal driver ranking.) Tj
-T*
-(A-to-B change record) Tj
-T*
-(Question Edition A Edition B What changed and why) Tj
-T*
-(Investment stance Watch / defer pending valuation work Watch / defer, now conditional and) Tj
-T*
-(valuation-informed No material change in the recommendation. The basis changed from an) Tj
-T*
-(incomplete research screen to a valuation conclusion with stated conditions.) Tj
-T*
-(Intrinsic value No per-share value claimed FCFF DCF: $541.74/share Completed a five-year) Tj
-T*
-(FCFF forecast, enterprise-to-equity bridge, and WACC/terminal-growth sensitivity.) Tj
-T*
-(Market cross-check No peer comparison P/E: $435.11-$556.30; median $495.71 Selected and) Tj
-T*
-(qualified peers based on recurring enterprise/cloud economics and annual GAAP EPS.) Tj
-T*
-(AI-infrastructure risk Qualitative concern about capex, margin, and cash-flow conversion) Tj
-T*
-(Quantified sensitivity: $64.37 value span over stated capex-intensity ranges Built capex) Tj
-T*
-(through PP&E, depreciation, cash, FCFE, and value in the linked model.) Tj
-T*
-(What could reverse the view Unspecified next-earnings evidence on data-center spending and) Tj
-T*
-(future profit Cloud growth, margin recovery, capex normalization, and normalized) Tj
-T*
-ET
-endstream
+<</BaseFont/Helvetica/Encoding/WinAnsiEncoding/Name/F1/Subtype/Type1/Type/Font>>
 endobj
 8 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+<</BaseFont/Helvetica-Bold/Encoding/WinAnsiEncoding/Name/F2/Subtype/Type1/Type/Font>>
 endobj
 9 0 obj
-<< /Length 3213 >>
-stream
-BT
-/F1 15 Tf
-50 750 Td
-(Research Evolution: Microsoft Corporation \(MSFT\)) Tj
-/F1 9 Tf
-0 -22 Td
-(Project 1 | Page 3 of 3) Tj
-0 -18 Td
-/F1 10 Tf
-13 TL
-(enterprise-cloud peer comparison Converted the open question into observable monitoring) Tj
-T*
-(conditions.) Tj
-T*
-(Primary driver and supporting tests) Tj
-T*
-(Primary driver of the change: coursework and personal analysis. The work moved from an) Tj
-T*
-(initial filing-based thesis to modeled valuations, peer-policy analysis, a three-statement) Tj
-T*
-(pro-forma, and sensitivity tests. AI-assisted drafting is separately disclosed in the) Tj
-T*
-(project validation record; source facts and calculations should be checked against the) Tj
-T*
-(filing, committed code, and executed outputs.) Tj
-T*
-(Test or evidence What it tested Result) Tj
-T*
-(FY2026 Form 10-K and MD&A Baseline revenue, debt, cash, diluted shares, cloud growth, RPO,) Tj
-T*
-(margin pressure, and infrastructure investment Supported the initial thesis and identified) Tj
-T*
-(capex normalization as the key evidence question.) Tj
-T*
-(DCF sensitivity and reverse DCF WACC, terminal growth, and growth expectations embedded in) Tj
-T*
-(price Showed the DCF is sensitive to cash-flow recovery, discounting, and terminal) Tj
-T*
-(assumptions.) Tj
-T*
-(Peer P/E leave-one-out Whether one higher-multiple qualified peer drives the reference value) Tj
-T*
-(Removing Alphabet left Oracle's $435.11 reference, $60.60 below the two-peer median.) Tj
-T*
-(Pro-forma accounting checks Whether forecast balance sheets balance and cash remains above) Tj
-T*
-(the floor The base and usable sensitivity scenarios recorded zero balance-sheet gaps and no) Tj
-T*
-(revolver draw.) Tj
-T*
-(Locked changed-input sensitivity test Effect of changing one independent assumption at a) Tj
-T*
-(time Confirmed the capex range produces the larger FCFE and value span over the selected) Tj
-T*
-(ranges.) Tj
-T*
-(Conditional conclusion and next evidence) Tj
-T*
-(Watch / defer. Initiate only if updated results support capex normalization while cloud) Tj
-T*
-(growth and margins remain consistent with the cash-flow path, and a consistently normalized) Tj
-T*
-(enterprise-cloud peer comparison supports value above the market price. Otherwise, continue) Tj
-T*
-(to watch/defer.) Tj
-T*
-(Monitor next: quarterly AI-infrastructure capital expenditure as a percentage of revenue,) Tj
-T*
-(cloud growth, and cloud-margin recovery. These are the facts most likely to change the) Tj
-T*
-(valuation conclusion.) Tj
-T*
-(Source and reproducibility index) Tj
-T*
-(Edition A source: research/reports/2026-09-01-initial-research.md ; first frozen in commit) Tj
-T*
-(861e227 .) Tj
-T*
-(Reverse-DCF report: research/reports/2026-09-10-msft-reverse-dcf.md .) Tj
-T*
-(Peer-P/E triangulation: research/reports/2026-09-17-msft-pe-triangulation-lab.md .) Tj
-T*
-(Pro-forma assumptions: research/reports/2026-09-24-lab-10-msft-history-and-assumptions.md .) Tj
-T*
-(Sensitivity output and validation: research/lab-11-sensitivity/lab-11-submission.md and) Tj
-T*
-(research/lab-11-sensitivity/validation-check.md .) Tj
-T*
-(Primary filing: sources/filings/MSFT-FY2026-10-K.pdf .) Tj
-T*
-(Educational coursework only. This document does not provide investment advice.) Tj
-T*
-ET
+<</BaseFont/Helvetica-Oblique/Encoding/WinAnsiEncoding/Name/F3/Subtype/Type1/Type/Font>>
+endobj
+10 0 obj
+<</Contents 11 0 R /MediaBox[ 0 0 612 792]/Parent 2 0 R /Resources<</Font 6 0 R /ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/Rotate 0/Trans<<>>/Type/Page>>
+endobj
+11 0 obj
+<</Filter[/ASCII85Decode/FlateDecode]/Length 2640>>stream
+Gb!#]?$G!n&q0MXW/&S<Ae(!O#7)YPK](PE,\+i+-SKaZUrIL->,5@XnXTRJ>?1MbnJJL^CsL$J=@[IW<StAfFh@$,%t?_@N7S&Jk&>e.J`jpu$!uhM0`M.%q:X@UfCOU8mt9p8L''XAfCu&Emt&#0dl9?+%,K;2"ut'Bgg17U_Xa$L>RG]a0C6T<efD;RC0>rM<?Cd"Ln]G^`"?eK>YVE"j/^9d@J]0KLO[S+?2b?'Dh*o;-<HPcQPX_1>[GZ-YK$LbkK_-6MtuP.Itmb8R/c_r@4uTsiHM?KXtJU--TInZ_[ZIPYlJadDV4E;L5je+6uJXqIam]!-^8T#Bi;kn=.'gQ`*$NMgh,[a17d:60OH7:8JW+XWH3HK(3Gk[`aj9COeD?;ZoNU`OujCOGL'lQd.IJL6Xt6cDC#"Zd=5Q.lJVgRN8Jh(N%Mb\XlBN0k#h@;eimqgIupAqfo%%46X]:/6d(;;Z8*mQUf`_Pc<Ij#@3KQB#*D9eP4634&qXF+r16-'=;Z+_oF6V!<p71([TIp>0b2GN'tH.lYWF/?O=_Wnklqc*d7Mk?JsjfiFh`Ri!@WTJj.LW:koYFKgX&<$-GloNkQL6%1V&-b?+9T;ET:C6ARpC&+PTG>SC9Dlbd4C9ehW4#Eg^>G$@Q8I8=W?eI#e\/E-@i'#^'gsr#Y8o>0+Uk%K;E.)uiprL2TbobtIu=6GQX]]>D^%OWoU<_@4\JmD>U5/6#3)KG'HbLd`e%/^04&?!&!o)-(=;B%nqKL&p9BDih<EAqNB1$sN/8!UXl;C,i0G<X9^LE.V=L=Ki-LUs7=L,f\F;WJ6o?Pmt-_m_Eul3S2:>*2Sukf\@0\:9`K47!(.j\'-V4YaJVoPEOkaG\k`[V84Ir[R"ni$fS,]$5jk^=cq32/1DMWM&G1R#V#5pQ,%O65Zk5+rb3A<5u:&T1$qsTj#5P8,HOQR<[lgZ'II/&-5HB=q0qD8r\MfGHhe-'6]f"&iH1F]Yg*lLG!SqjPe)rOSiIUNM[NW(Q/'G5aD[PI`@A%rS<r`;)qjX?(n(&O_N)_]R`Nu!$Y_o!An.':$WY<ID/:K;0@&,fJHI[O*jUJ?&Dg/7\fCVf/Qo+)m/V@"Cr7EUd9(3a/lJKI0!uu]j_ERPO_*n@_6EZ$Iu!nT$p8:i-/NNm]q+f;JZo@one'pM].bgr_OFn@QJ('(WX80->nQ"S;0$s/-f9D3(\UbsdgE_L<`m@(Po-.,VFdNSK.!$5)<VJ*cpr0tha;aeL3#icr<%6XNd<ng.VI<gfJB+OA"GG#%-n5t<)2\_[l_^^/r6Sn)^H#I+\q(R[,kj,[MlM]Kpc"RcmR=Q=L+`)mmYFk#Gbl0HQ,M8,0fkb+7t:9gg72g$G=O)*kn7a32'\`GUhI\E7^-lR_;OAd^_ln".'eIlL-L:Q0h)(4fr4tqP!(A+Z0Gik@m5IMOVM!=CA[o:ZKQmEHC@;IX2GKW"b*\Wl\Y7rH'SsVfd<eG=<C-SAAO1@Y_Q5;"%[g];))l76SpiJp"EQ"DQu?o8UNrK`sa#Xr$g`UN]-DqsB#g`']]H_IqGpI2eVPq4F3R>Lnl*@-F5I"sJjTc\'P-SfM/1qZAe@296W.DibL56;md,RBNr_M*f$ej:X>ENo^i_SCZXRFhV(J42b$[3170L]TVe:W`<g"QU\omr%?1,(*ZaOg<hn9XMdHf(#EDn;JMDYcBA$CbQm!]@_O?!W1P(mCokU\R"qG86MNk2><9g+8>t8_F,#qg(8tprMI<LU<J0-pTNI+lj@U&("LUB*nt!OV3`UOTEpf%=*jZi0;A?a.J#J)O9i_WF'OS0aHe%p^q.n^?M(sho3``=@]"D,oX_>b16LG@['_4mK*K`G#_%MHbT>d506foBsr%k+.3P<CbWtMStI'B?p:0MBL\[YW70#phk]uK*TH)Wi%=itZee!8J]AiOje+>%@`bm$9L)Qp0;@-_QJN&fbQ[)E)F?fu"gP8hF[0)!i[%F8PGf!+f'U5*h]CGcO3A-&hSQmJ-.W#UfZbEXp5O&h25q#AO*)\%ROJA)OEm6'H:=21<"A(so\Kd9RJXQRah'WtZWYkj*HlYiMrq19^SpFHQmp\\..mo;#fr8s'T95E%GVj#[n8RIf_AjiZMN*`CU`u_(c2i=1V[0-Gs;ObLKM/_=NQtNGEO*L$;p<1_.^lA7./73.(L,m(*^=SD&+228!6KqMfItTGS`UXW%:99.QP.6[lf5cM^.'HZUa6YW8d_f/uihuJ;Xe_F1$^b:[:43^Neh9`Q,#s+m4cTY,9DDd+,dmVJ_O#,$)WEd5!WsJ5pfc^5#bbH"*XVCO`Qr%G[u,6LK?ib3GK7_D$*CH=^i/9'%&UAsK2E/N.2qpSm%'<ql.2-8/u1;j:kd0i7Vb<$='>uIohF/Kn9'%p08a_R/Td<$dU:Lo%e7WrXf3lMm6mCJOaqV<N$tFDZ9f"_0?!06HbA'-;3sEZWa;)A6[rmE>HL7,H@D4<:SM#[Z^NsBV,Qs+%u.IPhp0QHP#u1@&.9K6;UJO2lLc9H:?^Xo+6,=O&#;>nC<<B_*1E@C8E<\5o"M8TH:j8ZoQLked-3U:oGoY>dk:Qi+\@bTJtsYF9H10NpWMXFZUGFKs7.a**"kMUp)i%1EeO~>
+endstream
+endobj
+12 0 obj
+<</Contents 13 0 R /MediaBox[ 0 0 612 792]/Parent 2 0 R /Resources<</Font 6 0 R /ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/Rotate 0/Trans<<>>/Type/Page>>
+endobj
+13 0 obj
+<</Filter[/ASCII85Decode/FlateDecode]/Length 2905>>stream
+Gau0F?$"c/&q0MXfE]_C[3O'%^XYM.MVRO+M%s01k0E#k+s@7I74KE/8"KP;mfNEI/^gqIPDR7T"L-NA3.#g_!]p<,lDMB#Gdi4()Zms.`<qEt=g7Z7VMg@N(E+HoCY59la)_Y*1rF8aRt+UJ6o`hA4DjG8K-Lh(dk)+><^0sL<1og['-#lOH,l@P9T+*d@=`9HlT1Ji:MaGnTAEAIkECD5o^BCVs'"47I0B<u^k^[dr9jRPAc\+-q<W!JXhOTdpi(_hq!um0YkSQ`T7<AuR$qm"AtR?:I\0C)Oi@[OZuKS&i0H7Df#M*.2$$dbQ/0biD&Uhq39rEBI%'UcU*9;O-5-"hM[,'5n=[U,_\3;b5MNIl`=%ts'W8/KnX]soGdM*TWkP7ET)22CZ5M->$kpNTXZE4m#%lo[:Dg2(E<cSUfU@Arm1*Q7#ou^Mh5uPNdIXIR"ba]6li7?M&t\YW:Ck7:nWD.$b;Tkqs4FKT\\/2<$kZ.8Ca40oVHEmi)k6C/BObhZ)u,PV/5bRo)5+$qldueTfl'hTY'^>)fJm,=f#2:i#Wr*P-bR;.7"1j\m]pr$V22gSrtr==VXV*(U2n2&mWKcJkqZd$>dh=5Lk=]Wm$P+BM_[1oMtf$_<9knn)BE1/N.*S>[dNhUPon"K0_4IgI37u-XZ%m6JjAQU_=0S3YV7\IQN?6ReSfFfYnJZg#O^e*%ZIM'Z(J3jT#Q,t">1IljdBEEZnJA]>kmPa0.h+@A#,W3?TcZCf1TDuO0;T;c8/)^]QCh*:/@3-?jo&SV2pa5OX/BbK91sJ'+gKB(ptT]YR^1E+2Oig"pq#U"X%KcAr5(>%YpRr@5jC>BceJC[b)mGL7UsnWtu>N>k/a@RblCL3\aa0_A]$['be\@+LrerPilH5dpt7<L%/Z2E!AttdgX(.1#$`br%pNd^JU*.9Mt!-/pnMmR6pU+%2%?N?aM-',WLts(!"d8!L^9rIq]IR(k$@Kj`8\_`N_8Km=WQ<3&-r4TOb5M:bbBBPFO?7Wdp-Yaf$2oUe;c/,UU&il*=FL='<I]F@*l[Jj@C=EeXgpVWZ=u49#,'Tt-b-R(,jDhk&u0O83]1\;SC4s!Y:_<IuR4%cP.Q3VaKVZFk*YeU;RChUd[T]"7Lt7ptY]bIh#CH'V$tl7EEc;>a#ehk:D%+p+q<^T#%+i%bn^25G6bT6Dtd#7fn?O%%DA&e.6&^Ijbq1L.-5I"hd>94XcjPC/%(dS!%@'T>8:3'g[cNq"T%o-m%-l4Pp`U,h)2Vluh:r+PA_eR*6E(&=U4R"k@$"[6j<>0qKo1^['%+1_a5dSES-7lg4M0%#ap\r*('8B1FPM=<;qr=*!t^fEua3u.uj2AHHgE`5:AAB!4@h#EjP6`auDZ1a/t(c5>mL8qNlMhP.^[d5suPUOqM'8,Hh\+F/=>NBh@AU0m=&s$"L5]mWV0sH57Y+kF%!l%sf":Or:E@VW>&U$,F8*iRnW-JO.&Lu-DM(]^(,S/=LbL.hgQmI`u4a?$9F:53Sq5dMu,#b*GcDf`h0E"!jp4/R@k4p]`O[(?P;A,qAqS3UjmfGrZiH%$][JLEGTA9>GQaT=>f=L7uAd()L6V]M46bsIM6;E.JlA<mhYlr3)4=R4>PB9q&Lul#t:Y7(T8*jG,FimVO@*OFh'<;@&?V`"Mq!==,;(NUgc1XjZe1CPlrr#+$"%1KPEKZ:Y%J,Vo<.VH`/ZjOM9*B>i7>H"2ee2(?\E?6UltVE^Z:l2bK.dE1i6o%Sc.%6FJqRh#a=*D+f[a<UM`T;D8p_`DmTG?G;3=>_AMiHuNrP:Q9-io`Fb?b,KUECWrDCHcDZBgDB,#9pT<uC(UBp%9hla.q0V.$D@Egm=Dpd\:lW]c_"<JDBq.\FDaJ$S$aE(-pBcM?c-g=L]T%Ythr_,^FQZ6'8/QCbHLe11>H.5$gF\Rc]A\lcj#n,sgg%ZsqGX2&(@]iQn<E?,c9:<Sq/tf5\C9O\\WXmZ,!hKjBBiW'tj#_q1]8VMZD@^?'&SLD=b\#"L_8#Q%kn*O1%O'(sEZV[e5*W]A<UhIq?-%\\7h<,YD&fda$dRm;>9LK9NO(<(SKab(,?c"nkNoHLLn7`"+,@gB;6iQe.@u@JpN2'k.RHm$lJ,@O&4#L\PZ)\b/%TE$l>l-h]Xu>I!U]3N(@XN8V:PETY#V9_B>a<42/,g[qCp+o<-P]HYMsj,-c_.N^:[IHQ"FXRWDSgm%Bf[]<#g\b,&!]!6lo54Ql%&uFJ%0QZ=sq=]M+^FbBF\D<f/,n`es5sV<No-)i!_q9aQ)F2C`6K?JNN#nh.`u=Z&OqFnH30gLZ#UW9u]hHc0X,7s`o4BQN!QG\\8:dU4C]!pTdSo;7V&aaLVP`Bq6t=J4-(;^%Ssgrc-FQqJb_9-uK'gs:YM2+<EQ?7>m8[EL;K=-V-.<9/m^F\2,D!K3O3g(I6$;?N!aOW(IC6di&j&0ElP`C&=L=5'@u@)E<Y@A\jE2<qtfW"-m^(Pgd1<"%aVP/PVtW,B<m7uV!'8Fs1>Hj?'3YA/TET-cNYD6+``\l,+i!tp?D&#Tf_+$@C".0WJ_lo=lDe3_S=SelsX-5=;"OJ%r%c;rFjQ+fOj#lQ<um>#5ILj:G_MScg,1gO%]Y#7-*m['W3Tj+,Nj^+$aF^X*(=NOdPHCrhern3*QrM<dTa*H)W4/%(&2t9[[cU``47VV=<@5M<iP/++7;H]-[.eoQ_"B.4e?bO[R-!>IT2:ZUNSkaL(C6<Fs1%F*C`\B6D586(@]PkoXj))EFSS-E$n*gT-Asnf%;9#D<>,F[.ohk#q7ab+/Xirhuh3I4>%i@qPbk5h<gD9(6hgt!LkLoQ3OE6O&9-,T391D1`3#BGKfa]T"!&T2WnA(Xp9#RCH[;X3ZV_n8/idXrpf*D~>
+endstream
+endobj
+14 0 obj
+<</Contents 15 0 R /MediaBox[ 0 0 612 792]/Parent 2 0 R /Resources<</Font 6 0 R /ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>/Rotate 0/Trans<<>>/Type/Page>>
+endobj
+15 0 obj
+<</Filter[/ASCII85Decode/FlateDecode]/Length 2482>>stream
+Gb!#]?$"c/&q0MXfS@aWV.7pV5K1@IWnb0EW>o&XV_`dQ85MWI&hHRWET[8q])Y&`3u2BTR^k?ugGD:u]*Dtm%lOPAr$(uMPQC]lJr;,\`.h7n`&1h&]ncFKm%6(t&1=\F0Sr$em/Ti7%U>'FgmmIc3UiqYk_"pPD9'"gO:7<@cYt>[n*#IBR&Y9rdr1Sl;:8Y+\I\nX3Q3p4Qn7F0o?67^(RY6-GlR[+HLVriIfMZ;c^'LD`RP<-Mri2mH)X$=Rs_`Z>2?l=#HPUJp&4K9M.:l"PLXT;MdPX'Ht>"LF?FZh!Hd":4Y*&r<YGa4:YYiBeW-b._H#c=*RTb&S>HjS>*`tPj?8;]I5GB?jX%hhW\]rBpqTMC70SAZ%m4I>o*8;sqD0$Sn;*J;S8hf_G46@F?#Sq]JNJ,R,9GFO4O57LNG!V9#RR6ciQ2rq6%>Bq1IF\2"#G$dbJmo6b\i1(j-t@Tlb7Db2#Lg7V6/Rk9e=OQ]B<M`NXmC3[V9Z7e07&8*<h=4>'":D]oVJQ<erC7#u'<K8*gOk6d-)d`S[lVl-Cr`J6,S+N\!B(O+VH3g#'$[P*L/n*F']&Ei.[@,=hcE1SRW5mmk+En#+hRPUnJ5`?0?t#W.V4!$<$j]e`!gEtm9U>4q(?Cj(h@bD`L;gISTM[ccASk..s\I4A>ukm/klASW(%/B5cK+QObpkfsM%H]ujcJ&p^*Xk;UXeWtd''GEh=.t^GZ7*D]pUghq[/m0G2kJqY"H&8LHYB[cqI-_jAhkameB8(NW*92e8^%E)06iPjp-K4)r%On.`bRcd`f8#49nfW$M8:iE\1aV9f#$\gX7jGq(i'kfHT:2W>i<X[ZG4mo7'&bJ9+\7nQWH&&&d'Q!ZKMrf'A/Q/5Hio^LZ))5:+biPl$V@+XrMtV?>fXa1##&])4brKRbOdAg1LuAdUY6#A\Hj(23R,T>5Hmq-pehrcO;S3?Fju(XbG+n)(^#/+H3U#k$j3G[2,1&2dW3N5<VCoObk,;C5f:Lc.*%!+f0Y05ieX9Uj=q:WiEHmVS.C(EV)AbIP-0qP_^&GU/>nYhnjtTu.W^#M;KR@*g.g5HU=:^T@dsAL825HV/Eq%/-2=C^bO7lAO%)TCRVu;En@[DOKZVS.<@3dXN0B\g:D,2]+Hj`*79Gg7GTO2CiK(Wt+e&NKFUAl0Nol+\nR<j9KZgGK'bN%M-]e[1,o]]t2X.9O25P>Ga*]bVRVNDsA-QU2F&:CS02f(i?/M]GM-fYi9(=E\s*\J`e#D`-(XpBMF/j^AIm-4EG68SIBj'%MVf7"L'AMrpnYmHrD:f9V6T:lb@Pb#+]5akl[.MG[kA7TBZgGHqS[o;._S1.:5^fj(.*n)^`u-H&:4!h/4poU=4H5`;nfFEuZn=3f&F&*)V[DS,KI)Lqf6>J77YIm<TkB-5g(]^cGC,bEO\T&+HSte;To:)#7I$k%7(LpZp0P?K2I>Al[fBRr#ruc7cOY"G-*UEp&%d@ak#_.c6PQqP2tJ08@05%@!_+];mm+Z%W/DMm<3f@m=4BBU;$^=4gs/n;8bm!Nd9sHFQj]Zge=DcO=D,]qbh%L>VXcZP\1j\NhSorQNoR07`3_i<$E>pkCV/'K53[s@^n1o;q0jp&\ha\q`W7D`/=+LnbgP$"&m9c'\eOs(]es\mD$]Q&$Q=N@W^^rrYYZ'MLWc6h/[99G>6!u''l>U5<U!$6o#29[^i\;?<"[Okks1'7hR'!:o5WCJ6K\Z)gdC]O+i+D7,f"b.N\U)NfQS!7EG:)6AHL%ub3p4BY%4c>*#^^=@mc-P&%oMu59-h;BWCHDOZ%0pDHqE-4(J!AOW`!iW?/mV;E>]^dQ6)j2YgHRM'PCu0<_W--5*/4XJ;e]3l1CpPDd#MW)TP3.$eqMR7%cdWJ`sk/9U's7oZL/SldY9huDL-fcZU$b]cD:s7,H_q*pQtTY$AHqD$(bhct_['5g5j)[QmFejoeTk,Atjf-jieNE%#Toj6AW$Cn9k]Y4tG_DfaGr&7BTaU;._V/t]$?e&_uY#ojLSq_ga%=I9kW0)4+)\_?,$#c=)7_lecPRWoG-7CQ&lR#MWAi]'9RUplMJ#>J=\C$MslH9_uVs>_'3abor%?sPQd0n^7IDZC$MdXh0Os2cpGKfDmLJ;nO:3Y)k2Q\T![;6c!Nad%Gh%*s]/0c[/b%NkV7N<`7QqZC^lQ0p?(olt%8WKXY:<0p#Jo\0a%jM]DL_S'X@[WA,of+ebRkOH<BoD<sElYCEiVj)0Z!E&N:R`pC>p1:!/1SZDFZ>8B1Hgkc[t?kpW2lYq\sk42?c=A(D[a:G"M9WtH]REF*]/if0a;KPI]-Rc]Mns>K;cJ;*1j_8`mB.=,9/f`!BEc;7n?H!jI;pg4413*>q%Fq?-<WK+*5HP?^c@5\UU);S:"8=_<^t&hS*p$j@;:(p72<I=Z`],]5a&VbpYbtA)=rCi!m:,>&,tT2DN7a%rh5LS-CVF~>
 endstream
 endobj
 xref
-0 10
-0000000000 65535 f 
-0000000000 00000 n 
-0000000069 00000 n 
-0000000141 00000 n 
-0000000211 00000 n 
-0000000337 00000 n 
-0000004192 00000 n 
-0000004318 00000 n 
-0000008142 00000 n 
-0000008268 00000 n 
+0 16
+0000000000 65535 f
+0000000017 00000 n
+0000000066 00000 n
+0000000146 00000 n
+0000000240 00000 n
+0000000411 00000 n
+0000003502 00000 n
+0000003555 00000 n
+0000003654 00000 n
+0000003758 00000 n
+0000003865 00000 n
+0000004038 00000 n
+0000006768 00000 n
+0000006941 00000 n
+0000009936 00000 n
+0000010109 00000 n
 trailer
-<< /Size 10 /Root 1 0 R >>
+<<
+/Root 1 0 R
+/Info 3 0 R
+/Size 16/ID[<6BCE1DE47665B557D126BC09532E65D1><6BCE1DE47665B557D126BC09532E65D1>]>>
 startxref
-11533
+12681
 %%EOF
