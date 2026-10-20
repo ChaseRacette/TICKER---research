@@ -1,249 +1,359 @@
 %PDF-1.4
-%Styled PDF
+%Plain PDF
 1 0 obj
 << /Type /Catalog /Pages 2 0 R >>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R 10 0 R 12 0 R  ] /Count 5 >>
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R  ] /Count 3 >>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
 4 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
 endobj
 5 0 obj
-<< /Length 2815 >>
+<< /Length 3803 >>
 stream
-q 0.07 0.18 0.31 rg 0 735 612 57 re f Q
-BT /F2 20 Tf 1 1 1 rg 48 763 Td (Research Evolution) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 48 746 Td (Microsoft Corporation \(MSFT\) | Edition A baseline to Edition B valuation conclusion) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 525 746 Td (Page 1) Tj ET
-BT /F2 25 Tf 0.07 0.18 0.31 rg 48 684 Td (WATCH / DEFER) Tj ET
-BT /F1 12 Tf 0.13 0.16 0.20 rg 48 654 Td (Microsoft has strong cloud growth and a large contracted-revenue base. The) Tj ET
-BT /F1 12 Tf 0.13 0.16 0.20 rg 48 636.96 Td (unresolved question is whether AI-infrastructure spending can normalize while) Tj ET
-BT /F1 12 Tf 0.13 0.16 0.20 rg 48 619.92 Td (cloud growth, margins, and cash conversion remain strong.) Tj ET
-q 0.92 0.95 0.98 rg 48 560 155 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 58 596 Td (FCFF DCF) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 58 576 Td ($541.74/share) Tj ET
-q 0.92 0.95 0.98 rg 218 560 165 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 228 596 Td (Peer P/E range) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 228 576 Td ($435-$556/share) Tj ET
-q 0.92 0.95 0.98 rg 398 560 166 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 408 596 Td (Key monitoring) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 408 576 Td (Capex + cloud margins) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 515 Td (What changed) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 510 m 564 510 l S Q
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 490 Td (Edition A was a filing-based research thesis. Edition B adds a five-year FCFF DCF, reverse) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 474.38 Td (DCF, peer comparison, linked pro-forma, and one-at-a-time sensitivity analysis. The) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 458.76 Td (recommendation did not change, but the evidence behind it became more specific and) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 443.14 Td (testable.) Tj ET
-q 1 0.97 0.88 rg 48 346 516 66 re f Q
-BT /F2 10 Tf 0.48 0.32 0.02 rg 60 393 Td (Conditional conclusion) Tj ET
-BT /F1 9 Tf 0.13 0.16 0.20 rg 60 377 Td (Do not initiate today. Revisit the decision after reported results show whether capex can normalize) Tj ET
-BT /F1 9 Tf 0.13 0.16 0.20 rg 60 364.22 Td (without weakening cloud growth, cloud margins, or cash-flow conversion.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 318 Td (Document map) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 313 m 564 313 l S Q
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 293 Td (Page 2 preserves the Edition A baseline. Page 3 summarizes the completed Edition B work. Page 4) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 278.8 Td (records the A-to-B changes and sensitivity evidence. Page 5 states the decision, monitoring) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 264.6 Td (triggers, and sources.) Tj ET
-q 0.78 0.82 0.86 RG 0.8 w 48 42 m 564 42 l S Q
-BT /F1 8 Tf 0.36 0.40 0.45 rg 48 27 Td (Microsoft \(MSFT\) | Project 1 | Educational coursework) Tj ET
+BT
+/F1 15 Tf
+50 750 Td
+(Research Evolution: Microsoft Corporation \(MSFT\)) Tj
+/F1 9 Tf
+0 -22 Td
+(Project 1 | Page 1 of 3) Tj
+0 -18 Td
+/F1 10 Tf
+13 TL
+(Research Evolution - Microsoft \(MSFT\)) Tj
+T*
+(Research Evolution: Microsoft Corporation \(MSFT\)) Tj
+T*
+(Edition A baseline to Edition B valuation conclusion | Prepared for Project 1) Tj
+T*
+(Company: Microsoft Corporation \(NASDAQ: MSFT\)) Tj
+T*
+(Currency and scale: USD; financial-statement amounts in millions unless stated otherwise) Tj
+T*
+(Edition A prepared: September 1, 2026 | First Git-frozen: September 3, 2026, commit 861e227) Tj
+T*
+(Edition B evidence through: September 29, 2026) Tj
+T*
+(Purpose and final position) Tj
+T*
+(Watch / defer. The recommendation did not change from Edition A. What changed is the quality) Tj
+T*
+(and amount of evidence behind it. The valuation work supports a conditional view, not a) Tj
+T*
+(point estimate or a recommendation to buy immediately.) Tj
+T*
+(Edition B estimates a five-year FCFF DCF value of $541.74 per diluted share . The September) Tj
+T*
+(1, 2026 peer-P/E range is $435.11 to $556.30 per share , with a $495.71 median reference.) Tj
+T*
+(The two methods are not averaged because they use different inputs and have different) Tj
+T*
+(limitations. The principal condition for a more favorable call is evidence that) Tj
+T*
+(AI-infrastructure capital spending can normalize without impairing cloud growth, margins, or) Tj
+T*
+(cash conversion.) Tj
+T*
+(Edition A: frozen baseline) Tj
+T*
+(Original decision: Decide whether an investment committee should begin full fundamental) Tj
+T*
+(valuation of Microsoft and, after that work, decide whether to initiate an equity position.) Tj
+T*
+(Initial thesis - Watch / defer. Microsoft merited full valuation work because FY2026 results) Tj
+T*
+(showed cloud-led growth and a large contracted-revenue base. I did not have an) Tj
+T*
+(intrinsic-value range, market-price comparison, normalized free-cash-flow forecast, or) Tj
+T*
+(explicit analysis of AI-infrastructure capital intensity. The initial conclusion was an) Tj
+T*
+(admission decision for research, not an investment recommendation.) Tj
+T*
+(Known facts at the baseline date) Tj
+T*
+(Item FY2026 baseline fact Source locator) Tj
+T*
+(Revenue $331,839m; up 18% from FY2025 Microsoft FY2026 Form 10-K, Consolidated Statements of) Tj
+T*
+(Income and MD&A) Tj
+T*
+(Operating income $155,237m FY2026 Form 10-K, Consolidated Statements of Income) Tj
+T*
+(Cash and short-term investments $76,843m at June 30, 2026 FY2026 Form 10-K, Balance Sheets) Tj
+T*
+(Total debt $40,294m FY2026 Form 10-K, Balance Sheets and Note 10) Tj
+T*
+(Diluted weighted-average shares 7,453m for FY2026 FY2026 Form 10-K, earnings-per-share note) Tj
+T*
+(Azure and other cloud-services growth 41% FY2026 Form 10-K, Item 7 MD&A) Tj
+T*
+(Commercial RPO Up 84% to $678bn FY2026 Form 10-K, Item 7 MD&A) Tj
+T*
+(Initial assumptions and uncertainties) Tj
+T*
+(The FY2026 Form 10-K was the appropriate primary baseline as of September 1, 2026.) Tj
+T*
+(Debt began at the June 30, 2026 carrying amount, subject to later review of other debt-like) Tj
+T*
+(items.) Tj
+T*
+(Cash and short-term investments required an operating-cash assessment before any amount) Tj
+T*
+(could be added to equity value.) Tj
+T*
+(Azure growth and RPO were useful indicators, but did not prove durable margin,) Tj
+T*
+(free-cash-flow, or valuation support.) Tj
+T*
+(The central unresolved question was whether AI-infrastructure spending would absorb cash) Tj
+T*
+(flow and pressure margins faster than cloud growth could create durable per-share value.) Tj
+T*
+(Baseline research plan) Tj
+T*
+(The baseline called for a historical operating model, a revenue-to-FCFF bridge, explicit) Tj
+T*
+(revenue/margin/reinvestment assumptions, a documented enterprise-to-equity bridge, peer) Tj
+T*
+ET
 endstream
 endobj
 6 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
 endobj
 7 0 obj
-<< /Length 3234 >>
+<< /Length 3772 >>
 stream
-q 0.07 0.18 0.31 rg 0 735 612 57 re f Q
-BT /F2 20 Tf 1 1 1 rg 48 763 Td (Edition A: Frozen Baseline) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 48 746 Td (Prepared September 1, 2026 | First Git-frozen September 3, 2026, commit 861e227) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 525 746 Td (Page 2) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 690 Td (Initial thesis) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 685 m 564 685 l S Q
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 665 Td (Microsoft merited full valuation work because FY2026 results showed cloud-led growth and a) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 649.38 Td (large contracted-revenue base. The initial stance was Watch/Defer because no) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 633.76 Td (intrinsic-value range, market-price comparison, normalized free-cash-flow forecast, or) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 618.14 Td (explicit capex analysis had yet been completed.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 575 Td (Known baseline facts) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 570 m 564 570 l S Q
-q 0.92 0.95 0.98 rg 48 500 155 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 58 536 Td (FY2026 revenue) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 58 516 Td ($331,839m) Tj ET
-q 0.92 0.95 0.98 rg 218 500 165 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 228 536 Td (Operating income) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 228 516 Td ($155,237m) Tj ET
-q 0.92 0.95 0.98 rg 398 500 166 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 408 536 Td (Azure growth) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 408 516 Td (41%) Tj ET
-q 0.92 0.95 0.98 rg 48 425 155 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 58 461 Td (Commercial RPO) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 58 441 Td ($678bn) Tj ET
-q 0.92 0.95 0.98 rg 218 425 165 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 228 461 Td (Cash + investments) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 228 441 Td ($76,843m) Tj ET
-q 0.92 0.95 0.98 rg 398 425 166 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 408 461 Td (Total debt) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 408 441 Td ($40,294m) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 380 Td (Central uncertainty) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 375 m 564 375 l S Q
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 355 Td (AI infrastructure could absorb cash flow and pressure cloud margins faster than revenue) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 339.38 Td (growth converts into durable per-share value. Azure growth and RPO provided useful demand) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 323.76 Td (indicators, but neither proved margin durability or cash-flow support.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 270 Td (Baseline research plan) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 265 m 564 265 l S Q
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 245 Td (Build a revenue-to-FCFF bridge; establish growth, margin, reinvestment, tax, WACC, and terminal) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 230.8 Td (assumptions; test capital-intensity reversal conditions; complete the enterprise-to-equity bridge;) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 216.6 Td (compare intrinsic value with peers; and identify evidence that could reverse the view.) Tj ET
-q 0.78 0.82 0.86 RG 0.8 w 48 42 m 564 42 l S Q
-BT /F1 8 Tf 0.36 0.40 0.45 rg 48 27 Td (Microsoft \(MSFT\) | Project 1 | Educational coursework) Tj ET
+BT
+/F1 15 Tf
+50 750 Td
+(Research Evolution: Microsoft Corporation \(MSFT\)) Tj
+/F1 9 Tf
+0 -22 Td
+(Project 1 | Page 2 of 3) Tj
+0 -18 Td
+/F1 10 Tf
+13 TL
+(comparison, reverse DCF, and tests of cloud growth, margin, and capital-intensity reversal) Tj
+T*
+(conditions.) Tj
+T*
+(Edition B: post-research valuation brief) Tj
+T*
+(What was completed) Tj
+T*
+(Workstream Result What it added) Tj
+T*
+(Five-year FCFF DCF and reverse DCF $541.74 per diluted share; base WACC 8.0%; terminal) Tj
+T*
+(growth 3.5% An explicit intrinsic-value estimate and a record of the growth path implied by) Tj
+T*
+(the comparison price.) Tj
+T*
+(Peer P/E comparison $435.11-$556.30 implied range; $495.71 median reference A market-based) Tj
+T*
+(cross-check using Oracle and qualified Alphabet comparability evidence.) Tj
+T*
+(Five-year pro-forma Linked three-statement FCFE model with balance-sheet checks A cash-last) Tj
+T*
+(model of revenue, margins, PP&E, depreciation, cash, and FCFE.) Tj
+T*
+(One-at-a-time sensitivity Revenue growth changed operating profit most; AI/cloud capex) Tj
+T*
+(intensity changed FCFE and value most over the tested ranges A quantified test of the) Tj
+T*
+(central AI-capex risk rather than a qualitative warning alone.) Tj
+T*
+(Valuation evidence and limitations) Tj
+T*
+(Method Result and date Main limitation) Tj
+T*
+(FCFF DCF $541.74 per share; September 10, 2026 calculation Depends on FCFF growth, capex) Tj
+T*
+(normalization, 8.0% WACC, 3.5% terminal growth, and cash/debt treatment.) Tj
+T*
+(Peer P/E $435.11-$556.30; September 1, 2026 prices and annual GAAP EPS Oracle and Alphabet) Tj
+T*
+(have non-identical business mixes and fiscal year-ends. Alphabet is advertising-dominant and) Tj
+T*
+(therefore qualified rather than a direct peer.) Tj
+T*
+(Pro-forma FCFE $238.72 per diluted share in the Lab 11 base model This simplified FCFE model) Tj
+T*
+(uses a different cash-flow definition and discount-rate convention. It is not averaged with) Tj
+T*
+(the FCFF DCF.) Tj
+T*
+(Key sensitivity evidence) Tj
+T*
+(Output, FY2031E where applicable Revenue-growth span AI/cloud-capex-intensity span) Tj
+T*
+(Interpretation) Tj
+T*
+(Operating profit $48,015.6m $0.0m Revenue growth produces the larger operating-profit span) Tj
+T*
+(over these stated ranges.) Tj
+T*
+(FCFE $16,831.4m $38,525.6m Capex intensity produces the larger cash-flow span because it) Tj
+T*
+(directly changes reinvestment.) Tj
+T*
+(Value per diluted share $21.12 $64.37 Capex intensity produces the larger value span over) Tj
+T*
+(these ranges. This is not a probability statement or a universal driver ranking.) Tj
+T*
+(A-to-B change record) Tj
+T*
+(Question Edition A Edition B What changed and why) Tj
+T*
+(Investment stance Watch / defer pending valuation work Watch / defer, now conditional and) Tj
+T*
+(valuation-informed No material change in the recommendation. The basis changed from an) Tj
+T*
+(incomplete research screen to a valuation conclusion with stated conditions.) Tj
+T*
+(Intrinsic value No per-share value claimed FCFF DCF: $541.74/share Completed a five-year) Tj
+T*
+(FCFF forecast, enterprise-to-equity bridge, and WACC/terminal-growth sensitivity.) Tj
+T*
+(Market cross-check No peer comparison P/E: $435.11-$556.30; median $495.71 Selected and) Tj
+T*
+(qualified peers based on recurring enterprise/cloud economics and annual GAAP EPS.) Tj
+T*
+(AI-infrastructure risk Qualitative concern about capex, margin, and cash-flow conversion) Tj
+T*
+(Quantified sensitivity: $64.37 value span over stated capex-intensity ranges Built capex) Tj
+T*
+(through PP&E, depreciation, cash, FCFE, and value in the linked model.) Tj
+T*
+(What could reverse the view Unspecified next-earnings evidence on data-center spending and) Tj
+T*
+(future profit Cloud growth, margin recovery, capex normalization, and normalized) Tj
+T*
+ET
 endstream
 endobj
 8 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
 endobj
 9 0 obj
-<< /Length 2793 >>
+<< /Length 3213 >>
 stream
-q 0.07 0.18 0.31 rg 0 735 612 57 re f Q
-BT /F2 20 Tf 1 1 1 rg 48 763 Td (Edition B: Completed Valuation Work) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 48 746 Td (Evidence through September 29, 2026) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 525 746 Td (Page 3) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 690 Td (Valuation evidence) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 685 m 564 685 l S Q
-q 0.92 0.95 0.98 rg 48 595 516 58 re f Q
-BT /F2 10 Tf 0.07 0.18 0.31 rg 60 632 Td (Five-year FCFF DCF) Tj ET
-BT /F2 10 Tf 0.07 0.18 0.31 rg 250 632 Td (Peer P/E comparison) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 60 609 Td ($541.74/share) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 250 609 Td ($435.11-$556.30/share) Tj ET
-BT /F1 8 Tf 0.36 0.40 0.45 rg 60 590 Td (September 10 calculation; 8.0% WACC; 3.5% terminal growth) Tj ET
-BT /F1 8 Tf 0.36 0.40 0.45 rg 250 590 Td (September 1 prices and annual GAAP diluted EPS) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 545 Td (What the work added) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 540 m 564 540 l S Q
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 520 Td (1. A five-year FCFF DCF and reverse DCF made the cash-flow assumptions and price-implied growth) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 505.8 Td (explicit. 2. A peer P/E comparison added a market-based cross-check using Oracle and qualified) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 491.6 Td (Alphabet evidence. 3. A linked pro-forma modeled revenue, margins, PP&E, depreciation, cash, and) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 477.4 Td (FCFE. 4. Sensitivity analysis tested revenue growth and AI/cloud capex intensity one at a time.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 395 Td (Important limitation) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 390 m 564 390 l S Q
-q 1 0.97 0.88 rg 48 304 516 66 re f Q
-BT /F2 10 Tf 0.48 0.32 0.02 rg 60 351 Td (Do not average the models) Tj ET
-BT /F1 9 Tf 0.13 0.16 0.20 rg 60 335 Td (The FCFF DCF and simplified FCFE pro-forma use different cash-flow and discount-rate conventions. Their) Tj ET
-BT /F1 9 Tf 0.13 0.16 0.20 rg 60 322.22 Td (values are evidence with different limitations, not inputs to a mechanical average.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 270 Td (Peer-policy judgment) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 265 m 564 265 l S Q
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 245 Td (Oracle was used because of meaningful cloud, software, and recurring-support economics. Alphabet) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 230.8 Td (was qualified rather than treated as a direct peer because advertising dominates its consolidated) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 216.6 Td (earnings. The peer range is informative, not proof of fair value.) Tj ET
-q 0.78 0.82 0.86 RG 0.8 w 48 42 m 564 42 l S Q
-BT /F1 8 Tf 0.36 0.40 0.45 rg 48 27 Td (Microsoft \(MSFT\) | Project 1 | Educational coursework) Tj ET
-endstream
-endobj
-10 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 11 0 R >>
-endobj
-11 0 obj
-<< /Length 3106 >>
-stream
-q 0.07 0.18 0.31 rg 0 735 612 57 re f Q
-BT /F2 20 Tf 1 1 1 rg 48 763 Td (A-to-B Change Record) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 48 746 Td (What changed, why it changed, and what the tests showed) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 525 746 Td (Page 4) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 690 Td (Recommendation) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 685 m 564 685 l S Q
-q 0.92 0.95 0.98 rg 48 620 516 46 re f Q
-BT /F2 11 Tf 0.07 0.18 0.31 rg 60 646 Td (Edition A: Watch/Defer) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 60 628 Td (Edition B: Watch/Defer, now supported by explicit valuation and evidence conditions) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 580 Td (Material changes) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 575 m 564 575 l S Q
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 555 Td (No material change in the recommendation. The material change was in evidence: no per-share value) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 540.8 Td (became a DCF estimate and peer reference range; qualitative capex risk became an explicit pro-forma) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 526.6 Td (and sensitivity test; and an open next-earnings question became observable monitoring conditions.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 465 Td (Sensitivity evidence) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 460 m 564 460 l S Q
-q 0.92 0.95 0.98 rg 48 390 155 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 58 426 Td (Revenue-growth span) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 58 406 Td ($48,015.6m op. profit) Tj ET
-q 0.92 0.95 0.98 rg 218 390 165 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 228 426 Td (Capex span) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 228 406 Td ($38,525.6m FCFE) Tj ET
-q 0.92 0.95 0.98 rg 398 390 166 55 re f Q
-BT /F2 8 Tf 0.36 0.40 0.45 rg 408 426 Td (Capex value span) Tj ET
-BT /F2 16 Tf 0.07 0.18 0.31 rg 408 406 Td ($64.37/share) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 345 Td (Interpretation) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 340 m 564 340 l S Q
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 320 Td (Over the selected ranges, revenue growth is the larger operating-profit driver. AI/cloud capex) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 305.8 Td (intensity is the larger FCFE and value-per-share driver because it directly changes cash) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 291.6 Td (reinvestment. These are sensitivity results over stated ranges, not probability estimates or) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 277.4 Td (universal driver rankings.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 225 Td (Primary driver of the research change) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 220 m 564 220 l S Q
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 200 Td (Coursework and personal analysis moved the project from a filing-based thesis to tested valuation) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 185.8 Td (outputs. Source facts and model conventions were checked against the FY2026 Form 10-K, the) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 171.6 Td (committed code, and the executed output.) Tj ET
-q 0.78 0.82 0.86 RG 0.8 w 48 42 m 564 42 l S Q
-BT /F1 8 Tf 0.36 0.40 0.45 rg 48 27 Td (Microsoft \(MSFT\) | Project 1 | Educational coursework) Tj ET
-endstream
-endobj
-12 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 13 0 R >>
-endobj
-13 0 obj
-<< /Length 2857 >>
-stream
-q 0.07 0.18 0.31 rg 0 735 612 57 re f Q
-BT /F2 20 Tf 1 1 1 rg 48 763 Td (Decision and Monitoring Plan) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 48 746 Td (Conditional investment conclusion) Tj ET
-BT /F1 9 Tf 0.82 0.88 0.94 rg 525 746 Td (Page 5) Tj ET
-BT /F2 22 Tf 0.07 0.18 0.31 rg 48 686 Td (WATCH / DEFER) Tj ET
-q 1 0.97 0.88 rg 48 584 516 66 re f Q
-BT /F2 10 Tf 0.48 0.32 0.02 rg 60 631 Td (Committee ask) Tj ET
-BT /F1 9 Tf 0.13 0.16 0.20 rg 60 615 Td (Do not initiate a position today. Revisit after the next results provide evidence on capex) Tj ET
-BT /F1 9 Tf 0.13 0.16 0.20 rg 60 602.22 Td (normalization, cloud-margin recovery, and cash-flow conversion.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 540 Td (What would change the view) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 535 m 564 535 l S Q
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 515 Td (Initiate only if updated results support capex normalization while cloud growth and) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 499.38 Td (margins remain consistent with the forecast cash-flow path, and a consistently normalized) Tj ET
-BT /F1 11 Tf 0.13 0.16 0.20 rg 48 483.76 Td (enterprise-cloud peer comparison supports value above the market price.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 420 Td (Failure conditions) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 415 m 564 415 l S Q
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 395 Td (Capex stays elevated longer than forecast. Cloud growth slows before scale benefits improve) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 380.8 Td (margins. Microsoft Cloud margins do not recover. A normalized enterprise-cloud peer comparison) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 366.6 Td (fails to support value above market price.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 305 Td (Monitor next) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 300 m 564 300 l S Q
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 280 Td (Quarterly AI-infrastructure capex as a percentage of revenue, cloud growth, cloud-margin) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 265.8 Td (performance, cash-flow conversion, and a sourced normalized-EPS reconciliation for Microsoft and) Tj ET
-BT /F1 10 Tf 0.13 0.16 0.20 rg 48 251.6 Td (admitted peers.) Tj ET
-BT /F2 14 Tf 0.07 0.18 0.31 rg 48 190 Td (Source and reproducibility index) Tj ET
-q 0.55 0.68 0.80 RG 0.8 w 48 185 m 564 185 l S Q
-BT /F1 9 Tf 0.36 0.40 0.45 rg 48 165 Td (Microsoft FY2026 Form 10-K; research/reports/2026-09-01-initial-research.md;) Tj ET
-BT /F1 9 Tf 0.36 0.40 0.45 rg 48 152.22 Td (research/reports/2026-09-10-msft-reverse-dcf.md; research/reports/2026-09-17-msft-pe-triangulation-lab.md;) Tj ET
-BT /F1 9 Tf 0.36 0.40 0.45 rg 48 139.44 Td (research/lab-11-sensitivity/lab-11-submission.md; models/dcf.py; docs/executed-output.txt.) Tj ET
-q 0.78 0.82 0.86 RG 0.8 w 48 42 m 564 42 l S Q
-BT /F1 8 Tf 0.36 0.40 0.45 rg 48 27 Td (Microsoft \(MSFT\) | Project 1 | Educational coursework) Tj ET
+BT
+/F1 15 Tf
+50 750 Td
+(Research Evolution: Microsoft Corporation \(MSFT\)) Tj
+/F1 9 Tf
+0 -22 Td
+(Project 1 | Page 3 of 3) Tj
+0 -18 Td
+/F1 10 Tf
+13 TL
+(enterprise-cloud peer comparison Converted the open question into observable monitoring) Tj
+T*
+(conditions.) Tj
+T*
+(Primary driver and supporting tests) Tj
+T*
+(Primary driver of the change: coursework and personal analysis. The work moved from an) Tj
+T*
+(initial filing-based thesis to modeled valuations, peer-policy analysis, a three-statement) Tj
+T*
+(pro-forma, and sensitivity tests. AI-assisted drafting is separately disclosed in the) Tj
+T*
+(project validation record; source facts and calculations should be checked against the) Tj
+T*
+(filing, committed code, and executed outputs.) Tj
+T*
+(Test or evidence What it tested Result) Tj
+T*
+(FY2026 Form 10-K and MD&A Baseline revenue, debt, cash, diluted shares, cloud growth, RPO,) Tj
+T*
+(margin pressure, and infrastructure investment Supported the initial thesis and identified) Tj
+T*
+(capex normalization as the key evidence question.) Tj
+T*
+(DCF sensitivity and reverse DCF WACC, terminal growth, and growth expectations embedded in) Tj
+T*
+(price Showed the DCF is sensitive to cash-flow recovery, discounting, and terminal) Tj
+T*
+(assumptions.) Tj
+T*
+(Peer P/E leave-one-out Whether one higher-multiple qualified peer drives the reference value) Tj
+T*
+(Removing Alphabet left Oracle's $435.11 reference, $60.60 below the two-peer median.) Tj
+T*
+(Pro-forma accounting checks Whether forecast balance sheets balance and cash remains above) Tj
+T*
+(the floor The base and usable sensitivity scenarios recorded zero balance-sheet gaps and no) Tj
+T*
+(revolver draw.) Tj
+T*
+(Locked changed-input sensitivity test Effect of changing one independent assumption at a) Tj
+T*
+(time Confirmed the capex range produces the larger FCFE and value span over the selected) Tj
+T*
+(ranges.) Tj
+T*
+(Conditional conclusion and next evidence) Tj
+T*
+(Watch / defer. Initiate only if updated results support capex normalization while cloud) Tj
+T*
+(growth and margins remain consistent with the cash-flow path, and a consistently normalized) Tj
+T*
+(enterprise-cloud peer comparison supports value above the market price. Otherwise, continue) Tj
+T*
+(to watch/defer.) Tj
+T*
+(Monitor next: quarterly AI-infrastructure capital expenditure as a percentage of revenue,) Tj
+T*
+(cloud growth, and cloud-margin recovery. These are the facts most likely to change the) Tj
+T*
+(valuation conclusion.) Tj
+T*
+(Source and reproducibility index) Tj
+T*
+(Edition A source: research/reports/2026-09-01-initial-research.md ; first frozen in commit) Tj
+T*
+(861e227 .) Tj
+T*
+(Reverse-DCF report: research/reports/2026-09-10-msft-reverse-dcf.md .) Tj
+T*
+(Peer-P/E triangulation: research/reports/2026-09-17-msft-pe-triangulation-lab.md .) Tj
+T*
+(Pro-forma assumptions: research/reports/2026-09-24-lab-10-msft-history-and-assumptions.md .) Tj
+T*
+(Sensitivity output and validation: research/lab-11-sensitivity/lab-11-submission.md and) Tj
+T*
+(research/lab-11-sensitivity/validation-check.md .) Tj
+T*
+(Primary filing: sources/filings/MSFT-FY2026-10-K.pdf .) Tj
+T*
+(Educational coursework only. This document does not provide investment advice.) Tj
+T*
+ET
 endstream
 endobj
 xref
-0 14
+0 10
 0000000000 65535 f 
 0000000000 00000 n 
-0000000070 00000 n 
-0000000156 00000 n 
-0000000231 00000 n 
-0000000367 00000 n 
-0000003233 00000 n 
-0000003369 00000 n 
-0000006654 00000 n 
-0000006790 00000 n 
-0000009634 00000 n 
-0000009772 00000 n 
-0000012930 00000 n 
-0000013068 00000 n 
+0000000069 00000 n 
+0000000141 00000 n 
+0000000211 00000 n 
+0000000337 00000 n 
+0000004192 00000 n 
+0000004318 00000 n 
+0000008142 00000 n 
+0000008268 00000 n 
 trailer
-<< /Size 14 /Root 1 0 R >>
+<< /Size 10 /Root 1 0 R >>
 startxref
-15977
+11533
 %%EOF
