@@ -34,7 +34,24 @@ def memo_path(ticker: str) -> Path:
 
 
 st.set_page_config(page_title="Buffett 10-K Skill", layout="wide")
-st.title("Buffett 10-K Skill")
+st.markdown(
+    """
+    <style>
+      .stApp { background: #f7f3ea; }
+      h1, h2, h3 { color: #173f5f; font-weight: 800 !important; }
+      [data-testid="stMetric"] {
+        background: #ffffff;
+        border-left: 7px solid #d9822b;
+        border-radius: 10px;
+        padding: 14px;
+        box-shadow: 0 2px 8px rgba(23, 63, 95, 0.12);
+      }
+      [data-testid="stDataFrame"] { border: 2px solid #173f5f; border-radius: 8px; }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+st.title("Buffett 10-K Skill | Business Quality, Not Price")
 st.caption("Data from SEC EDGAR; built with AI help, a learning demonstration, not investment advice.")
 
 ticker = st.sidebar.text_input("Ticker", "COST").strip().upper()
@@ -49,6 +66,13 @@ if "lab18_data" in st.session_state:
     st.subheader(f"{loaded_ticker} — {company}")
     chart_rows = [{"FY end": row["fiscal_year_end"], "Owner earnings": row["owner_earnings"] / 1_000_000 if row["owner_earnings"] is not None else None,
                    "Net income": row["net_income"] / 1_000_000 if row["net_income"] is not None else None} for row in rows]
+    latest = rows[-1] if rows else {}
+    summary = st.columns(3)
+    summary[0].metric("Latest owner earnings ($ millions)", display_value(latest.get("owner_earnings")))
+    summary[1].metric("Latest ROE", display_value(latest.get("roe"), percent=True))
+    summary[2].metric("Fiscal year end", latest.get("fiscal_year_end", "not found"))
+
+    st.subheader("Earnings trend")
     st.line_chart(chart_rows, x="FY end", y=["Owner earnings", "Net income"])
 
     table = []
@@ -63,7 +87,13 @@ if "lab18_data" in st.session_state:
     st.dataframe(table, width="stretch", hide_index=True)
 
     st.subheader("Buffett checks computed in code")
-    st.dataframe([{"Check": name, "Result": result} for name, result in buffett_checks(rows).items()], hide_index=True)
+    checks = buffett_checks(rows)
+    check_columns = st.columns(3)
+    for column, (name, result) in zip(check_columns, checks.items()):
+        icon = "PASS" if result == "pass" else "FAIL" if result == "fail" else "NOT KNOWN"
+        column.markdown(f"### {icon}")
+        column.caption(name)
+    st.dataframe([{"Check": name, "Result": result} for name, result in checks.items()], hide_index=True)
 
     path = memo_path(loaded_ticker)
     st.subheader("Buffett memo")
