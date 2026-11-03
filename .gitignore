@@ -19,3 +19,5 @@ venv/
 # Local research scratch space
 scratch/
 *.tmp
+# Local SEC identifier — never commit a name/email used in request headers.
+.env
