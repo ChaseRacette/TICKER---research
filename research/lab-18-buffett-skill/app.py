@@ -37,24 +37,39 @@ st.set_page_config(page_title="Buffett 10-K Skill", layout="wide")
 st.markdown(
     """
     <style>
-      .stApp { background: #f7f3ea; }
-      h1, h2, h3 { color: #173f5f; font-weight: 800 !important; }
+      .stApp, [data-testid="stAppViewContainer"] { background: #ffffff; color: #172033; }
+      [data-testid="stHeader"] { background: rgba(255, 255, 255, 0.96); }
+      [data-testid="stSidebar"] { background: #eef4f8; }
+      h1, h2, h3 { color: #12344d !important; font-weight: 800 !important; }
+      p, li, label, [data-testid="stCaptionContainer"] { color: #172033 !important; }
+      [data-testid="stMetricLabel"] p { color: #334155 !important; font-weight: 700; }
+      [data-testid="stMetricValue"] { color: #0f2f44 !important; font-weight: 800; }
       [data-testid="stMetric"] {
         background: #ffffff;
-        border-left: 7px solid #d9822b;
+        border: 1px solid #bfd1df;
+        border-left: 7px solid #0f6b8a;
         border-radius: 10px;
         padding: 14px;
-        box-shadow: 0 2px 8px rgba(23, 63, 95, 0.12);
+        box-shadow: 0 2px 8px rgba(23, 63, 95, 0.08);
       }
-      [data-testid="stDataFrame"] { border: 2px solid #173f5f; border-radius: 8px; }
+      [data-testid="stDataFrame"] { border: 1px solid #8ba9bc; border-radius: 8px; }
+      .explanation-box { background: #eef7fb; border-left: 6px solid #0f6b8a; color: #172033;
+                         border-radius: 6px; padding: 14px 18px; margin: 10px 0 20px; }
     </style>
     """,
     unsafe_allow_html=True,
 )
 st.title("Buffett 10-K Skill | Business Quality, Not Price")
 st.caption("Data from SEC EDGAR; built with AI help, a learning demonstration, not investment advice.")
+st.markdown(
+    """<div class="explanation-box"><b>What this page does:</b> It uses only the company's
+    SEC 10-K facts to calculate revenue, profit, cash flow, ROE, and owner earnings. The code
+    calculates the numbers; the memo interprets the business and never gives a price target.</div>""",
+    unsafe_allow_html=True,
+)
 
 ticker = st.sidebar.text_input("Ticker", "COST").strip().upper()
+st.sidebar.caption("Enter a U.S. company ticker, then load its five most recent 10-K fiscal years.")
 if st.sidebar.button("Load 10-K facts") or "lab18_data" not in st.session_state:
     try:
         st.session_state.lab18_data = (ticker, *load_company(ticker))
@@ -73,8 +88,11 @@ if "lab18_data" in st.session_state:
     summary[2].metric("Fiscal year end", latest.get("fiscal_year_end", "not found"))
 
     st.subheader("Earnings trend")
+    st.caption("Amounts are USD millions. Higher owner earnings means more cash remains after capital spending.")
     st.line_chart(chart_rows, x="FY end", y=["Owner earnings", "Net income"])
 
+    st.subheader("Five-year 10-K facts")
+    st.caption("Each figure is reported in USD millions. The right-most column records the exact XBRL tag used.")
     table = []
     for row in rows:
         table.append({
@@ -87,16 +105,18 @@ if "lab18_data" in st.session_state:
     st.dataframe(table, width="stretch", hide_index=True)
 
     st.subheader("Buffett checks computed in code")
+    st.caption("PASS means the rule was satisfied in all five rows. NOT KNOWN means the 10-K data did not contain an input, so the program did not estimate it.")
     checks = buffett_checks(rows)
     check_columns = st.columns(3)
     for column, (name, result) in zip(check_columns, checks.items()):
         icon = "PASS" if result == "pass" else "FAIL" if result == "fail" else "NOT KNOWN"
         column.markdown(f"### {icon}")
-        column.caption(name)
+        column.caption(name.replace("every year", "each year"))
     st.dataframe([{"Check": name, "Result": result} for name, result in checks.items()], hide_index=True)
 
     path = memo_path(loaded_ticker)
     st.subheader("Buffett memo")
+    st.caption("This is a business-quality judgment based only on the printed facts above, not an investment recommendation.")
     if path.exists():
         memo = path.read_text(encoding="utf-8")
         st.markdown(memo)
