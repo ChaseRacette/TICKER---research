@@ -2,6 +2,7 @@
 from __future__ import annotations
 import sys
 from pathlib import Path
+import pandas as pd
 import streamlit as st
 sys.path.insert(0, str(Path(__file__).parent))
 from panel_skill import build_year_rows, display, investor_checks, memo_unprinted_numbers, verdict
@@ -23,9 +24,39 @@ if "data" in st.session_state:
     st.caption("All three skills use the exact same five fiscal-year 10-K rows below. Missing inputs remain not found; checks become not known.")
     table = [{"FY end": r["fiscal_year_end"], "Net income ($m)": display(r["net_income"]), "Operating cash flow ($m)": display(r["operating_cash_flow"]), "Equity ($m)": display(r["equity"]), "ROE": f"{r['roe'] * 100:.1f}%" if r["roe"] is not None else "not found", "Owner earnings ($m)": display(r["owner_earnings"]), "Current assets ($m)": display(r["assets_current"]), "Current liabilities ($m)": display(r["liabilities_current"]), "Liabilities ($m)": display(r["liabilities"]), "Current ratio": display(r["current_ratio"], True), "Liabilities ÷ equity": display(r["liabilities_to_equity"], True)} for r in rows]
     st.dataframe(table, hide_index=True, width="stretch")
+
+    st.subheader("Five-year operating trends")
+    st.caption("USD millions. The charts use the same printed 10-K facts as the panel checks.")
+    trends = [{
+        "FY end": r["fiscal_year_end"],
+        "Revenue": None if r["revenue"] is None else r["revenue"] / 1_000_000,
+        "Net income": None if r["net_income"] is None else r["net_income"] / 1_000_000,
+        "Operating cash flow": None if r["operating_cash_flow"] is None else r["operating_cash_flow"] / 1_000_000,
+    } for r in rows]
+    revenue_chart, cash_chart = st.columns(2)
+    with revenue_chart:
+        st.caption("Growth scale — revenue")
+        st.line_chart(trends, x="FY end", y="Revenue", color="#5b8ff9")
+    with cash_chart:
+        st.caption("Earnings quality — cash flow versus income")
+        st.line_chart(trends, x="FY end", y=["Operating cash flow", "Net income"], color=["#27ae60", "#f2994a"])
+
     st.subheader("Panel table")
     panel = [{"Investor": investor, "Check": name, "Result": result} for investor, cs in checks.items() for name, result in cs.items()]
     st.dataframe(panel, hide_index=True, width="stretch")
+
+    st.subheader("At-a-glance scorecard")
+    st.caption("Green = pass, red = fail, amber = not known. Blank cells mean that check belongs to another investor.")
+    check_names = list(dict.fromkeys(name for cs in checks.values() for name in cs))
+    scorecard = pd.DataFrame([
+        {"Investor": investor, **{name: cs.get(name, "") for name in check_names}}
+        for investor, cs in checks.items()
+    ])
+    def score_color(value):
+        return {"pass": "background-color: #d8f3dc; color: #14532d; font-weight: 700",
+                "fail": "background-color: #fde2e2; color: #991b1b; font-weight: 700",
+                "not known": "background-color: #fef3c7; color: #92400e; font-weight: 700"}.get(value, "")
+    st.dataframe(scorecard.style.map(score_color, subset=check_names), hide_index=True, width="stretch")
     verdicts = st.columns(3)
     for col, (investor, cs) in zip(verdicts, checks.items()): col.metric(investor, verdict(cs).upper(), f"{list(cs.values()).count('pass')} of {len(cs)} checks pass")
     st.subheader("Memos — every number must be printed above")
