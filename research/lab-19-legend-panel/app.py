@@ -2,7 +2,6 @@
 from __future__ import annotations
 import sys
 from pathlib import Path
-import pandas as pd
 import streamlit as st
 sys.path.insert(0, str(Path(__file__).parent))
 from panel_skill import build_year_rows, display, investor_checks, memo_unprinted_numbers, verdict
@@ -46,19 +45,26 @@ if "data" in st.session_state:
     st.dataframe(panel, hide_index=True, width="stretch")
 
     st.subheader("At-a-glance scorecard")
-    st.caption("Green = pass, red = fail, amber = not known. Blank cells mean that check belongs to another investor.")
-    check_names = list(dict.fromkeys(name for cs in checks.values() for name in cs))
-    scorecard = pd.DataFrame([
-        {"Investor": investor, **{name: cs.get(name, "") for name in check_names}}
-        for investor, cs in checks.items()
-    ])
-    def score_color(value):
-        return {"pass": "background-color: #d8f3dc; color: #14532d; font-weight: 700",
-                "fail": "background-color: #fde2e2; color: #991b1b; font-weight: 700",
-                "not known": "background-color: #fef3c7; color: #92400e; font-weight: 700"}.get(value, "")
-    st.dataframe(scorecard.style.map(score_color, subset=check_names), hide_index=True, width="stretch")
-    verdicts = st.columns(3)
-    for col, (investor, cs) in zip(verdicts, checks.items()): col.metric(investor, verdict(cs).upper(), f"{list(cs.values()).count('pass')} of {len(cs)} checks pass")
+    st.caption("Each investor uses different rules, so each card keeps that investor’s checks together. Green = pass, red = fail, amber = not known.")
+    colors = {
+        "pass": ("#d8f3dc", "#14532d", "✓"),
+        "fail": ("#fde2e2", "#991b1b", "✕"),
+        "not known": ("#fef3c7", "#92400e", "?"),
+    }
+    cards = st.columns(3)
+    for column, (investor, criteria) in zip(cards, checks.items()):
+        passed = list(criteria.values()).count("pass")
+        with column:
+            st.markdown(f"### {investor}")
+            st.markdown(f"**{verdict(criteria).upper()}**")
+            st.caption(f"{passed} of {len(criteria)} checks pass")
+            for name, status in criteria.items():
+                background, text, icon = colors[status]
+                st.markdown(
+                    f"<div style='background:{background}; color:{text}; border-radius:8px; "
+                    f"padding:9px 10px; margin:7px 0; font-size:0.9rem;'><b>{icon} {status.upper()}</b><br>{name}</div>",
+                    unsafe_allow_html=True,
+                )
     st.subheader("Memos — every number must be printed above")
     columns = st.columns(3)
     flagged = []
