@@ -81,10 +81,10 @@ def investor_checks(rows):
             "Owner earnings positive every year": result(all_known(rows, ("owner_earnings",)), all(v > 0 for v in owner) if all_known(rows, ("owner_earnings",)) else False),
             "Owner earnings grew, first year to last": result(all_known(rows, ("owner_earnings",)), owner[-1] > owner[0] if all_known(rows, ("owner_earnings",)) else False),
         },
-        "Graham": {
-            "Current ratio of 2 or more, latest year": result(latest_current is not None, latest_current >= 2 if latest_current is not None else False),
-            "Net income positive every year": result(all_known(rows, ("net_income",)), all(v > 0 for v in income) if all_known(rows, ("net_income",)) else False),
-            "Net income grew, first year to last": result(all_known(rows, ("net_income",)), income[-1] > income[0] if all_known(rows, ("net_income",)) else False),
+        "Cathie Wood": {
+            "Revenue grew, first year to last": result(all_known(rows, ("revenue",)), rows[-1]["revenue"] > rows[0]["revenue"] if all_known(rows, ("revenue",)) else False),
+            "Operating cash flow positive every year": result(all_known(rows, ("operating_cash_flow",)), all(r["operating_cash_flow"] > 0 for r in rows) if all_known(rows, ("operating_cash_flow",)) else False),
+            "Disruptive innovation and adoption evidence": "not known",
         },
         "Burry": {
             "Operating cash flow at least net income every year": result(all_known(rows, ("operating_cash_flow", "net_income")), all(r["operating_cash_flow"] >= r["net_income"] for r in rows) if all_known(rows, ("operating_cash_flow", "net_income")) else False),

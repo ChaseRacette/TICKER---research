@@ -9,7 +9,7 @@ from panel_skill import build_year_rows, display, investor_checks, memo_unprinte
 REPORTS = Path(__file__).parent / "reports"
 @st.cache_data(ttl=3600, show_spinner=False)
 def load(ticker): return build_year_rows(ticker)
-def memo(ticker, investor): return REPORTS / f"{ticker}_{investor.lower()}_memo.md"
+def memo(ticker, investor): return REPORTS / f"{ticker}_{investor.lower().replace(' ', '_')}_memo.md"
 st.set_page_config(page_title="Lab 19 Legend Panel", layout="wide")
 st.title("Legend Panel | Three investors, one 10-K record")
 st.caption("SEC 10-K facts only • Educational business-quality screen, not investment advice")
