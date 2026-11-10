@@ -16,15 +16,25 @@ import streamlit as st
 ENGINE_DIRECTORY = Path(__file__).resolve().parents[1] / "lab-14-portfolio"
 if str(ENGINE_DIRECTORY) not in sys.path:
     sys.path.insert(0, str(ENGINE_DIRECTORY))
+MANDATE_DIRECTORY = Path(__file__).resolve().parents[1] / "lab-13-mandate"
+if str(MANDATE_DIRECTORY) not in sys.path:
+    sys.path.insert(0, str(MANDATE_DIRECTORY))
 
 from portfolio import (  # noqa: E402
     CORRELATIONS,
     OBJECTIVE_RETURN,
     RESERVE_ELIGIBLE,
     SLEEVES,
+    benchmark_weights,
+    covariance_matrix,
+    equal_weight_weights,
     estimate_from_prices,
+    expected_return,
     lowest_risk_mix,
+    portfolio_volatility,
+    reserve_eligible_weight,
 )
+from mandate import HOLDINGS, rule_results  # noqa: E402
 
 
 def load_inputs(uploaded_prices, use_last_36_months):
@@ -47,8 +57,31 @@ def load_inputs(uploaded_prices, use_last_36_months):
     return current_sleeves, current_correlations, loaded_sleeves, loaded_correlations, label
 
 
+def result_for_weights(weights, sleeves, correlations, reserve_eligible):
+    """Calculate the three comparable portfolio metrics for any supplied weights."""
+    covariances = covariance_matrix(sleeves, correlations)
+    return {
+        "weights": weights,
+        "expected_return": expected_return(weights, sleeves),
+        "volatility": portfolio_volatility(weights, covariances),
+        "reserve_eligible_weight": reserve_eligible_weight(weights, reserve_eligible),
+    }
+
+
+def mandate_results(weights):
+    """Apply Lab 13's checkable rules when all nonzero assets belong to its mandate universe."""
+    unknown_assets = [asset for asset, weight in weights.items() if weight and asset not in HOLDINGS]
+    if unknown_assets:
+        return "not known", [("Mandate asset mapping", ", ".join(unknown_assets), "not known")]
+
+    percent_weights = {holding: weights.get(holding, 0.0) * 100 for holding in HOLDINGS}
+    checks = [(label, f"{measured:.1f}%", "pass" if passed else "fail")
+              for label, measured, passed in rule_results(percent_weights)]
+    return ("pass" if all(status == "pass" for _, _, status in checks) else "fail"), checks
+
+
 def display_result(container, title, result, asset_names):
-    """Display one search result or the honest infeasible-result message."""
+    """Display one comparable portfolio and the mandate verdict it earns."""
     with container:
         st.subheader(title)
         if result is None:
@@ -66,6 +99,19 @@ def display_result(container, title, result, asset_names):
         first.metric("Expected return", f"{result['expected_return']:.2%}")
         second.metric("Volatility", f"{result['volatility']:.2%}")
         third.metric("Reserve eligible", f"{result['reserve_eligible_weight']:.2%}")
+        verdict, checks = mandate_results(result["weights"])
+        if verdict == "pass":
+            st.success("Mandate verdict: PASS")
+        elif verdict == "fail":
+            failed_rules = "; ".join(label for label, _, status in checks if status == "fail")
+            st.error(f"Mandate verdict: FAIL — {failed_rules}")
+        else:
+            st.warning("Mandate verdict: NOT KNOWN — uploaded assets need mapping to the mandate.")
+        st.dataframe(
+            [{"Mandate rule": label, "Measured": measured, "Result": status} for label, measured, status in checks],
+            hide_index=True,
+            width="stretch",
+        )
 
 
 def largest_weight_change(current_result, loaded_result, asset_names):
@@ -84,8 +130,8 @@ def largest_weight_change(current_result, loaded_result, asset_names):
 
 def main():
     st.set_page_config(page_title="Portfolio Stability Decision", layout="wide")
-    st.title("Portfolio Stability Decision")
-    st.caption("Built with AI help, a learning demonstration, not investment advice.")
+    st.title("Meridian Foundation Portfolio Decision")
+    st.caption("AI use: ChatGPT/Codex assisted with code and documentation; the analyst owns the analysis and decision. Educational use only; not investment advice.")
 
     st.sidebar.header("Mandate and data")
     objective_return = st.sidebar.number_input(
@@ -142,7 +188,7 @@ def main():
             ):
                 reserve_eligible.add(asset)
 
-    current_result = lowest_risk_mix(
+    constrained_result = lowest_risk_mix(
         edited_sleeves,
         current_correlations,
         objective_return,
@@ -157,11 +203,21 @@ def main():
         minimum_reserve_weight,
     )
 
-    current_column, loaded_column = st.columns(2)
-    display_result(current_column, "Lowest-risk mix for current inputs", current_result, list(edited_sleeves))
-    display_result(loaded_column, "Answer for inputs as loaded", loaded_result, list(loaded_sleeves))
+    equal_result = result_for_weights(
+        equal_weight_weights(edited_sleeves), edited_sleeves, current_correlations, reserve_eligible
+    )
+    benchmark_result = result_for_weights(
+        benchmark_weights(edited_sleeves), edited_sleeves, current_correlations, reserve_eligible
+    )
 
-    change = largest_weight_change(current_result, loaded_result, list(edited_sleeves))
+    st.subheader("Required portfolio comparison")
+    st.caption("The constrained mix is the recommended candidate because it is the lowest-volatility mix that meets the entered return objective and reserve rule. Every portfolio is separately checked against the mandate.")
+    equal_column, benchmark_column, constrained_column = st.columns(3)
+    display_result(equal_column, "Equal-weight baseline", equal_result, list(edited_sleeves))
+    display_result(benchmark_column, "Benchmark baseline", benchmark_result, list(edited_sleeves))
+    display_result(constrained_column, "Constrained portfolio — recommended", constrained_result, list(edited_sleeves))
+
+    change = largest_weight_change(constrained_result, loaded_result, list(edited_sleeves))
     if change is None:
         st.info("Largest weight change is unavailable because at least one search has no feasible mix.")
     else:
