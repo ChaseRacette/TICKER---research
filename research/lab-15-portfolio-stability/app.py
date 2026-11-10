@@ -213,6 +213,19 @@ def main():
     st.subheader("Required portfolio comparison")
     st.caption("The constrained mix is the recommended candidate because it is the lowest-volatility mix that meets the entered return objective and reserve rule. Every portfolio is separately checked against the mandate.")
     equal_column, benchmark_column, constrained_column = st.columns(3)
+    for column, label, result in (
+        (equal_column, "Equal-weight", equal_result),
+        (benchmark_column, "Benchmark", benchmark_result),
+        (constrained_column, "Recommended", constrained_result),
+    ):
+        verdict, _ = mandate_results(result["weights"])
+        column.metric(label, verdict.upper())
+        column.caption(f"Return {result['expected_return']:.2%} | Volatility {result['volatility']:.2%}")
+
+    equal_tab, benchmark_tab, constrained_tab = st.tabs(
+        ["Equal-weight details", "Benchmark details", "Recommended portfolio details"]
+    )
+    equal_column, benchmark_column, constrained_column = equal_tab, benchmark_tab, constrained_tab
     display_result(equal_column, "Equal-weight baseline", equal_result, list(edited_sleeves))
     display_result(benchmark_column, "Benchmark baseline", benchmark_result, list(edited_sleeves))
     display_result(constrained_column, "Constrained portfolio — recommended", constrained_result, list(edited_sleeves))
