@@ -46,7 +46,9 @@ The transparent benchmark is 70% global equity index, 20% investment-grade bonds
 
 ## Assumption and data approach
 
-- The primary recommendation will use a fixed, documented baseline-assumption set so a reviewer can reproduce the result.
+- The primary recommendation uses a frozen five-year monthly adjusted-close file covering October 2021 through September 2026. It is stored at `research/lab-15-portfolio-stability/prices.csv`; annualized arithmetic return, volatility, and correlation inputs are computed from that committed file at runtime.
+- The proxy mapping is SGOV for Treasury reserve, LQD for investment-grade bonds, ACWI for global equity, BIZD for the private-credit proxy, and IGF for listed infrastructure.
+- BIZD is a public business-development-company ETF proxy, not a private-credit fund. The model nevertheless treats that sleeve as less liquid to keep the policy conservative; it does not reproduce private-credit fund terms, fees, or redemption mechanics.
 - A five-year historical-price window will be available as a sensitivity mode, not as a replacement selected after seeing a favorable output.
 - The DFF point-in-time data card is a monitoring signal. It can trigger committee review of assumptions; it does not automatically change weights.
 

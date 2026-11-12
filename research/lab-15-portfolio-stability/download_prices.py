@@ -13,7 +13,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 
-TICKERS = ("QQQ", "SGOV", "VGIT", "ACWI")
+TICKERS = ("SGOV", "LQD", "ACWI", "BIZD", "IGF")
 PERIOD_START = 1633046400  # 2021-10-01 UTC
 PERIOD_END = 1790812800  # 2026-10-01 UTC, exclusive
 OUTPUT_PATH = Path(__file__).with_name("prices.csv")
