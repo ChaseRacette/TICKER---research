@@ -154,6 +154,30 @@ def dff_signal():
     return signal, dff_value, card
 
 
+def adverse_return_stress(sleeves, correlations, objective_return, reserve_eligible, minimum_reserve_weight):
+    """Stress the global-equity return estimate and rerun the same constrained search.
+
+    The formal stress lowers the global-equity estimate to 6.0%. The process stops when no
+    long-only mix can meet both the return objective and reserve rule; it must not substitute
+    a portfolio that breaks the mandate just to produce an answer.
+    """
+    stressed_sleeves = deepcopy(sleeves)
+    asset = "Global equity index fund"
+    if asset not in stressed_sleeves:
+        return None, None, None
+    base_return = stressed_sleeves[asset]["expected_return"]
+    stressed_return = min(base_return, 0.06)
+    stressed_sleeves[asset]["expected_return"] = stressed_return
+    result = lowest_risk_mix(
+        stressed_sleeves,
+        correlations,
+        objective_return,
+        reserve_eligible,
+        minimum_reserve_weight,
+    )
+    return base_return, stressed_return, result
+
+
 def main():
     st.set_page_config(page_title="Portfolio Stability Decision", layout="wide")
     st.title("Meridian Foundation Portfolio Decision")
@@ -272,6 +296,43 @@ def main():
         hide_index=True,
         width="stretch",
     )
+
+    st.subheader("Formal adverse-return stress run")
+    st.caption(
+        "Stress design: reduce the global equity expected-return estimate to 6.0%, then rerun the same "
+        "long-only constrained search. The return objective and reserve requirement do not change."
+    )
+    base_return, stressed_return, stress_result = adverse_return_stress(
+        edited_sleeves,
+        current_correlations,
+        objective_return,
+        reserve_eligible,
+        minimum_reserve_weight,
+    )
+    if base_return is None:
+        st.warning("Stress result not known: the uploaded universe has no mapped global equity index fund.")
+    else:
+        base_column, stress_column, outcome_column = st.columns(3)
+        base_column.metric("Base global-equity estimate", f"{base_return:.2%}")
+        stress_column.metric("Stressed global-equity estimate", f"{stressed_return:.2%}")
+        if stress_result is None:
+            outcome_column.metric("Stress outcome", "STOP")
+            st.error(
+                "Stop condition met: no long-only portfolio can meet both the entered return objective and "
+                "reserve rule after the stress. Do not recommend an allocation; return to the committee for "
+                "a revised objective, assumptions, or mandate clarification."
+            )
+        else:
+            outcome_column.metric("Stress outcome", "REVIEW")
+            st.warning(
+                "A feasible mix remains after the stress. Review its weights, return estimate, and mandate verdict "
+                "before retaining the recommendation."
+            )
+            st.dataframe(
+                {"Asset": list(edited_sleeves), "Stressed weight": [f"{stress_result['weights'][asset]:.2%}" for asset in edited_sleeves]},
+                hide_index=True,
+                width="stretch",
+            )
 
     change = largest_weight_change(constrained_result, loaded_result, list(edited_sleeves))
     if change is None:
