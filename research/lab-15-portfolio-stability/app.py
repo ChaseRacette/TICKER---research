@@ -128,6 +128,32 @@ def largest_weight_change(current_result, loaded_result, asset_names):
     return asset, change * 100
 
 
+def dff_signal():
+    """Return the verified Lab 17 ALFRED DFF card without a live-data dependency.
+
+    The reference vintage was checked in Lab 17. A DFF level of 3.50% or higher is a
+    monitoring trigger for committee review; it never changes portfolio weights automatically.
+    """
+    dff_value = 3.88
+    signal = "high-rate review" if dff_value >= 3.50 else "normal-rate context"
+    card = {
+        "Source": "https://fred.stlouisfed.org/series/DFF",
+        "Series": "DFF — Federal Funds Effective Rate",
+        "Units": "Percent, not seasonally adjusted",
+        "Frequency": "Daily, 7-day",
+        "Release": "H.15 Selected Interest Rates",
+        "As known on": "2026-09-30",
+        "Latest available observation": "2026-09-29",
+        "Latest value": "3.88%",
+        "Observed publication lag": "1 calendar day",
+        "Same-date revisions": "0",
+        "Later current observations excluded": "28",
+        "Signal rule": "DFF at or above 3.50%",
+        "Signal": signal,
+    }
+    return signal, dff_value, card
+
+
 def main():
     st.set_page_config(page_title="Portfolio Stability Decision", layout="wide")
     st.title("Meridian Foundation Portfolio Decision")
@@ -229,6 +255,23 @@ def main():
     display_result(equal_column, "Equal-weight baseline", equal_result, list(edited_sleeves))
     display_result(benchmark_column, "Benchmark baseline", benchmark_result, list(edited_sleeves))
     display_result(constrained_column, "Constrained portfolio — recommended", constrained_result, list(edited_sleeves))
+
+    st.subheader("Point-in-time DFF signal and data card")
+    st.caption(
+        "DFF is an external rate-monitoring signal, not a fund price or automatic allocation override. "
+        "The verified ALFRED vintage calls for committee review when DFF is at or above 3.50%; it does not change portfolio weights automatically."
+    )
+    signal, dff_value, data_card = dff_signal()
+    signal_column, level_column, vintage_column = st.columns(3)
+    signal_column.metric("DFF monitoring signal", signal.upper())
+    level_column.metric("Latest DFF known then", f"{dff_value:.2f}%", "2026-09-29")
+    vintage_column.metric("ALFRED vintage", "2026-09-30", "one-day observed lag")
+    st.dataframe(
+        [data_card],
+        column_config={"Source": st.column_config.LinkColumn("Source", display_text=r".*/series/(.*)$")},
+        hide_index=True,
+        width="stretch",
+    )
 
     change = largest_weight_change(constrained_result, loaded_result, list(edited_sleeves))
     if change is None:
