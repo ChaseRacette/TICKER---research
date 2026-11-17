@@ -1,6 +1,6 @@
 # Project 2 — Portfolio Policy Decisions
 
-**Purpose:** This record captures the student’s policy choices before rebuilding the Project 2 investment-management app. It is a design record, not a forecast or an investment recommendation.
+**Purpose:** This record captures the student's policy choices before building the Project 2 investment-management app. It is a design record, not a forecast or investment recommendation.
 
 ## Committee decision
 
@@ -42,16 +42,16 @@ The committee should **pilot**, rather than immediately adopt, the portfolio pro
 
 ## Benchmark and baselines
 
-The transparent benchmark is 70% global equity index, 20% investment-grade bonds, and 10% Treasury bills/notes. The app will also show an equal-weight baseline. Each baseline and the constrained portfolio must receive a mandate verdict.
+The transparent benchmark is 70% global equity index, 20% investment-grade bonds, and 10% Treasury bills/notes. The app also shows an equal-weight baseline. Each baseline and the constrained portfolio receive a mandate verdict.
 
 ## Assumption and data approach
 
-- The primary recommendation uses a frozen five-year monthly adjusted-close file covering October 2021 through September 2026. It is stored at `research/lab-15-portfolio-stability/prices.csv`; annualized arithmetic return, volatility, and correlation inputs are computed from that committed file at runtime.
+- The primary recommendation uses live Yahoo Finance monthly adjusted-close history for the five tickers. The app excludes the partial current month, retains the latest 60 completed monthly returns, then computes annualized arithmetic return, volatility, and correlation inputs locally at runtime. The date range displayed in the app identifies the exact live window used.
 - The proxy mapping is SGOV for Treasury reserve, LQD for investment-grade bonds, ACWI for global equity, BIZD for the private-credit proxy, and IGF for listed infrastructure.
-- BIZD is a public business-development-company ETF proxy, not a private-credit fund. The model nevertheless treats that sleeve as less liquid to keep the policy conservative; it does not reproduce private-credit fund terms, fees, or redemption mechanics.
-- A five-year historical-price window will be available as a sensitivity mode, not as a replacement selected after seeing a favorable output.
-- The DFF point-in-time data card is a monitoring signal. It can trigger committee review of assumptions; it does not automatically change weights.
+- BIZD is a public business-development-company ETF proxy, not a private-credit fund. The model nevertheless treats that sleeve conservatively as less liquid to keep the policy conservative; it does not reproduce private-credit fund terms, fees, or redemption mechanics.
+- The changed-input stress test replaces the investment-grade bond expected-return input with a user-selected value; it does not replace other live observations after seeing a favorable output.
+- The ACWI ten-month-trend data card is a monitoring signal. It can trigger committee review of assumptions; it does not automatically change weights.
 
 ## AI and ownership
 
-ChatGPT/Codex helped translate the student’s stated preferences into a testable policy record. The student owns the policy choices, financial analysis, and final committee decision. Educational use only; not investment advice.
+ChatGPT/Codex helped translate the student's stated preferences into a testable policy record. The student owns the policy choices, financial analysis, and final committee decision. Educational use only; not investment advice.

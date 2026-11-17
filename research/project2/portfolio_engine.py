@@ -1,14 +1,18 @@
-"""Reproducible constrained portfolio engine for Project 2.
+"""Constrained portfolio engine for Project 2.
 
-The fixed baseline uses the committed five-year monthly adjusted-close CSV. Historical
-averages are inputs to test, not forecasts or investment advice.
+The app requests live Yahoo Finance monthly adjusted-close history. Historical averages
+are inputs to test, not forecasts or investment advice.
 """
 from __future__ import annotations
 
 import csv
+import json
 from io import StringIO
 from math import sqrt
 from statistics import fmean, stdev
+from datetime import datetime, timedelta, timezone
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
 
 SLEEVES = (
     "Treasury reserve",
@@ -47,6 +51,62 @@ CPI_ASSUMPTION = 0.025
 REAL_RETURN_OBJECTIVE = 0.05
 NOMINAL_OBJECTIVE = CPI_ASSUMPTION + REAL_RETURN_OBJECTIVE
 STEP = 0.05
+
+
+class YahooDataError(RuntimeError):
+    """Raised when Yahoo Finance cannot supply a usable price history."""
+
+
+def fetch_yahoo_monthly_prices(years=7):
+    """Fetch aligned, completed monthly adjusted closes from Yahoo Finance.
+
+    Seven calendar years are requested so the engine can retain the latest sixty
+    completed monthly returns (which require sixty-one month-end prices).  No API
+    key or third-party package is required.
+    """
+    now = datetime.now(timezone.utc)
+    start = now - timedelta(days=365 * years)
+    period1 = int(start.timestamp())
+    period2 = int(now.timestamp())
+    current_month = now.strftime("%Y-%m")
+    series_by_ticker = {}
+
+    for ticker in TICKERS.values():
+        url = (
+            f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
+            f"?period1={period1}&period2={period2}&interval=1mo"
+            "&events=history&includeAdjustedClose=true"
+        )
+        request = Request(url, headers={"User-Agent": "Project2PortfolioPilot/1.0 educational-use"})
+        try:
+            with urlopen(request, timeout=20) as response:
+                payload = json.load(response)
+        except (HTTPError, URLError, TimeoutError, json.JSONDecodeError) as error:
+            raise YahooDataError(
+                "Yahoo Finance could not be reached. Check your internet connection and try Refresh live data."
+            ) from error
+
+        result = (payload.get("chart", {}).get("result") or [None])[0]
+        if not result:
+            raise YahooDataError(f"Yahoo Finance did not return usable monthly history for {ticker}.")
+        adjusted = (result.get("indicators", {}).get("adjclose") or [{}])[0].get("adjclose")
+        closes = adjusted or (result.get("indicators", {}).get("quote") or [{}])[0].get("close")
+        timestamps = result.get("timestamp") or []
+        points = {}
+        for timestamp, close in zip(timestamps, closes or []):
+            if close is None or close <= 0:
+                continue
+            month = datetime.fromtimestamp(timestamp, timezone.utc).strftime("%Y-%m")
+            if month != current_month:  # do not treat a partial month as a completed observation
+                points[month] = float(close)
+        series_by_ticker[ticker] = points
+
+    common_months = sorted(set.intersection(*(set(points) for points in series_by_ticker.values())))
+    if len(common_months) < 61:
+        raise YahooDataError("Yahoo Finance returned fewer than 61 shared completed month-end prices.")
+    dates = common_months[-61:]
+    prices = {ticker: [series_by_ticker[ticker][month] for month in dates] for ticker in TICKERS.values()}
+    return dates, prices
 
 
 def read_prices(csv_source):
@@ -98,6 +158,11 @@ def correlation(left, right):
 def estimate_inputs(csv_source, last_60_months=True):
     """Return annualized historical estimates and correlations mapped to policy sleeves."""
     _, prices = read_prices(csv_source)
+    return estimate_inputs_from_prices(prices, last_60_months=last_60_months)
+
+
+def estimate_inputs_from_prices(prices, last_60_months=True):
+    """Return annualized historical estimates from already-loaded price series."""
     returns = monthly_returns(prices)
     if last_60_months:
         returns = {ticker: values[-60:] for ticker, values in returns.items()}
