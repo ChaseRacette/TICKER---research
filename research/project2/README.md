@@ -54,6 +54,7 @@ Run it from the repository root:
 - [Decision memo](../../docs/decision-memo.md)
 - [Decision output snapshot](../../docs/decision-output.md)
 - [Validation and AI-use record](../../docs/validation-and-ai-use.md)
+- [Changed-input stress-run output](../../docs/stress-run-output.md)
 - [Partner cold-run note](../../docs/cold-run-note.md)
 
 To regenerate a current readable decision snapshot from live Yahoo Finance data:
