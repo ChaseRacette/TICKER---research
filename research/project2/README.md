@@ -1,4 +1,4 @@
-# Northstar Portfolio Pilot
+# Racette Investments Portfolio Pilot
 
 ## Cold-run setup and one-command result
 
@@ -19,7 +19,7 @@ The cold run requires Python 3.11 or newer and an internet connection. The app f
 
 ## What the app does
 
-Northstar pilots a 15-year, growth-oriented portfolio process. It pulls the latest completed monthly adjusted-close history from Yahoo Finance, calculates historical return, volatility, and correlation inputs locally, then maximizes historical expected return only after enforcing the policy rules: sleeve ranges, a 15% alternatives cap, at least 90% liquidity, and at most 15% estimated annual volatility.
+Racette Investments pilots a 15-year, growth-oriented portfolio process. It pulls the latest completed monthly adjusted-close history from Yahoo Finance, calculates historical return, volatility, and correlation inputs locally, then maximizes historical expected return only after enforcing the policy rules: sleeve ranges, a 15% alternatives cap, at least 90% liquidity, and at most 15% estimated annual volatility.
 
 The app compares an equal-weight baseline, a 70/20/10 liquid benchmark, and the constrained pilot allocation. It requests enough Yahoo Finance history to use the most recent 60 completed monthly returns and excludes the partial current month. The **Refresh live data** button clears the six-hour local cache. The app needs an internet connection to Yahoo Finance, but a reviewer never needs to upload a CSV.
 

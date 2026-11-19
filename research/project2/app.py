@@ -22,6 +22,7 @@ from portfolio_engine import (  # noqa: E402
     fetch_yahoo_monthly_prices,
     recommended_portfolio,
 )
+from goal_runway import future_value, money, required_monthly_investment  # noqa: E402
 
 
 @st.cache_data(ttl=60 * 60 * 6, show_spinner=False)
@@ -88,23 +89,26 @@ def point_in_time_signal(dates, prices):
 
 
 def main():
-    st.set_page_config(page_title="Northstar Portfolio Pilot", page_icon="✦", layout="wide")
-    # The intake is illustrative: this prototype does not use real client data.
+    st.set_page_config(page_title="Racette Investments", page_icon="✦", layout="wide")
     with st.sidebar:
-        st.header("Meridian prototype")
-        st.caption("Illustrative investor intake - educational use only")
-        case_label = st.text_input("Case label", value="Illustrative 15-year growth investor")
-        client_horizon = st.slider("Investment horizon (years)", min_value=1, max_value=30, value=15)
+        st.header("Your personal plan")
+        st.caption("Inputs stay in this browser session and are not saved by the app.")
+        current_savings = st.number_input("Investable balance ($)", min_value=0.0, value=10000.0, step=1000.0, format="%.0f")
+        monthly_expenses = st.number_input("Monthly essential expenses ($)", min_value=1.0, value=3000.0, step=100.0, format="%.0f")
+        cash_reserve = st.number_input("Separate cash reserve ($)", min_value=0.0, value=9000.0, step=500.0, format="%.0f")
+        monthly_investment = st.number_input("Planned monthly investment ($)", min_value=0.0, value=1000.0, step=100.0, format="%.0f")
+        final_goal = st.number_input("Desired final portfolio value ($)", min_value=0.0, value=1_000_000.0, step=25_000.0, format="%.0f")
+        client_horizon = st.slider("Years to goal", min_value=1, max_value=40, value=15)
         client_risk = st.selectbox("Risk preference", ("Medium-high growth", "Moderate growth", "Conservative"))
-        client_liquidity = st.selectbox(
-            "Liquidity need",
-            ("Standard - policy floor is acceptable", "Higher than the current policy floor"),
-        )
-        st.caption("This intake tests mandate fit. It does not automatically change the allocation or make a recommendation.")
+        st.caption("These inputs create a personal planning view. They do not automatically change the shared portfolio allocation.")
 
-    horizon_fit = client_horizon == 15
+    horizon_fit = client_horizon >= 10
     risk_fit = client_risk == "Medium-high growth"
-    liquidity_fit = client_liquidity == "Standard - policy floor is acceptable"
+    projected_value = future_value(current_savings, monthly_investment, NOMINAL_OBJECTIVE, client_horizon)
+    required_contribution = required_monthly_investment(current_savings, final_goal, NOMINAL_OBJECTIVE, client_horizon)
+    goal_gap = projected_value - final_goal
+    months_of_expenses = cash_reserve / monthly_expenses
+    reserve_fit = months_of_expenses >= 3
 
 
     st.markdown(
@@ -125,11 +129,23 @@ def main():
     )
     st.markdown(
         """<div class="hero"><div class="eyebrow">Project 2 · Investment-management application</div>
-        <h1>Northstar Portfolio Pilot ✦</h1>
+        <h1>Racette Investments ✦</h1>
         <p>A long-horizon growth portfolio with visible guardrails—not a black-box stock picker.</p></div>""",
         unsafe_allow_html=True,
     )
     st.caption("AI use: ChatGPT/Codex assisted with code and documentation; the student owns the policy, analysis, and decision. Educational use only; not investment advice.")
+
+    st.markdown('<div class="section-label">01 · Your personal runway</div>', unsafe_allow_html=True)
+    runway_columns = st.columns(4)
+    runway_columns[0].metric(f"Projected value in {client_horizon} years", money(projected_value))
+    runway_columns[1].metric("Desired final value", money(final_goal))
+    runway_columns[2].metric("Ahead / behind goal", money(goal_gap), delta_color="normal" if goal_gap >= 0 else "inverse")
+    runway_columns[3].metric("Cash reserve coverage", f"{months_of_expenses:.1f} months")
+    if goal_gap >= 0:
+        st.success(f"Your current plan projects {money(goal_gap)} above the selected goal at the {NOMINAL_OBJECTIVE:.1%} planning objective. This is a planning estimate, not a forecast.")
+    else:
+        additional = max(0.0, required_contribution - monthly_investment)
+        st.info(f"At the {NOMINAL_OBJECTIVE:.1%} planning objective, reaching the goal would require about {money(required_contribution)} per month—{money(additional)} more than the current monthly plan.")
 
     left, right = st.columns([4, 1])
     with left:
@@ -146,7 +162,7 @@ def main():
         st.info("This version deliberately uses live Yahoo Finance data. Reconnect to the internet and use **Refresh live data** to run the analysis.")
         return
 
-    st.markdown('<div class="section-label">01 · Live market feed</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">02 · Live market feed</div>', unsafe_allow_html=True)
     data_date, window, decision = st.columns(3)
     data_date.metric("Latest completed month", dates[-1])
     window.metric("Estimation window", f"{dates[0]} to {dates[-1]}")
@@ -168,19 +184,19 @@ def main():
             "BIZD is a public business-development-company ticker used only as a limited private-credit proxy; it does not reproduce private-credit fund liquidity, fees, or valuations."
         )
 
-    st.markdown('<div class="section-label">02 - Illustrative mandate fit</div>', unsafe_allow_html=True)
-    st.caption(f"Case: {case_label}. The committee view accepts no real client data and does not change the shared policy automatically.")
+    st.markdown('<div class="section-label">03 · Personal policy fit</div>', unsafe_allow_html=True)
+    st.caption("Your goal inputs help you judge whether the fixed medium-high-growth policy fits. They do not silently change the portfolio weights.")
     fit_columns = st.columns(3)
-    fit_columns[0].metric("15-year horizon", "PASS" if horizon_fit else "REVIEW", f"Input: {client_horizon} years")
+    fit_columns[0].metric("Long-horizon fit", "PASS" if horizon_fit else "REVIEW", f"Input: {client_horizon} years")
     fit_columns[1].metric("Medium-high growth preference", "PASS" if risk_fit else "REVIEW", client_risk)
-    fit_columns[2].metric("90% liquidity floor", "PASS" if liquidity_fit else "REVIEW", client_liquidity)
-    if horizon_fit and risk_fit and liquidity_fit:
-        st.success("This illustrative mandate fits the current Northstar policy. Continue to the baseline comparison and stress test before any committee decision.")
+    fit_columns[2].metric("Personal cash-reserve prompt", "READY" if reserve_fit else "REVIEW", f"{months_of_expenses:.1f} months")
+    if horizon_fit and risk_fit and reserve_fit:
+        st.success("Your inputs fit the current Racette Investments policy. Continue to the allocation comparison and stress test before making a decision.")
     else:
-        st.warning("This illustrative mandate does not fully fit the fixed policy. A committee should redesign and validate the mandate rather than force this allocation onto the case.")
+        st.warning("Your inputs do not fully fit the current policy. Review the goal horizon, risk preference, or cash-reserve plan instead of forcing this allocation onto your situation.")
 
 
-    st.markdown('<div class="section-label">02 · Strategy guardrails</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">04 · Strategy guardrails</div>', unsafe_allow_html=True)
     objective, volatility, liquidity, horizon = st.columns(4)
     objective.metric("Return objective", f"CPI + {REAL_RETURN_OBJECTIVE:.0%}", f"{NOMINAL_OBJECTIVE:.1%} nominal at {CPI_ASSUMPTION:.1%} CPI")
     volatility.metric("Volatility ceiling", "15%")
@@ -188,13 +204,13 @@ def main():
     horizon.metric("Investment horizon", "15 years")
     st.caption("At least 90% must be redeemable within five business days. Alternatives are capped at 15%; private credit is capped at 10%. Annual review only; rebalance after a sleeve drifts more than five percentage points.")
 
-    st.markdown('<div class="section-label">03 · Compare the routes</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">05 · Compare the routes</div>', unsafe_allow_html=True)
     equal = equal_weight_baseline(estimates, correlations)
     benchmark = benchmark_baseline(estimates, correlations)
     recommended = recommended_portfolio(estimates, correlations)
     for column, title, description, portfolio in zip(
         st.columns(3),
-        ("Equal start", "Liquid benchmark", "Northstar route"),
+        ("Equal start", "Liquid benchmark", "Racette route"),
         ("20% in every sleeve", "70% global equity · 20% bonds · 10% Treasuries", "Maximum historical return after every guardrail"),
         (equal, benchmark, recommended),
     ):
@@ -207,7 +223,7 @@ def main():
                 st.metric("Mandate status", verdict_badge(portfolio["verdict"]))
                 st.caption(f"Return {portfolio['expected_return']:.2%} · Volatility {portfolio['volatility']:.2%}")
 
-    equal_tab, benchmark_tab, recommended_tab = st.tabs(["Equal start", "Liquid benchmark", "Northstar route"])
+    equal_tab, benchmark_tab, recommended_tab = st.tabs(["Equal start", "Liquid benchmark", "Racette route"])
     with equal_tab:
         portfolio_detail("Equal-weight baseline", equal)
     with benchmark_tab:
@@ -216,7 +232,7 @@ def main():
         portfolio_detail("Constrained pilot allocation", recommended)
         st.markdown('<div class="pilot-note"><b>Pilot decision:</b> test this allocation process before adopting it. It is selected from live historical inputs, but remains subject to the monitoring triggers below.</div>', unsafe_allow_html=True)
 
-    st.markdown('<div class="section-label">04 · Monitor, challenge, decide</div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-label">06 · Monitor, challenge, decide</div>', unsafe_allow_html=True)
     signal, close, moving_average, signal_date = point_in_time_signal(dates, prices)
     signal_column, stress_column = st.columns(2)
     with signal_column:

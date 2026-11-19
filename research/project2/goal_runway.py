@@ -47,7 +47,7 @@ def status(value: bool) -> str:
 
 
 def main():
-    st.set_page_config(page_title="Personal Portfolio Planner", page_icon="P", layout="wide")
+    st.set_page_config(page_title="Racette Investments | Personal Planner", page_icon="R", layout="wide")
     st.markdown(
         """<style>
         .stApp { background: #f7f7f2; color: #18221c; }
@@ -62,8 +62,8 @@ def main():
         unsafe_allow_html=True,
     )
     st.markdown(
-        """<div class="hero"><h1>Personal Portfolio Planner</h1>
-        <p>Plan a long-term saving goal, protect day-to-day liquidity, and check whether your assumptions fit the same transparent policy used by the Meridian Portfolio Prototype.</p></div>""",
+        """<div class="hero"><h1>Racette Investments · Personal Planner</h1>
+        <p>Plan a long-term saving goal, protect day-to-day liquidity, and check whether your assumptions fit the Racette Investments portfolio policy.</p></div>""",
         unsafe_allow_html=True,
     )
     st.caption("Personal educational planning tool only; not investment, tax, or financial advice. Dollar outputs are nominal future dollars and do not guarantee investment results.")
