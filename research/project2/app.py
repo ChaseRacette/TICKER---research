@@ -89,6 +89,24 @@ def point_in_time_signal(dates, prices):
 
 def main():
     st.set_page_config(page_title="Northstar Portfolio Pilot", page_icon="✦", layout="wide")
+    # The intake is illustrative: this prototype does not use real client data.
+    with st.sidebar:
+        st.header("Meridian prototype")
+        st.caption("Illustrative investor intake - educational use only")
+        case_label = st.text_input("Case label", value="Illustrative 15-year growth investor")
+        client_horizon = st.slider("Investment horizon (years)", min_value=1, max_value=30, value=15)
+        client_risk = st.selectbox("Risk preference", ("Medium-high growth", "Moderate growth", "Conservative"))
+        client_liquidity = st.selectbox(
+            "Liquidity need",
+            ("Standard - policy floor is acceptable", "Higher than the current policy floor"),
+        )
+        st.caption("This intake tests mandate fit. It does not automatically change the allocation or make a recommendation.")
+
+    horizon_fit = client_horizon == 15
+    risk_fit = client_risk == "Medium-high growth"
+    liquidity_fit = client_liquidity == "Standard - policy floor is acceptable"
+
+
     st.markdown(
         """<style>
         .stApp { background: #08111f; color: #e8eef7; }
@@ -149,6 +167,18 @@ def main():
             "Returns, volatility, and correlations are calculated locally from those prices. Historical averages are reproducible inputs, not forecasts. "
             "BIZD is a public business-development-company ticker used only as a limited private-credit proxy; it does not reproduce private-credit fund liquidity, fees, or valuations."
         )
+
+    st.markdown('<div class="section-label">02 - Illustrative mandate fit</div>', unsafe_allow_html=True)
+    st.caption(f"Case: {case_label}. The committee view accepts no real client data and does not change the shared policy automatically.")
+    fit_columns = st.columns(3)
+    fit_columns[0].metric("15-year horizon", "PASS" if horizon_fit else "REVIEW", f"Input: {client_horizon} years")
+    fit_columns[1].metric("Medium-high growth preference", "PASS" if risk_fit else "REVIEW", client_risk)
+    fit_columns[2].metric("90% liquidity floor", "PASS" if liquidity_fit else "REVIEW", client_liquidity)
+    if horizon_fit and risk_fit and liquidity_fit:
+        st.success("This illustrative mandate fits the current Northstar policy. Continue to the baseline comparison and stress test before any committee decision.")
+    else:
+        st.warning("This illustrative mandate does not fully fit the fixed policy. A committee should redesign and validate the mandate rather than force this allocation onto the case.")
+
 
     st.markdown('<div class="section-label">02 · Strategy guardrails</div>', unsafe_allow_html=True)
     objective, volatility, liquidity, horizon = st.columns(4)
