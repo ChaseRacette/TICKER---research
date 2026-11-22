@@ -7,6 +7,7 @@ Fundamental Microsoft (MSFT) research and valuation coursework, plus the Racette
 From the repository root, install the app dependency and launch the investment-management application:
 
 ```powershell
+python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -E -m streamlit run research\project2\app.py
 ```
