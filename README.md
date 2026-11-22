@@ -4,6 +4,8 @@ Fundamental Microsoft (MSFT) research and valuation coursework, plus the Racette
 
 ## Project 2 — Racette Investments Portfolio Pilot
 
+**[Open the live Racette Investments app](https://racette-investments.streamlit.app/)**
+
 From the repository root, install the app dependency and launch the investment-management application:
 
 ```powershell

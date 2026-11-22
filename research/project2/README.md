@@ -1,5 +1,9 @@
 # Racette Investments Portfolio Pilot
 
+## Live app
+
+**[Open Racette Investments in your browser](https://racette-investments.streamlit.app/)**
+
 ## Cold-run setup and one-command result
 
 From the repository root:
