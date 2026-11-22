@@ -253,7 +253,33 @@ def personal_plan_tab(values):
         {"Year": year, "Projected portfolio value": future_value(values["savings"], values["monthly"], NOMINAL_OBJECTIVE, year)}
         for year in range(years + 1)
     ]
-    st.line_chart(milestones, x="Year", y="Projected portfolio value", color="#0f766e", height=290)
+    runway_chart = {
+        "mark": {"type": "line", "color": "#0f766e", "strokeWidth": 3},
+        "encoding": {
+            "x": {
+                "field": "Year",
+                "type": "quantitative",
+                "title": "Year",
+                "axis": {"format": "d"},
+            },
+            "y": {
+                "field": "Projected portfolio value",
+                "type": "quantitative",
+                "title": "Projected portfolio value",
+                "axis": {"format": "$,.0f"},
+            },
+            "tooltip": [
+                {"field": "Year", "type": "quantitative", "format": ".0f"},
+                {
+                    "field": "Projected portfolio value",
+                    "type": "quantitative",
+                    "format": "$,.0f",
+                },
+            ],
+        },
+        "height": 290,
+    }
+    st.vega_lite_chart(milestones, runway_chart, width="stretch")
 
     horizon_fit = years >= 10
     risk_fit = values["risk"] == "Medium-high growth"
