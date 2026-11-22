@@ -50,14 +50,16 @@ def main():
     st.set_page_config(page_title="Racette Investments | Personal Planner", page_icon="R", layout="wide")
     st.markdown(
         """<style>
-        .stApp { background: #f7f7f2; color: #18221c; }
+        .stApp { background: #fff7ed; color: #431407; }
         .block-container { max-width: 1180px; padding-top: 2.5rem; }
-        .hero { background: #173b2d; color: #f9fbf8; border-radius: 22px; padding: 1.7rem 1.9rem; margin-bottom: 1rem; }
+        .hero { background: #c2410c; color: #fff7ed; border-radius: 22px; padding: 1.7rem 1.9rem; margin-bottom: 1rem; }
         .hero h1 { margin: 0 0 .35rem; font-size: 2.35rem; }
-        .hero p { margin: 0; color: #d9e9de; font-size: 1.03rem; }
-        .step { color: #307454; font-size: .8rem; letter-spacing: .11em; font-weight: 750; margin-top: 1.4rem; }
-        [data-testid="stMetric"] { background: #ffffff; border: 1px solid #d7dfd8; border-radius: 14px; padding: .8rem; }
-        .outcome { background: #e2f2e7; border-left: 5px solid #2f855a; border-radius: 10px; padding: 1rem 1.1rem; font-size: 1.02rem; }
+        .hero p { margin: 0; color: #ffedd5; font-size: 1.03rem; }
+        .step { color: #c2410c; font-size: .8rem; letter-spacing: .11em; font-weight: 750; margin-top: 1.4rem; }
+        [data-testid="stWidgetLabel"], [data-testid="stWidgetLabel"] p { color: #c2410c !important; font-weight: 650; }
+        [data-testid="stMetric"] { background: #c2410c; border: 1px solid #9a3412; border-radius: 14px; padding: .8rem; }
+        [data-testid="stMetric"] * { color: #fff7ed !important; }
+        .outcome { background: #ffedd5; border-left: 5px solid #ea580c; border-radius: 10px; padding: 1rem 1.1rem; font-size: 1.02rem; color: #431407; }
         </style>""",
         unsafe_allow_html=True,
     )

@@ -4,7 +4,7 @@ This folder is the hand-in hub for the Project 2 Readiness lab. The authoritativ
 
 ## Submit these GitHub links
 
-1. [Main Northstar app](../research/project2/app.py)
+1. [Main Racette Investments app](../research/project2/app.py)
 2. [README and cold-run command](../research/project2/README.md)
 3. [Decision memo](../docs/decision-memo.md)
 4. [Decision output snapshot](../docs/decision-output.md)
@@ -19,4 +19,4 @@ The partner must receive only the repository link, follow the README in a fresh 
 
 ## Committee decision line
 
-**Pilot** the Northstar portfolio process; pause new allocations if no feasible portfolio meets the CPI + 5% objective while passing every guardrail, or if a 25% drawdown triggers committee review.
+**Pilot** the Racette Investments portfolio process; pause new allocations if no feasible portfolio meets the CPI + 5% objective while passing every guardrail, or if a 25% drawdown triggers committee review.

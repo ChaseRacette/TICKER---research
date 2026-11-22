@@ -6,7 +6,7 @@
 
 | Result | Before: 4.0% LQD assumption | After: 2.0% LQD assumption |
 |---|---:|---:|
-| Northstar mandate verdict | Pass | Pass |
+| Racette mandate verdict | Pass | Pass |
 | Historical expected return | 9.69% | 9.49% |
 | Estimated volatility | 13.18% | 13.18% |
 | Treasury reserve | 5% | 5% |

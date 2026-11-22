@@ -50,7 +50,7 @@ The student wanted to remake Project 2 around a portfolio process they would per
 
 ## How these preferences shaped the app
 
-The Project 2 app is called **Northstar Portfolio Pilot**. It:
+The Project 2 app is called **Racette Investments Portfolio Pilot**. It:
 
 1. Uses live Yahoo Finance monthly adjusted-close data for the five tickers above.
 2. Compares equal weight, the 70/20/10 benchmark, and a constrained recommendation.
@@ -72,7 +72,7 @@ The personal goal companion currently lives at `research/project2/goal_runway.py
 ## Related repository files
 
 - `docs/project-2-policy-decisions.md` — authoritative policy record.
-- `research/project2/app.py` — Northstar committee-facing Streamlit app.
+- `research/project2/app.py` — Racette Investments committee-facing Streamlit app.
 - `research/project2/portfolio_engine.py` — allocation rules and decision logic.
 - `research/project2/goal_runway.py` — personal savings and goal-planning companion.
 - `docs/decision-memo.md` — current Pilot recommendation and conditions.

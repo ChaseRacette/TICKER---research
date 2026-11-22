@@ -1,4 +1,4 @@
-# Northstar Decision Output Snapshot
+# Racette Investments Decision Output Snapshot
 
 **Generated:** 2026-11-17 19:25 UTC  
 **Live source:** Yahoo Finance monthly adjusted closes  
@@ -8,11 +8,11 @@
 |---|---|---:|---:|---|
 | Equal weight | FAIL | 5.99% | 9.37% | Treasury reserve 20%; investment-grade bonds 20%; global equity index 20%; private-credit proxy 20%; listed infrastructure 20% |
 | 70/20/10 benchmark | PASS | 7.80% | 11.97% | Treasury reserve 10%; investment-grade bonds 20%; global equity index 70%; private-credit proxy 0%; listed infrastructure 0% |
-| Northstar constrained recommendation | PASS | 9.25% | 13.18% | Treasury reserve 5%; investment-grade bonds 10%; global equity index 80%; private-credit proxy 0%; listed infrastructure 5% |
+| Racette constrained recommendation | PASS | 9.25% | 13.18% | Treasury reserve 5%; investment-grade bonds 10%; global equity index 80%; private-credit proxy 0%; listed infrastructure 5% |
 
 ## Decision
 
-**PILOT** the Northstar process. The recommendation is selected only after passing the sleeve ranges, 15% alternatives cap, 90% five-business-day liquidity floor, and 15% estimated-volatility ceiling.
+**PILOT** the Racette Investments process. The recommendation is selected only after passing the sleeve ranges, 15% alternatives cap, 90% five-business-day liquidity floor, and 15% estimated-volatility ceiling.
 
 The point-in-time ACWI ten-month monitor was **Growth trend intact** as of October 2026. It is monitoring-only and does not automatically change the allocation.
 

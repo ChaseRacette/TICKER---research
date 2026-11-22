@@ -1,4 +1,4 @@
-"""Print a dated Markdown snapshot of the current Northstar decision."""
+"""Print a dated Markdown snapshot of the current Racette decision."""
 from __future__ import annotations
 
 import argparse
@@ -26,7 +26,7 @@ def row(name, portfolio):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Print the Northstar decision snapshot.")
+    parser = argparse.ArgumentParser(description="Print the Racette Investments decision snapshot.")
     parser.add_argument(
         "--bond-return-percent",
         type=float,
@@ -49,7 +49,7 @@ def main():
     recommended = recommended_portfolio(estimates, correlations)
     signal = "Growth trend intact" if prices["ACWI"][-1] >= sum(prices["ACWI"][-10:]) / 10 else "Caution: trend below average"
 
-    print("# Northstar Decision Output Snapshot")
+    print("# Racette Investments Decision Output Snapshot")
     print()
     print(f"Generated: {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
     print(f"Yahoo Finance monthly adjusted-close window: {dates[0]} through {dates[-1]} (60 completed monthly returns)")
@@ -60,7 +60,7 @@ def main():
     print("|---|---|---:|---:|---|")
     print(row("Equal weight", equal))
     print(row("70/20/10 benchmark", benchmark))
-    print(row("Northstar constrained recommendation", recommended))
+    print(row("Racette constrained recommendation", recommended))
     print()
     print(f"Point-in-time monitor: **{signal}** as of {dates[-1]}. It is monitoring-only and does not automatically change allocations.")
     print()

@@ -1,4 +1,4 @@
-# Validation and AI Use — Northstar Portfolio Pilot
+# Validation and AI Use — Racette Investments Portfolio Pilot
 
 ## Validation scope
 
@@ -8,7 +8,7 @@ The app compares two transparent baselines with the constrained recommendation o
 |---|---|---|
 | Equal weight | 20% in each sleeve | Fail |
 | 70/20/10 benchmark | 70% global equity, 20% investment-grade bonds, 10% Treasuries | Pass |
-| Northstar recommendation | Highest historical-return allocation that passes each policy rule | Pass |
+| Racette recommendation | Highest historical-return allocation that passes each policy rule | Pass |
 
 The dated values and allocations are in [decision-output.md](decision-output.md). The app shows the individual policy checks for each portfolio rather than hiding a failing check. The locked changed-input before/after output is in [stress-run-output.md](stress-run-output.md).
 
@@ -19,6 +19,10 @@ The dated values and allocations are in [decision-output.md](decision-output.md)
 - BIZD is a public BDC ETF proxy and does not reproduce private-credit fund terms, valuations, fees, or redemption restrictions.
 - The ACWI ten-month trend is monitoring-only. It may lag reversals and does not predict returns.
 - The allocation search uses long-only weights in 5% steps, so it does not represent every possible portfolio.
+
+## Additional app stress controls
+
+The **Stress Test & Monitoring** view also lets a reviewer compare the base 60-month estimate with 36- or 48-month estimation windows, subtract an explicit annual implementation-cost assumption from the recommended portfolio's expected return, and tighten the volatility and liquidity rules. These controls are deliberately separate from the Locked Changed-Input Record below: that record remains the dated, pre-committed Lab 20 test. For any challenge, no feasible allocation or a net return below the 7.5% nominal objective requires a pause and review rather than an automatic trade.
 
 ## Stress run and Locked Changed-Input Record
 
@@ -39,8 +43,8 @@ The dated values and allocations are in [decision-output.md](decision-output.md)
 | Required item | Actual result |
 |---|---|
 | Run date and data window | 2026-11-17; Yahoo Finance adjusted-close window October 2021 through October 2026 (60 completed monthly returns) |
-| Before result | With the LQD stress input at 4.0%, Northstar passed with 9.69% historical expected return, 13.18% estimated volatility, and 5% Treasury reserve / 10% investment-grade bonds / 80% global equity / 0% private credit / 5% listed infrastructure. |
-| After result | With the LQD stress input at 2.0%, Northstar passed with 9.49% historical expected return, 13.18% estimated volatility, and the same allocation. |
+| Before result | With the LQD stress input at 4.0%, Racette passed with 9.69% historical expected return, 13.18% estimated volatility, and 5% Treasury reserve / 10% investment-grade bonds / 80% global equity / 0% private credit / 5% listed infrastructure. |
+| After result | With the LQD stress input at 2.0%, Racette passed with 9.49% historical expected return, 13.18% estimated volatility, and the same allocation. |
 | Did the decision change? | No. The decision remained PILOT. |
 | Did the outcome match the prediction? Why or why not? | Yes. Expected return declined by 0.20 percentage points, estimated volatility did not change, and the allocation stayed the same. The portfolio kept the 10% bond minimum and retained the higher-return global-equity allocation, so the process still cleared the 7.5% objective and every guardrail. |
 

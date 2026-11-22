@@ -47,6 +47,7 @@ LIQUID_SLEEVES = set(SLEEVES) - {"Private credit proxy"}
 ALTERNATIVES_CAP = 0.15
 LIQUIDITY_FLOOR = 0.90
 VOLATILITY_CEILING = 0.15
+DRAWDOWN_REVIEW_TRIGGER = 0.25
 CPI_ASSUMPTION = 0.025
 REAL_RETURN_OBJECTIVE = 0.05
 NOMINAL_OBJECTIVE = CPI_ASSUMPTION + REAL_RETURN_OBJECTIVE
@@ -161,11 +162,19 @@ def estimate_inputs(csv_source, last_60_months=True):
     return estimate_inputs_from_prices(prices, last_60_months=last_60_months)
 
 
-def estimate_inputs_from_prices(prices, last_60_months=True):
-    """Return annualized historical estimates from already-loaded price series."""
+def estimate_inputs_from_prices(prices, last_60_months=True, months=None):
+    """Return annualized historical estimates from already-loaded price series.
+
+    ``months`` makes the estimation window explicit for stress testing. The
+    historical default remains sixty completed monthly returns.
+    """
     returns = monthly_returns(prices)
-    if last_60_months:
-        returns = {ticker: values[-60:] for ticker, values in returns.items()}
+    if months is None and last_60_months:
+        months = 60
+    if months is not None:
+        if months < 12 or any(len(values) < months for values in returns.values()):
+            raise ValueError("The selected estimation window needs at least 12 shared monthly returns.")
+        returns = {ticker: values[-months:] for ticker, values in returns.items()}
     estimates = {
         sleeve: {
             "expected_return": fmean(returns[ticker]) * 12,
@@ -204,7 +213,7 @@ def volatility(weights, estimates, correlations):
     return sqrt(max(variance, 0.0))
 
 
-def constraint_results(weights, estimates, correlations):
+def constraint_results(weights, estimates, correlations, liquidity_floor=LIQUIDITY_FLOOR, volatility_ceiling=VOLATILITY_CEILING):
     alternatives = sum(weights[sleeve] for sleeve in ALTERNATIVES)
     liquid = sum(weights[sleeve] for sleeve in LIQUID_SLEEVES)
     result = []
@@ -216,14 +225,14 @@ def constraint_results(weights, estimates, correlations):
         ))
     result.extend([
         ("Total alternatives at most 15%", alternatives, alternatives <= ALTERNATIVES_CAP),
-        ("Redeemable within five business days at least 90%", liquid, liquid >= LIQUIDITY_FLOOR),
-        ("Estimated annual volatility at most 15%", volatility(weights, estimates, correlations), volatility(weights, estimates, correlations) <= VOLATILITY_CEILING),
+        (f"Redeemable within five business days at least {liquidity_floor:.0%}", liquid, liquid >= liquidity_floor),
+        (f"Estimated annual volatility at most {volatility_ceiling:.1%}", volatility(weights, estimates, correlations), volatility(weights, estimates, correlations) <= volatility_ceiling),
     ])
     return result
 
 
-def evaluate(weights, estimates, correlations):
-    checks = constraint_results(weights, estimates, correlations)
+def evaluate(weights, estimates, correlations, liquidity_floor=LIQUIDITY_FLOOR, volatility_ceiling=VOLATILITY_CEILING):
+    checks = constraint_results(weights, estimates, correlations, liquidity_floor, volatility_ceiling)
     return {
         "weights": weights,
         "expected_return": expected_return(weights, estimates),
@@ -243,11 +252,11 @@ def weight_combinations(index=0, steps_left=20, partial=None):
         yield from weight_combinations(index + 1, steps_left - steps, {**partial, SLEEVES[index]: steps * STEP})
 
 
-def recommended_portfolio(estimates, correlations):
+def recommended_portfolio(estimates, correlations, liquidity_floor=LIQUIDITY_FLOOR, volatility_ceiling=VOLATILITY_CEILING):
     """Maximize expected return among portfolios meeting policy limits and CPI + 5%."""
     best = None
     for weights in weight_combinations():
-        evaluated = evaluate(weights, estimates, correlations)
+        evaluated = evaluate(weights, estimates, correlations, liquidity_floor, volatility_ceiling)
         if evaluated["verdict"] != "pass" or evaluated["expected_return"] < NOMINAL_OBJECTIVE:
             continue
         if best is None or (evaluated["expected_return"], -evaluated["volatility"]) > (
