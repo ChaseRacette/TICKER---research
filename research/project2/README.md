@@ -15,6 +15,10 @@ Then this one command opens the unified personal-planning and portfolio dashboar
 .\.venv\Scripts\python.exe -E -m streamlit run research\project2\app.py
 ```
 
+## Open by double-clicking
+
+After the one-time setup is complete, double-click [Open-Racette-Investments.cmd](../../Open-Racette-Investments.cmd) in your local `ticker-research` folder. It starts the app and opens it in your browser. A GitHub README link cannot execute a local program directly, so this link takes you to the launcher file instead.
+
 The cold run requires Python 3.11 or newer and an internet connection. The app fetches public monthly adjusted-close data from Yahoo Finance; it does not require a CSV upload, API key, login, or local data file. A dated, readable output snapshot is available in [`docs/decision-output.md`](../../docs/decision-output.md).
 
 ## What the app does

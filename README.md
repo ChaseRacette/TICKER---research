@@ -14,6 +14,10 @@ python -m venv .venv
 
 The app uses public Yahoo Finance monthly adjusted-close data and needs an internet connection. It compares two transparent baselines with a constrained Racette allocation, shows each mandate verdict, provides a point-in-time monitoring signal, and includes estimate, history-window, cost, constraint, and drawdown stress tests. Read the [Project 2 README](research/project2/README.md) for the cold-run setup and limitations, and the [Project 2 manifest](docs/project-2-manifest.md) for every submission artifact.
 
+### Open the app by double-clicking
+
+After completing the one-time setup above, double-click [Open-Racette-Investments.cmd](Open-Racette-Investments.cmd) in your local `ticker-research` folder. It starts the app and opens it in your browser. GitHub cannot run local programs from a README link, so the link is a shortcut to the launcher file rather than a browser-only launch button.
+
 AI use: ChatGPT/Codex assisted with code and documentation. The student owns the policy, analysis, and decision. Educational use only; not investment advice.
 
 ## Setup
