@@ -3,7 +3,7 @@ setlocal
 
 set "PROJECT_ROOT=%~dp0"
 set "PYTHON=%PROJECT_ROOT%..\..\project2-venv\Scripts\python.exe"
-set "APP=%PROJECT_ROOT%research\project2\app.py"
+set "APP=%PROJECT_ROOT%Project 2\app.py"
 
 if not exist "%PYTHON%" (
     echo.

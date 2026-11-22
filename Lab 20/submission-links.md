@@ -9,4 +9,4 @@ The Lab 20 evidence is organized as follows:
 - `docs/validation-and-ai-use.md` — baselines, validation, and locked changed-input record.
 - `docs/stress-run-output.md` — before/after stress-run results.
 - `docs/cold-run-note.md` — partner's independent cold-run record.
-- `research/project2/app.py` — the running Streamlit app.
+- `Project 2/app.py` — the running Streamlit app.

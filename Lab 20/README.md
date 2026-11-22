@@ -4,14 +4,14 @@ This folder is the hand-in hub for the Project 2 Readiness lab. The authoritativ
 
 ## Submit these GitHub links
 
-1. [Main Racette Investments app](../research/project2/app.py)
-2. [README and cold-run command](../research/project2/README.md)
+1. [Main Racette Investments app](../Project%202/app.py)
+2. [README and cold-run command](../Project%202/README.md)
 3. [Decision memo](../docs/decision-memo.md)
 4. [Decision output snapshot](../docs/decision-output.md)
 5. [Validation and AI-use record](../docs/validation-and-ai-use.md)
 6. [Changed-input stress-run output](../docs/stress-run-output.md)
 7. [Partner cold-run note](../docs/cold-run-note.md)
-8. [Decision code](../research/project2/portfolio_engine.py)
+8. [Decision code](../Project%202/portfolio_engine.py)
 
 ## Required in-class activity
 

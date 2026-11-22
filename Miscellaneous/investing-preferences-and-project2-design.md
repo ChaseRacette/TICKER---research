@@ -67,14 +67,14 @@ The student later requested a two-layer build:
 - **Personal version first:** connect savings, expenses, monthly contributions, final-value goals, time horizon, and portfolio planning in a tool the student would actually use.
 - **Meridian prototype second:** adapt the same transparent policy engine into a committee-facing view with generalized client inputs, mandate checks, stress testing, and an audit trail.
 
-The personal goal companion currently lives at `research/project2/goal_runway.py`. It should remain educational planning software and should not be represented as Meridian's actual production system or use real Meridian client data without explicit authorization.
+The personal goal companion currently lives at `Project 2/goal_runway.py`. It should remain educational planning software and should not be represented as Meridian's actual production system or use real Meridian client data without explicit authorization.
 
 ## Related repository files
 
 - `docs/project-2-policy-decisions.md` — authoritative policy record.
-- `research/project2/app.py` — Racette Investments committee-facing Streamlit app.
-- `research/project2/portfolio_engine.py` — allocation rules and decision logic.
-- `research/project2/goal_runway.py` — personal savings and goal-planning companion.
+- `Project 2/app.py` — Racette Investments committee-facing Streamlit app.
+- `Project 2/portfolio_engine.py` — allocation rules and decision logic.
+- `Project 2/goal_runway.py` — personal savings and goal-planning companion.
 - `docs/decision-memo.md` — current Pilot recommendation and conditions.
 
 ## AI-use note

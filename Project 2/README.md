@@ -16,7 +16,7 @@ py -3 -m venv .venv
 Then this one command opens the unified personal-planning and portfolio dashboard:
 
 ```powershell
-.\.venv\Scripts\python.exe -E -m streamlit run research\project2\app.py
+.\.venv\Scripts\python.exe -E -m streamlit run "Project 2\app.py"
 ```
 
 The cold run requires Python 3.11 or newer and an internet connection. The app fetches public monthly adjusted-close data from Yahoo Finance; it does not require a CSV upload, API key, login, or local data file. A dated, readable output snapshot is available in [`docs/decision-output.md`](../../docs/decision-output.md).
@@ -58,5 +58,5 @@ The **My Plan** view projects a nominal future balance, shows the required month
 To regenerate a current readable decision snapshot from live Yahoo Finance data:
 
 ```powershell
-.\.venv\Scripts\python.exe -E research\project2\decision_snapshot.py
+.\.venv\Scripts\python.exe -E "Project 2\decision_snapshot.py"
 ```

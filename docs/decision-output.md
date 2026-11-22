@@ -18,4 +18,4 @@ The point-in-time ACWI ten-month monitor was **Growth trend intact** as of Octob
 
 **Reversal condition:** pause new allocations if no feasible portfolio clears the CPI + 5% objective and every guardrail, or if a 25% drawdown triggers committee review.
 
-This snapshot is a dated record of a live-data run. Run `research/project2/decision_snapshot.py` to produce a new current snapshot; results can differ when Yahoo Finance history updates.
+This snapshot is a dated record of a live-data run. Run `Project 2/decision_snapshot.py` to produce a new current snapshot; results can differ when Yahoo Finance history updates.

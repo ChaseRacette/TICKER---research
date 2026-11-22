@@ -9,10 +9,10 @@
 | Item | GitHub location | Status |
 |---|---|---|
 | Live hosted app | [racette-investments.streamlit.app](https://racette-investments.streamlit.app/) | Complete |
-| Project 2 app | [research/project2/app.py](https://github.com/ChaseRacette/TICKER---research/blob/main/research/project2/app.py) | Complete |
+| Project 2 app | [Project 2/app.py](https://github.com/ChaseRacette/TICKER---research/blob/main/Project%202/app.py) | Complete |
 | Root README and launch command | [README.md](https://github.com/ChaseRacette/TICKER---research/blob/main/README.md) | Complete |
-| Project 2 setup and data documentation | [research/project2/README.md](https://github.com/ChaseRacette/TICKER---research/blob/main/research/project2/README.md) | Complete |
-| Portfolio decision engine | [research/project2/portfolio_engine.py](https://github.com/ChaseRacette/TICKER---research/blob/main/research/project2/portfolio_engine.py) | Complete |
+| Project 2 setup and data documentation | [Project 2/README.md](https://github.com/ChaseRacette/TICKER---research/blob/main/Project%202/README.md) | Complete |
+| Portfolio decision engine | [Project 2/portfolio_engine.py](https://github.com/ChaseRacette/TICKER---research/blob/main/Project%202/portfolio_engine.py) | Complete |
 | Dated readable decision output | [docs/decision-output.md](https://github.com/ChaseRacette/TICKER---research/blob/main/docs/decision-output.md) | Complete |
 
 ## Decision, validation, and policy

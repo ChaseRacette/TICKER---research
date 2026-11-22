@@ -148,7 +148,7 @@ def main():
         hide_index=True,
         width="stretch",
     )
-    st.caption("The companion does not choose securities or place trades. Run research/project2/app.py to evaluate the same policy against live market data, baselines, guardrails, and stress tests.")
+    st.caption("The companion does not choose securities or place trades. Run Project 2/app.py to evaluate the same policy against live market data, baselines, guardrails, and stress tests.")
 
     st.markdown('<div class="step">05 - See the path, not just the finish line</div>', unsafe_allow_html=True)
     milestones = []
