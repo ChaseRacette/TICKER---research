@@ -17,4 +17,7 @@ if not exist "%PYTHON%" (
 )
 
 echo Starting Racette Investments...
-"%PYTHON%" -m streamlit run "%APP%"
+start "Racette Investments server" "%PYTHON%" -m streamlit run "%APP%" --server.headless true --browser.gatherUsageStats false
+timeout /t 4 /nobreak >nul
+start "" "http://localhost:8501"
+exit /b 0
