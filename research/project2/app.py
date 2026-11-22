@@ -253,30 +253,63 @@ def personal_plan_tab(values):
         {"Year": year, "Projected portfolio value": future_value(values["savings"], values["monthly"], NOMINAL_OBJECTIVE, year)}
         for year in range(years + 1)
     ]
-    runway_chart = {
-        "mark": {"type": "line", "color": "#0f766e", "strokeWidth": 3},
-        "encoding": {
-            "x": {
-                "field": "Year",
-                "type": "quantitative",
-                "title": "Year",
-                "axis": {"format": "d"},
-            },
-            "y": {
-                "field": "Projected portfolio value",
-                "type": "quantitative",
-                "title": "Projected portfolio value",
-                "axis": {"format": "$,.0f"},
-            },
-            "tooltip": [
-                {"field": "Year", "type": "quantitative", "format": ".0f"},
-                {
-                    "field": "Projected portfolio value",
-                    "type": "quantitative",
-                    "format": "$,.0f",
-                },
-            ],
+    chart_encoding = {
+        "x": {
+            "field": "Year",
+            "type": "quantitative",
+            "title": "Year",
+            "axis": {"format": "d"},
         },
+        "y": {
+            "field": "Projected portfolio value",
+            "type": "quantitative",
+            "title": "Projected portfolio value",
+            "axis": {"format": "$,.0f"},
+        },
+    }
+    tooltip = [
+        {"field": "Year", "type": "quantitative", "format": ".0f"},
+        {
+            "field": "Projected portfolio value",
+            "type": "quantitative",
+            "format": "$,.0f",
+        },
+    ]
+    runway_chart = {
+        "layer": [
+            {
+                "mark": {"type": "line", "color": "#0f766e", "strokeWidth": 3},
+                "encoding": chart_encoding,
+            },
+            {
+                "mark": {"type": "point", "opacity": 0, "size": 180},
+                "params": [
+                    {
+                        "name": "hovered_year",
+                        "select": {
+                            "type": "point",
+                            "fields": ["Year"],
+                            "nearest": True,
+                            "on": "pointerover",
+                            "clear": "pointerout",
+                        },
+                    }
+                ],
+                "encoding": {**chart_encoding, "tooltip": tooltip},
+            },
+            {
+                "transform": [{"filter": {"param": "hovered_year"}}],
+                "mark": {
+                    "type": "point",
+                    "filled": True,
+                    "color": "#0f766e",
+                    "size": 115,
+                    "stroke": "#ffffff",
+                    "strokeWidth": 2,
+                },
+                "encoding": chart_encoding,
+            },
+        ],
         "height": 290,
     }
     st.vega_lite_chart(milestones, runway_chart, width="stretch")
