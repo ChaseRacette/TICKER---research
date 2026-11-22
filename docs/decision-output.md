@@ -1,6 +1,6 @@
 # Racette Investments Decision Output Snapshot
 
-**Generated:** 2026-11-17 19:25 UTC  
+**Generated:** 2026-11-22 17:15 UTC  
 **Live source:** Yahoo Finance monthly adjusted closes  
 **Estimation window:** October 2021 through October 2026, using 60 completed monthly returns
 
