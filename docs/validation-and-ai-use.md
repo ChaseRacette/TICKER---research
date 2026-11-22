@@ -22,7 +22,7 @@ The dated values and allocations are in [decision-output.md](decision-output.md)
 
 ## Additional app stress controls
 
-The **Stress Test & Monitoring** view also lets a reviewer compare the base 60-month estimate with 36- or 48-month estimation windows, subtract an explicit annual implementation-cost assumption from the recommended portfolio's expected return, and tighten the volatility and liquidity rules. These controls are deliberately separate from the Locked Changed-Input Record below: that record remains the dated, pre-committed Lab 20 test. For any challenge, no feasible allocation or a net return below the 7.5% nominal objective requires a pause and review rather than an automatic trade.
+The **Stress Test & Monitoring** view also lets a reviewer compare the base 60-month estimate with 36- or 48-month estimation windows, subtract an explicit annual implementation-cost assumption from the recommended portfolio's expected return, and tighten the volatility and liquidity rules. The dated results are in [stress-run-output.md](stress-run-output.md). These controls are deliberately separate from the Locked Changed-Input Record below: that record remains the dated, pre-committed Lab 20 test. For any challenge, no feasible allocation or a net return below the 7.5% nominal objective requires a pause and review rather than an automatic trade.
 
 ## Stress run and Locked Changed-Input Record
 
