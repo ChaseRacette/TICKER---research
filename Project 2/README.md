@@ -4,6 +4,8 @@
 
 **[Open Racette Investments in your browser](https://racette-investments.streamlit.app/)**
 
+**[Open the Project 2 submission manifest](manifest.md)**
+
 ## Cold-run setup and one-command result
 
 From the repository root:

@@ -14,7 +14,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -E -m streamlit run "Project 2\app.py"
 ```
 
-The app uses public Yahoo Finance monthly adjusted-close data and needs an internet connection. It compares two transparent baselines with a constrained Racette allocation, shows each mandate verdict, provides a point-in-time monitoring signal, and includes estimate, history-window, cost, constraint, and drawdown stress tests. Read the [Project 2 README](Project%202/README.md) for the cold-run setup and limitations, and the [Project 2 manifest](docs/project-2-manifest.md) for every submission artifact.
+The app uses public Yahoo Finance monthly adjusted-close data and needs an internet connection. It compares two transparent baselines with a constrained Racette allocation, shows each mandate verdict, provides a point-in-time monitoring signal, and includes estimate, history-window, cost, constraint, and drawdown stress tests. Read the [Project 2 README](Project%202/README.md) for the cold-run setup and limitations, and the [Project 2 manifest](Project%202/manifest.md) for every submission artifact.
 
 ### Open the app by double-clicking
 
