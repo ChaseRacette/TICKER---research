@@ -19,6 +19,7 @@
 
 | Item | GitHub location | Status |
 |---|---|---|
+| Project 2 document hub | [docs/Project 2/README.md](https://github.com/ChaseRacette/TICKER---research/blob/main/docs/Project%202/README.md) | Complete |
 | Decision memo | [docs/decision-memo.md](https://github.com/ChaseRacette/TICKER---research/blob/main/docs/decision-memo.md) | Complete |
 | Validation and AI-use record, including Locked Changed-Input Record | [docs/validation-and-ai-use.md](https://github.com/ChaseRacette/TICKER---research/blob/main/docs/validation-and-ai-use.md) | Complete |
 | Stress-run output | [docs/stress-run-output.md](https://github.com/ChaseRacette/TICKER---research/blob/main/docs/stress-run-output.md) | Complete |
