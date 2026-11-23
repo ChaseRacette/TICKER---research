@@ -36,6 +36,14 @@
 
 The three existing Microsoft/Project 1 video transcripts are not used for this Project 2 submission. After recording the Project 2 videos, replace each pending entry with its YouTube URL and a GitHub link to its transcript.
 
+### Recorded transcript locations
+
+- [Video 1 transcript](../docs/Project%202/video-1-transcript.pdf)
+- [Video 2 transcript](../docs/Project%202/video-2-transcript.pdf)
+- [Video 3 transcript](../docs/Project%202/video-3-transcript.pdf)
+
+The three transcript PDFs are complete. The YouTube URLs still need to be pasted into the video table above before Brightspace submission.
+
 ## Brightspace attachments
 
 Attach these same Markdown files to the Brightspace submission:
